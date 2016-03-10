@@ -4,7 +4,8 @@
 RS22812::RS22812(QObject *parent) : QObject(parent)
 {
     mode=0;
-    resetFlags();
+    resetFlags(flags);
+    resetFlags(oldflags);
 }
 
 /*!
@@ -16,6 +17,7 @@ float RS22812::getVal() const
 {
     float val;
     bool isNumber;
+    int modifierApplied=0;
     val=digits.toFloat(&isNumber);
     if(!isNumber)
     {
@@ -24,6 +26,35 @@ float RS22812::getVal() const
     }
     if(flags.dash)
         val=-val;
+    if(flags.k)
+    {
+        val*=1000;
+        modifierApplied++;
+    }
+    if(flags.M)
+    {
+        val*=1000000;
+        modifierApplied++;
+    }
+    if(flags.m)
+    {
+        val/=1000;
+        modifierApplied++;
+    }
+    if(flags.u)
+    {
+        val/=1000000;
+        modifierApplied++;
+    }
+    if(flags.n)
+    {
+        val/=1000000000;
+        modifierApplied++;
+    }
+    if(modifierApplied>1)
+    {
+        throw "Flags error";
+    }
     return val;
 }
 
@@ -40,6 +71,18 @@ QString RS22812::getDigitString() const
 uint RS22812::getMode() const
 {
     return mode;
+}
+
+/*!
+ * \brief RS22812::modeChanged
+ * Checks the flags structure to see whether the read mode changed.
+ * \return
+ */
+bool RS22812::modeChanged()
+{
+    return (oldflags.A!=flags.A||oldflags.dBm!=flags.dBm||oldflags.F!=flags.F||oldflags.Diode!=flags.Diode||
+            oldflags.tilde!=flags.tilde||oldflags.hFE!=flags.hFE||oldflags.Hz!=flags.Hz||oldflags.Ohms!=flags.Ohms||
+            oldflags.V!=flags.V);
 }
 
 /*!
@@ -134,36 +177,36 @@ QString RS22812::byte2Digit(uchar byte)
  * \brief RS22812::resetFlags
  * Set all the flags to false.
  */
-void RS22812::resetFlags()
+void RS22812::resetFlags(Flags &f)
 {
-    flags.Hz=false;
-    flags.Ohms=false;
-    flags.k=false;
-    flags.M=false;
-    flags.F=false;
-    flags.A=false;
-    flags.V=false;
-    flags.m=false;
-    flags.u=false;
-    flags.n=false;
-    flags.dBm=false;
-    flags.s=false;
-    flags.percent=false;
-    flags.hFE=false;
-    flags.REL=false;
-    flags.MIN=false;
-    flags.Beep=false;
-    flags.Diode=false;
-    flags.continuity=false;
-    flags.Bat=false;
-    flags.Hold=false;
-    flags.dash=false;
-    flags.tilde=false;
-    flags.RS232=false;
-    flags.Auto=false;
-    flags.MAX=false;
-    flags.DP=0;
-    flags.checksum=0;
+    f.Hz=false;
+    f.Ohms=false;
+    f.k=false;
+    f.M=false;
+    f.F=false;
+    f.A=false;
+    f.V=false;
+    f.m=false;
+    f.u=false;
+    f.n=false;
+    f.dBm=false;
+    f.s=false;
+    f.percent=false;
+    f.hFE=false;
+    f.REL=false;
+    f.MIN=false;
+    f.Beep=false;
+    f.Diode=false;
+    f.continuity=false;
+    f.Bat=false;
+    f.Hold=false;
+    f.dash=false;
+    f.tilde=false;
+    f.RS232=false;
+    f.Auto=false;
+    f.MAX=false;
+    f.DP=0;
+    f.checksum=0;
 }
 
 /*!
@@ -172,7 +215,7 @@ void RS22812::resetFlags()
  */
 void RS22812::newValue(const QByteArray &data)
 {
-    resetFlags();
+    resetFlags(flags);
     int dataLength=data.size();
     uchar byte;
     uint checksum=0;
@@ -251,11 +294,12 @@ void RS22812::newValue(const QByteArray &data)
     if(mode==20)    flags.continuity=true;
     else    flags.continuity=false;
     //Checks if flags changed.
-//    if(flags!=oldflags)
-//    {
-//        emit flagsChanged(flags);
-//        oldflags=flags;
-//    }
+    if(modeChanged())
+    {
+        emit newMode();
+    }
+
+    oldflags=flags;
     emit newData();
 }
 

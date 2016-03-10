@@ -117,14 +117,15 @@ public:
     QString getDigitString() const;
     uint getMode() const;
 private:
+    bool modeChanged();
     uint mode;
-    Flags flags;//,oldflags;
+    Flags flags,oldflags;
     QString digits;
     QString byte2Digit(uchar byte);
-    void resetFlags();
+    void resetFlags(Flags &f);
 
 signals:
-    //void modeChanged(uint newmode);
+    void newMode();
     //void flagsChanged(Flags newflags);
     void newData();
 

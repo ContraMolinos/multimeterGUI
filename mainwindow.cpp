@@ -35,6 +35,24 @@ MainWindow::MainWindow(QWidget *parent) :
     lcd=new LCD(rawdata,this);
 
     connect(rawdata,SIGNAL(newData()),lcd,SLOT(update()));
+
+    scene=new QGraphicsScene(this);
+    graph=new plotGraph();
+    ui->graphPlot->setScene(scene);
+    QRect bound=ui->graphPlot->rect();
+    scene->addItem(graph);
+    scene->setSceneRect(bound);
+
+    //Temporary. It has to be set automatically.
+    graph->setXaxis(0,counter);
+    graph->setYaxis(minData,maxData);
+    graph->setXsticks(10);
+    graph->setYsticks(5);
+    graph->linkData(&storeData);
+
+    //Connect new data signal.
+    newData=connect(rawdata,&RS22812::newData,this,&MainWindow::addData);
+    rData=connect(rawdata,&RS22812::newMode,this,&MainWindow::resetData);
 }
 
 MainWindow::~MainWindow()
@@ -43,6 +61,7 @@ MainWindow::~MainWindow()
     delete ui;
     delete rawdata;
     delete lcd;
+    delete scene;
 }
 
 void MainWindow::on_connectButton_clicked()
@@ -53,5 +72,42 @@ void MainWindow::on_connectButton_clicked()
 void MainWindow::on_disconnectButton_clicked()
 {
     portPtr->closePort();
+}
+
+void MainWindow::addData()
+{
+    float val;
+    try
+    {
+        val=rawdata->getVal();
+    }catch(...)
+    {
+        return;
+    }
+
+    counter++;
+    storeData.append(QPair<qreal,qreal>(counter,val));
+
+    //Update axis. This is temporary. User will be given more control.
+    graph->setXaxis(0,counter);
+    if(val<minData)
+    {
+        minData=val;
+        graph->setYaxis(minData,maxData);
+    }else if(val>maxData)
+    {
+        maxData=val;
+        graph->setYaxis(minData,maxData);
+    }
+    graph->update();
+    ui->graphPlot->viewport()->update();
+}
+
+void MainWindow::resetData()
+{
+    storeData.clear();
+    counter=0;
+    minData=99999999;
+    maxData=-99999999;
 }
 

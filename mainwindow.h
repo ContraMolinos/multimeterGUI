@@ -6,6 +6,9 @@
 #include "serialport.h"
 #include "rs22812.h"
 #include "lcd.h"
+#include "plotgraph.h"
+
+#include <QPair>
 
 namespace Ui {
 class MainWindow;
@@ -21,8 +24,9 @@ public:
 
 private slots:
     void on_connectButton_clicked();
-
     void on_disconnectButton_clicked();
+    void addData();
+    void resetData();
 
 private:
     Ui::MainWindow *ui;
@@ -30,6 +34,19 @@ private:
     RS22812 *rawdata;
     LCD *lcd;
     QLabel *label;
+    plotGraph *graph;
+    QGraphicsScene *scene;
+    QVector<QPair<qreal,qreal> > storeData;
+    qint32 counter=0;
+    qreal minData=99999999;
+    qreal maxData=-99999999;
+
+    QMetaObject::Connection newData;
+    QMetaObject::Connection rData;
+
+
+    //Temporal data
+    QVector<QPair<qreal,qreal> >tmp;
 };
 
 #endif // MAINWINDOW_H

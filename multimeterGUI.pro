@@ -16,11 +16,13 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     serialport.cpp \
     rs22812.cpp \
-    lcd.cpp
+    lcd.cpp \
+    plotgraph.cpp
 
 HEADERS  += mainwindow.h \
     serialport.h \
     rs22812.h \
-    lcd.h
+    lcd.h \
+    plotgraph.h
 
 FORMS    += mainwindow.ui
