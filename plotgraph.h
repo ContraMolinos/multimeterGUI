@@ -6,9 +6,12 @@
 #include <QWidget>
 #include <QPair>
 #include <QVector>
+#include <algorithm>
 
 class plotGraph : public QGraphicsItem
 {
+    Q_GADGET
+    Q_ENUMS(Units)
 public:
     plotGraph();
     //Abstract paint.
@@ -20,10 +23,14 @@ public:
     void setXsticks(int nSticks);
     void setYsticks(int nSticks);
     void linkData(const QVector<QPair<qreal,qreal> > *dat);
+    void setUnit(int U);
+
 
 private:
     void paintAxis(QPainter *painter,const QStyleOptionGraphicsItem *option, QWidget *widget);
     void plotData(QPainter *painter,const QStyleOptionGraphicsItem *option, QWidget *widget);
+    void labelXaxis(QPainter *painter, QPoint &p1, QPoint &p2);
+    void labelYaxis(QPainter *painter, QPoint &p1, QPoint &p2);
     QPoint real2Coord(const QPair<qreal,qreal> dpoint);
     QRect bRect=QRect(0,0,0,0);
     QPoint origin, rightX,upperY;
@@ -36,6 +43,8 @@ private:
     int nx=2;
     int ny=2;
     const QVector<QPair<qreal,qreal> > *data=NULL;
+
+    QString unit;
 };
 
 #endif // PLOTGRAPH_H

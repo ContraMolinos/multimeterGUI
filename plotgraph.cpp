@@ -14,7 +14,6 @@ plotGraph::plotGraph()
  */
 void plotGraph::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
-    //qDebug()<<"Paint "<<xmin<<","<<xmax<<"  "<<ymin<<","<<ymax;
     bRect=widget->rect();
     paintAxis(painter,option,widget);
     plotData(painter,option,widget);
@@ -46,8 +45,8 @@ void plotGraph::setYaxis(qreal minVal, qreal maxVal)
     qreal diff=maxVal-minVal;
     if(diff>0)
     {
-        ymin=minVal-0.01*diff;
-        ymax=maxVal+0.01*diff;
+        ymin=minVal-0.01*fabs(minVal);
+        ymax=maxVal+0.01*fabs(minVal);
     }
     else
     {
@@ -69,6 +68,49 @@ void plotGraph::setYsticks(int nSticks)
 void plotGraph::linkData(const QVector<QPair<qreal, qreal> > *dat)
 {
     data=dat;
+}
+
+void plotGraph::setUnit(int U)
+{
+    if(U==2||U==5||U==3||U==6)
+    {
+        unit="A";
+        return;
+    }
+    if(U==0||U==1)
+    {
+        unit="V";
+        return;
+    }
+    if(U==8)
+    {
+        unit=QChar(0x03A9);
+        return;
+    }
+    if(U==9)
+    {
+        unit="F";
+        return;
+    }
+    if(U==10)
+    {
+        unit="Hz";
+        return;
+    }
+    if(U==23)
+    {
+        unit="dBm";
+        return;
+    }
+    if(U==21)
+    {
+        unit="hFe";
+        return;
+    }
+    else
+    {
+        unit="";
+    }
 }
 
 /*!
@@ -96,29 +138,9 @@ void plotGraph::paintAxis(QPainter *painter, const QStyleOptionGraphicsItem *opt
     pen.setWidth(1);
     painter->setPen(pen);
 
-    //Labels and sticksfor the X axis.
-    for(int i=0;i<nx+1;i++)
-    {
-        p1=origin+QPoint(i*(rightX.x()-origin.x())/nx,0);
-        p2=p1+QPoint(0,5);
-        //So far, x axis is reading number, not time.
-        QString str=QString::number(round(xmin+i*(xmax-xmin)/nx),'f',0);
-        QFontMetrics fm(painter->font());
-        painter->drawLine(p1,p2);
-        painter->drawText(p2+QPoint(-fm.width(str)/2,fm.height()),str);
-    }
+    labelXaxis(painter, p1, p2);
 
-    //Labels and sticks for the y axis.
-    for(int i=0;i<ny+1;i++)
-    {
-        p1=origin+QPoint(0,i*(upperY.y()-origin.y())/ny);
-        p2=p1-QPoint(5,0);
-        QString str=QString::number(ymin+i*(ymax-ymin)/ny,'f',2);
-        painter->setFont(QFont(painter->font().toString(),8));
-        QFontMetrics fm(painter->font());
-        painter->drawLine(p1,p2);
-        painter->drawText(p2+QPoint(-fm.width(str)-3,fm.height()/3),str);
-    }
+    labelYaxis(painter,p1,p2);
 
     painter->setPen(oldpen);
 }
@@ -155,6 +177,73 @@ void plotGraph::plotData(QPainter *painter, const QStyleOptionGraphicsItem *opti
 }
 
 /*!
+ * \brief plotGraph::labelXaxis
+ * Add labels to the X axis.
+ * \param painter
+ * \param p1
+ * \param p2
+ */
+void plotGraph::labelXaxis(QPainter *painter, QPoint &p1, QPoint &p2)
+{
+    for(int i=0;i<nx+1;i++)
+    {
+        p1=origin+QPoint(i*(rightX.x()-origin.x())/nx,0);
+        p2=p1+QPoint(0,5);
+        //So far, x axis is reading number, not time.
+        QString str=QString::number(round(xmin+i*(xmax-xmin)/nx),'f',0);
+        QFontMetrics fm(painter->font());
+        painter->drawLine(p1,p2);
+        painter->drawText(p2+QPoint(-fm.width(str)/2,fm.height()),str);
+    }
+}
+
+/*!
+ * \brief plotGraph::labelYaxis
+ * Adds labels to the Y axis.
+ * \param painter
+ * \param p1
+ * \param p2
+ */
+void plotGraph::labelYaxis(QPainter *painter, QPoint &p1, QPoint &p2)
+{
+    QVector<QString> labels;
+    painter->setFont(QFont(painter->font().toString(),8));
+    QFontMetrics fm(painter->font());
+    int exponent=0;
+    int maxWidth=0;
+    qreal absmax=std::max(fabs(ymax),fabs(ymin));
+    if(absmax>9999)
+        exponent=floor(log10(absmax))-1;
+    else if(absmax<1)
+        exponent=floor(log10(absmax));
+
+    for(int i=0;i<ny+1;i++)
+    {
+        labels.push_back(QString::number((ymin+i*(ymax-ymin)/ny)/pow(10,exponent),'f',3));
+        int w=fm.width(labels.back());
+        if(w>maxWidth)
+            maxWidth=w;
+    }
+    for(int i=0;i<ny+1;i++)
+    {
+        p1=origin+QPoint(0,i*(upperY.y()-origin.y())/ny);
+        p2=p1-QPoint(5,0);
+        painter->drawLine(p1,p2);
+        painter->drawText(p2+QPoint(-maxWidth-3,fm.height()/3),labels.at(i));
+    }
+
+    if(exponent!=0)
+    {
+        painter->drawText(p2+QPoint(-maxWidth,-fm.height()),QString("x10"));
+        painter->setFont(QFont(painter->font().toString(),6));
+        painter->drawText(p2+QPoint(-maxWidth+fm.width("x10"),-fm.height()-5),QString::number(exponent));
+    }
+
+    painter->setFont(QFont(painter->font().toString(),8));
+    painter->drawText(p2+QPoint(-maxWidth+fm.width("x10")+10,-fm.height()),unit);
+}
+
+/*!
  * \brief plotGraph::real2Coord
  * Transform reading coordinates to widget coordinates.
  * \param dpoint
@@ -177,8 +266,6 @@ QPoint plotGraph::real2Coord(const QPair<qreal, qreal> dpoint)
     }
 
     coord=QPoint(x,y);
-    //qDebug()<<dpoint<<" "<<coord<<" x=["<<origin.x()<<"-"<<rightX.x()<<"]; y=["<<upperY.y()<<"-"<<origin.y()<<"]";
-    //qDebug()<<xmin<<","<<xmax<<"   "<<ymin<<","<<ymax;
     return coord;
 
 }

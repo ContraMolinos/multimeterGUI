@@ -2,13 +2,16 @@
 #include <QApplication>
 
 /*
- * TODO:
- * 1. Reset data when mode changes.
- * 2. Add multipliers to axis.
+ * TO DO:
+ * Done 1. Reset data when mode changes.
+ * Done 2. Add multipliers to axis.
  * 3. Set x axis to time.
  * 4. Add display controls.
  * 5. Add resize capabilities.
- * 6. Show data as lines.
+ * Done 6. Show data as lines.
+*/
+
+/*15-03-2016: v.1.0: Working version.
 */
 
 int main(int argc, char *argv[])

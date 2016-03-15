@@ -49,6 +49,7 @@ MainWindow::MainWindow(QWidget *parent) :
     graph->setXsticks(10);
     graph->setYsticks(5);
     graph->linkData(&storeData);
+    graph->setUnit(rawdata->getMode());
 
     //Connect new data signal.
     newData=connect(rawdata,&RS22812::newData,this,&MainWindow::addData);
@@ -109,5 +110,6 @@ void MainWindow::resetData()
     counter=0;
     minData=99999999;
     maxData=-99999999;
+    graph->setUnit(rawdata->getMode());
 }
 
