@@ -25,6 +25,7 @@
 #include <QPair>
 #include <QVector>
 #include <algorithm>
+#include <QGraphicsScene>
 
 class plotGraph : public QGraphicsItem
 {
@@ -32,16 +33,18 @@ class plotGraph : public QGraphicsItem
     Q_ENUMS(Units)
 public:
     plotGraph();
+    plotGraph(QGraphicsScene *scene);
     //Abstract paint.
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
     //Abstract boundingRect
     QRectF boundingRect() const;
-    void setXaxis(qreal minVal,qreal maxVal);
+    void setXaxis(qint64 minVal,qint64 maxVal);
     void setYaxis(qreal minVal,qreal maxVal);
     void setXsticks(int nSticks);
     void setYsticks(int nSticks);
-    void linkData(const QVector<QPair<qreal,qreal> > *dat);
+    void linkData(const QVector<QPair<qint64, qreal> > *dat);
     void setUnit(int U);
+    void setScene(QGraphicsScene *scene);
 
 
 private:
@@ -60,9 +63,10 @@ private:
     qreal ymax=1;
     int nx=2;
     int ny=2;
-    const QVector<QPair<qreal,qreal> > *data=NULL;
+    const QVector<QPair<qint64,qreal> > *data=NULL;
 
     QString unit;
+    QGraphicsScene *scene;
 };
 
 #endif // PLOTGRAPH_H

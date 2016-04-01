@@ -19,13 +19,15 @@
  * TO DO:
  * Done 1. Reset data when mode changes.
  * Done 2. Add multipliers to axis.
- * 3. Set x axis to time.
+ * Done 3. Set x axis to time.
  * 4. Add display controls.
- * 5. Add resize capabilities.
+ * Done 5. Add resize capabilities.
  * Done 6. Show data as lines.
 */
 
-/*15-03-2016: v.1.0: Working version.
+/* 15-03-2016: v.1.0: Working version.
+ * 01-04-2016: v.1.2: All elements become resizable.
+ *                      X axis shows time.
 */
 
 #include "mainwindow.h"

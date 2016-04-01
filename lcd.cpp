@@ -41,12 +41,12 @@ void LCD::paintEvent(QPaintEvent *event)
     QPainter painter(this);
     QPen pen;
     QFont font=painter.font();
-    QPoint unitPosition=this->geometry().bottomRight()-QPoint(100,50);
+    QPoint unitPosition=this->geometry().bottomRight()-QPoint(font.SizeResolved*30,this->height()/3);
     QString units;
-    QPoint stringPosition=this->geometry().bottomLeft()+QPoint(50,-50);
+    QPoint stringPosition=this->geometry().bottomLeft()+QPoint(this->width()/5,-this->height()/4);
 
     Flags f=data->getFlags();
-    uint mode=data->getMode();
+    //uint mode=data->getMode();
     QString sVal=data->getDigitString();
     if(f.tilde)
         sVal="~"+sVal;
@@ -97,7 +97,7 @@ void LCD::paintEvent(QPaintEvent *event)
     if(f.Ohms)  units+=QChar(0x03A9);
     if(f.V) units+="V";
     painter.drawText(unitPosition,units);
-    font.setPointSize(48);
+    font.setPointSize(36);
     painter.setFont(font);
     painter.drawText(stringPosition,sVal);
 

@@ -26,6 +26,7 @@
 #include "plotgraph.h"
 
 #include <QPair>
+#include <QElapsedTimer>
 
 namespace Ui {
 class MainWindow;
@@ -53,7 +54,7 @@ private:
     QLabel *label;
     plotGraph *graph;
     QGraphicsScene *scene;
-    QVector<QPair<qreal,qreal> > storeData;
+    QVector<QPair<qint64,qreal> > storeData;
     qint32 counter=0;
     qreal minData=99999999;
     qreal maxData=-99999999;
@@ -61,6 +62,8 @@ private:
     QMetaObject::Connection newData;
     QMetaObject::Connection rData;
 
+    QElapsedTimer *timeMark;
+    bool timeRunning;
 
     //Temporal data
     QVector<QPair<qreal,qreal> >tmp;

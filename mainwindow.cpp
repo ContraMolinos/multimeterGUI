@@ -41,17 +41,19 @@ MainWindow::MainWindow(QWidget *parent) :
 
     connect(portPtr,SIGNAL(readyRead(QByteArray)),rawdata,SLOT(newValue(QByteArray)));
 
-    //lcd=new LCD(rawdata,ui->lcdDisplay);
     lcd=new LCD(rawdata,this);
+    ui->gridLayout->addWidget(lcd,0,0,1,1);
 
     connect(rawdata,SIGNAL(newData()),lcd,SLOT(update()));
 
     scene=new QGraphicsScene(this);
-    graph=new plotGraph();
+    graph=new plotGraph(scene);
+
     ui->graphPlot->setScene(scene);
-    QRect bound=ui->graphPlot->rect();
     scene->addItem(graph);
+    /*
     scene->setSceneRect(bound);
+    qDebug()<<bound;*/
 
     //Temporary. It has to be set automatically.
     graph->setXaxis(0,counter);
@@ -64,6 +66,9 @@ MainWindow::MainWindow(QWidget *parent) :
     //Connect new data signal.
     newData=connect(rawdata,&RS22812::newData,this,&MainWindow::addData);
     rData=connect(rawdata,&RS22812::newMode,this,&MainWindow::resetData);
+
+    timeRunning=false;
+    timeMark=new QElapsedTimer;
 }
 
 MainWindow::~MainWindow()
@@ -73,6 +78,7 @@ MainWindow::~MainWindow()
     delete rawdata;
     delete lcd;
     delete scene;
+    delete timeMark;
 }
 
 void MainWindow::on_connectButton_clicked()
@@ -87,6 +93,11 @@ void MainWindow::on_disconnectButton_clicked()
 
 void MainWindow::addData()
 {
+    if(!timeRunning)
+    {
+        timeMark->start();
+        timeRunning=true;
+    }
     float val;
     try
     {
@@ -96,11 +107,14 @@ void MainWindow::addData()
         return;
     }
 
-    counter++;
-    storeData.append(QPair<qreal,qreal>(counter,val));
+    //counter++;
+    //storeData.append(QPair<qreal,qreal>(counter,val));
+    qint64 time=timeMark->elapsed();
+    storeData.append(QPair<qint64,qreal>(time,val));
+    //qDebug()<<timeMark->elapsed();
 
     //Update axis. This is temporary. User will be given more control.
-    graph->setXaxis(0,counter);
+    graph->setXaxis(0,time);
     if(val<minData)
     {
         minData=val;
@@ -121,5 +135,6 @@ void MainWindow::resetData()
     minData=99999999;
     maxData=-99999999;
     graph->setUnit(rawdata->getMode());
+    timeRunning=false;
 }
 

@@ -21,7 +21,12 @@
 
 plotGraph::plotGraph()
 {
+    scene=NULL;
+}
 
+plotGraph::plotGraph(QGraphicsScene *scene)
+{
+    this->scene=scene;
 }
 
 /*!
@@ -35,6 +40,9 @@ void plotGraph::paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
     bRect=widget->rect();
     paintAxis(painter,option,widget);
     plotData(painter,option,widget);
+    if(scene!=NULL)
+        scene->setSceneRect(bRect);
+    //qDebug()<<widget->accessibleName()<<widget->winId()<<widget->rect();
 }
 
 //So far, it returns a fake value. Need to implement.
@@ -43,9 +51,9 @@ QRectF plotGraph::boundingRect() const
     return QRectF(0,0,100,100);
 }
 
-void plotGraph::setXaxis(qreal minVal, qreal maxVal)
+void plotGraph::setXaxis(qint64 minVal, qint64 maxVal)
 {
-    qreal diff=maxVal-minVal;
+    qint64 diff=maxVal-minVal;
     if(diff>0)
     {
         xmin=minVal;
@@ -83,7 +91,7 @@ void plotGraph::setYsticks(int nSticks)
     ny=nSticks;
 }
 
-void plotGraph::linkData(const QVector<QPair<qreal, qreal> > *dat)
+void plotGraph::linkData(const QVector<QPair<qint64, qreal> > *dat)
 {
     data=dat;
 }
@@ -174,7 +182,7 @@ void plotGraph::plotData(QPainter *painter, const QStyleOptionGraphicsItem *opti
 {
     QVector<QPoint> datPoint;
     QVector<QLineF> datLines;
-    for(QVector<QPair<qreal,qreal> >::const_iterator i=data->begin();i!=data->end();++i)
+    for(QVector<QPair<qint64,qreal> >::const_iterator i=data->begin();i!=data->end();++i)
     {
         try
         {
@@ -183,7 +191,6 @@ void plotGraph::plotData(QPainter *painter, const QStyleOptionGraphicsItem *opti
         {
             qWarning()<<e.what();
         }
-        //painter->drawPoint(datPoint);
     }
     if(datPoint.size()<2)
         return;
@@ -203,16 +210,24 @@ void plotGraph::plotData(QPainter *painter, const QStyleOptionGraphicsItem *opti
  */
 void plotGraph::labelXaxis(QPainter *painter, QPoint &p1, QPoint &p2)
 {
-    for(int i=0;i<nx+1;i++)
+
+    QFontMetrics fm(painter->font());
+    for(int i=0;i<nx;++i)
     {
         p1=origin+QPoint(i*(rightX.x()-origin.x())/nx,0);
         p2=p1+QPoint(0,5);
         //So far, x axis is reading number, not time.
-        QString str=QString::number(round(xmin+i*(xmax-xmin)/nx),'f',0);
-        QFontMetrics fm(painter->font());
+        //QString str=QString::number(round(xmin+i*(xmax-xmin)/nx),'f',0);
+        //Setting time in x axis
+        int vecPos=static_cast<int>(round(i*data->length()/nx));
+        QPair<qint64,qreal> val=(*(data->begin()+vecPos));
+        QString str=QString::number(static_cast<float>(val.first)/1000,'f',2);
         painter->drawLine(p1,p2);
         painter->drawText(p2+QPoint(-fm.width(str)/2,fm.height()),str);
     }
+    p1=origin+QPoint((rightX.x()-origin.x()),0);
+    p2=p1+QPoint(0,5);
+    painter->drawText(p2+QPoint(-10,20),"(s.)");
 }
 
 /*!
