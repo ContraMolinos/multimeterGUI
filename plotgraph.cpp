@@ -4,16 +4,6 @@
 #include "plotgraph.h"
 #include <QDebug>
 
-plotGraph::plotGraph()
-{
-    scene=NULL;
-}
-
-plotGraph::plotGraph(QGraphicsScene *scene)
-{
-    this->scene=scene;
-}
-
 /*!
  * \brief plotGraph::paint. Override of the paint method of QGraphicsScene.
  * \param painter
@@ -82,24 +72,11 @@ void plotGraph::setYaxis(qreal minVal, qreal maxVal)
 }
 
 /*!
- * \brief plotGraph::setXsticks
- * \param nSticks
+ * \brief plotGraph::setUnit
+ *
+ * Select the appropriate unit depending on the multimeter setting.
+ * \param U
  */
-void plotGraph::setXsticks(int nSticks)
-{
-    nx=nSticks;
-}
-
-void plotGraph::setYsticks(int nSticks)
-{
-    ny=nSticks;
-}
-
-void plotGraph::linkData(const QVector<QPair<qint64, qreal> > *dat)
-{
-    data=dat;
-}
-
 void plotGraph::setUnit(int U)
 {
     if(U==2||U==5||U==3||U==6)
@@ -144,7 +121,8 @@ void plotGraph::setUnit(int U)
 }
 
 /*!
- * \brief plotGraph::paintAxis
+ * \brief plotGraph::paintAxis.
+ *
  * Calculates the scale and limits of the axis and draws it.
  * \param painter
  * \param option
@@ -176,7 +154,8 @@ void plotGraph::paintAxis(QPainter *painter, const QStyleOptionGraphicsItem *opt
 }
 
 /*!
- * \brief plotGraph::plotData
+ * \brief plotGraph::plotData.
+ *
  * Draws the data on the widget.
  * \param painter
  * \param option
@@ -206,7 +185,8 @@ void plotGraph::plotData(QPainter *painter, const QStyleOptionGraphicsItem *opti
 }
 
 /*!
- * \brief plotGraph::labelXaxis
+ * \brief plotGraph::labelXaxis.
+ *
  * Add labels to the X axis.
  * \param painter
  * \param p1
@@ -235,7 +215,8 @@ void plotGraph::labelXaxis(QPainter *painter, QPoint &p1, QPoint &p2)
 }
 
 /*!
- * \brief plotGraph::labelYaxis
+ * \brief plotGraph::labelYaxis.
+ *
  * Adds labels to the Y axis.
  * \param painter
  * \param p1
@@ -281,7 +262,8 @@ void plotGraph::labelYaxis(QPainter *painter, QPoint &p1, QPoint &p2)
 }
 
 /*!
- * \brief plotGraph::real2Coord
+ * \brief plotGraph::real2Coord.
+ *
  * Transform reading coordinates to widget coordinates.
  * \param dpoint
  * \return

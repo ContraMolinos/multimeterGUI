@@ -68,21 +68,6 @@ MainWindow::~MainWindow()
 }
 
 /*!
- * \brief MainWindow::on_connectButton_clicked. Open the selected port.
- */
-void MainWindow::on_connectButton_clicked()
-{
-    portPtr->openPort(ui->comboBoxPort->currentText());
-}
-
-/*!
- * \brief MainWindow::on_disconnectButton_clicked. Disconnect from the current port.
- */
-void MainWindow::on_disconnectButton_clicked()
-{
-    portPtr->closePort();
-}
-/*!
  * \brief MainWindow::addData. Add new data to the data set.
  * This method will be called when new data has been read from the serial port, it will add the new value to the stored set of pairs (time,value) and update the graph.
  */
@@ -132,5 +117,21 @@ void MainWindow::resetData()
     maxData=-99999999;
     graph->setUnit(rawdata->getMode());
     timeRunning=false;
+}
+
+/*!
+ * \brief MainWindow::on_connectButton_clicked. Open the selected port.
+ */
+void MainWindow::on_connectButton_clicked()
+{
+    portPtr->openPort(ui->comboBoxPort->currentText());
+}
+
+/*!
+ * \brief MainWindow::on_disconnectButton_clicked. Disconnect from the current port.
+ */
+void MainWindow::on_disconnectButton_clicked()
+{
+    portPtr->closePort();
 }
 

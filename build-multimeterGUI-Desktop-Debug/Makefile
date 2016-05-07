@@ -69,7 +69,8 @@ OBJECTS       = main.o \
 		moc_rs22812.o \
 		moc_lcd.o \
 		moc_plotgraph.o
-DIST          = /usr/lib64/qt5/mkspecs/features/spec_pre.prf \
+DIST          = ../Doxyfile \
+		/usr/lib64/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib64/qt5/mkspecs/common/unix.conf \
 		/usr/lib64/qt5/mkspecs/common/linux.conf \
 		/usr/lib64/qt5/mkspecs/common/sanitize.conf \

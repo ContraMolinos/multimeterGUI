@@ -21,20 +21,46 @@ class plotGraph : public QGraphicsItem
     Q_GADGET
     Q_ENUMS(Units)
 public:
-    plotGraph();
-    plotGraph(QGraphicsScene *scene);
+    /*!
+     * \brief plotGraph. Default constructor.
+     */
+    plotGraph() : scene(NULL) {}
+    /*!
+     * \brief plotGraph. Constructor.
+     * \param _scene
+     */
+    plotGraph(QGraphicsScene *_scene) : scene(_scene) {}
     //Abstract paint.
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
     //Abstract boundingRect
     QRectF boundingRect() const;
     void setXaxis(qint64 minVal,qint64 maxVal);
     void setYaxis(qreal minVal,qreal maxVal);
-    void setXsticks(int nSticks);
-    void setYsticks(int nSticks);
-    void linkData(const QVector<QPair<qint64, qreal> > *dat);
+    /*!
+     * \brief plotGraph::setXsticks.
+     *
+     * Sets the number of sticks in the x axis.
+     * \param nSticks
+     */
+    void setXsticks(int nSticks) {nx=nSticks;}
+
+    /*!
+     * \brief plotGraph::setYsticks.
+     *
+     * Sets the number of sticks in the y axis.
+     * \param nSticks
+     */
+    void setYsticks(int nSticks) {ny=nSticks;}
+
+    /*!
+     * \brief plotGraph::linkData.
+     *
+     * Links the data being plotted with the data vector that is being acquired from the port.
+     * \param dat
+     */
+    void linkData(const QVector<QPair<qint64, qreal> > *dat) {data=dat;}
     void setUnit(int U);
     void setScene(QGraphicsScene *scene);
-
 
 private:
     void paintAxis(QPainter *painter,const QStyleOptionGraphicsItem *option, QWidget *widget);

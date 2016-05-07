@@ -114,9 +114,26 @@ class RS22812 : public QObject
 public:
     explicit RS22812(QObject *parent = 0);
     float getVal() const;
-    Flags getFlags() const;
-    QString getDigitString() const;
-    uint getMode() const;
+    /*!
+    * \brief RS22812::getFlags
+    * Gets the current flags structure.
+    * \return
+    */
+    Flags getFlags() const { return flags;}
+    /*!
+     * \brief RS22812::getDigitString
+     * It returns the multimeter reading in string format.
+     * \return
+     */
+    QString getDigitString() const {return digits;}
+
+    /*!
+     * \brief RS22812::getMode
+     * \return
+     * It returns the mode on which the multimeter is working.
+     */
+    uint getMode() const {return mode;}
+
 private:
     bool modeChanged();
     uint mode;

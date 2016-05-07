@@ -1,43 +1,270 @@
-\contentsline {chapter}{\numberline {1}multimeter\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I}{1}{chapter.1}
-\contentsline {chapter}{\numberline {2}Namespace Index}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}Namespace List}{3}{section.2.1}
-\contentsline {chapter}{\numberline {3}Hierarchical Index}{5}{chapter.3}
-\contentsline {section}{\numberline {3.1}Class Hierarchy}{5}{section.3.1}
-\contentsline {chapter}{\numberline {4}Class Index}{7}{chapter.4}
-\contentsline {section}{\numberline {4.1}Class List}{7}{section.4.1}
-\contentsline {chapter}{\numberline {5}Namespace Documentation}{9}{chapter.5}
-\contentsline {section}{\numberline {5.1}Ui Namespace Reference}{9}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Detailed Description}{9}{subsection.5.1.1}
-\contentsline {chapter}{\numberline {6}Class Documentation}{11}{chapter.6}
-\contentsline {section}{\numberline {6.1}Flags Struct Reference}{11}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Detailed Description}{12}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Member Function Documentation}{12}{subsection.6.1.2}
-\contentsline {subsubsection}{\numberline {6.1.2.1}operator==}{12}{subsubsection.6.1.2.1}
-\contentsline {section}{\numberline {6.2}L\discretionary {-}{}{}C\discretionary {-}{}{}D Class Reference}{12}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Detailed Description}{13}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Constructor \& Destructor Documentation}{13}{subsection.6.2.2}
-\contentsline {subsubsection}{\numberline {6.2.2.1}L\discretionary {-}{}{}C\discretionary {-}{}{}D}{13}{subsubsection.6.2.2.1}
-\contentsline {section}{\numberline {6.3}Main\discretionary {-}{}{}Window Class Reference}{13}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Constructor \& Destructor Documentation}{14}{subsection.6.3.1}
-\contentsline {subsubsection}{\numberline {6.3.1.1}Main\discretionary {-}{}{}Window}{14}{subsubsection.6.3.1.1}
-\contentsline {section}{\numberline {6.4}plot\discretionary {-}{}{}Graph Class Reference}{14}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Detailed Description}{15}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Constructor \& Destructor Documentation}{15}{subsection.6.4.2}
-\contentsline {subsubsection}{\numberline {6.4.2.1}plot\discretionary {-}{}{}Graph}{15}{subsubsection.6.4.2.1}
-\contentsline {subsection}{\numberline {6.4.3}Member Function Documentation}{15}{subsection.6.4.3}
-\contentsline {subsubsection}{\numberline {6.4.3.1}paint}{15}{subsubsection.6.4.3.1}
-\contentsline {section}{\numberline {6.5}R\discretionary {-}{}{}S22812 Class Reference}{15}{section.6.5}
-\contentsline {subsection}{\numberline {6.5.1}Constructor \& Destructor Documentation}{16}{subsection.6.5.1}
-\contentsline {subsubsection}{\numberline {6.5.1.1}R\discretionary {-}{}{}S22812}{16}{subsubsection.6.5.1.1}
-\contentsline {subsection}{\numberline {6.5.2}Member Function Documentation}{16}{subsection.6.5.2}
-\contentsline {subsubsection}{\numberline {6.5.2.1}get\discretionary {-}{}{}Val}{16}{subsubsection.6.5.2.1}
-\contentsline {subsubsection}{\numberline {6.5.2.2}new\discretionary {-}{}{}Value}{17}{subsubsection.6.5.2.2}
-\contentsline {section}{\numberline {6.6}Serial\discretionary {-}{}{}Port Class Reference}{18}{section.6.6}
-\contentsline {subsection}{\numberline {6.6.1}Detailed Description}{18}{subsection.6.6.1}
-\contentsline {subsection}{\numberline {6.6.2}Constructor \& Destructor Documentation}{19}{subsection.6.6.2}
-\contentsline {subsubsection}{\numberline {6.6.2.1}Serial\discretionary {-}{}{}Port}{19}{subsubsection.6.6.2.1}
-\contentsline {subsection}{\numberline {6.6.3}Member Function Documentation}{19}{subsection.6.6.3}
-\contentsline {subsubsection}{\numberline {6.6.3.1}close\discretionary {-}{}{}Port}{19}{subsubsection.6.6.3.1}
-\contentsline {subsubsection}{\numberline {6.6.3.2}list\discretionary {-}{}{}Ports}{19}{subsubsection.6.6.3.2}
-\contentsline {subsubsection}{\numberline {6.6.3.3}open\discretionary {-}{}{}Port}{19}{subsubsection.6.6.3.3}
-\contentsline {chapter}{Index}{21}{section*.14}
+\contentsline {chapter}{\numberline {1}Main Page}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}multimeter\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I}{3}{chapter.2}
+\contentsline {chapter}{\numberline {3}Todo List}{5}{chapter.3}
+\contentsline {chapter}{\numberline {4}Namespace Index}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}Namespace List}{7}{section.4.1}
+\contentsline {chapter}{\numberline {5}Hierarchical Index}{9}{chapter.5}
+\contentsline {section}{\numberline {5.1}Class Hierarchy}{9}{section.5.1}
+\contentsline {chapter}{\numberline {6}Class Index}{11}{chapter.6}
+\contentsline {section}{\numberline {6.1}Class List}{11}{section.6.1}
+\contentsline {chapter}{\numberline {7}File Index}{13}{chapter.7}
+\contentsline {section}{\numberline {7.1}File List}{13}{section.7.1}
+\contentsline {chapter}{\numberline {8}Namespace Documentation}{15}{chapter.8}
+\contentsline {section}{\numberline {8.1}Ui Namespace Reference}{15}{section.8.1}
+\contentsline {chapter}{\numberline {9}Class Documentation}{17}{chapter.9}
+\contentsline {section}{\numberline {9.1}Flags Struct Reference}{17}{section.9.1}
+\contentsline {subsection}{\numberline {9.1.1}Detailed Description}{18}{subsection.9.1.1}
+\contentsline {subsection}{\numberline {9.1.2}Member Function Documentation}{18}{subsection.9.1.2}
+\contentsline {subsubsection}{\numberline {9.1.2.1}operator!=}{18}{subsubsection.9.1.2.1}
+\contentsline {subsubsection}{\numberline {9.1.2.2}operator==}{18}{subsubsection.9.1.2.2}
+\contentsline {subsection}{\numberline {9.1.3}Member Data Documentation}{18}{subsection.9.1.3}
+\contentsline {subsubsection}{\numberline {9.1.3.1}A}{18}{subsubsection.9.1.3.1}
+\contentsline {subsubsection}{\numberline {9.1.3.2}Auto}{18}{subsubsection.9.1.3.2}
+\contentsline {subsubsection}{\numberline {9.1.3.3}Bat}{18}{subsubsection.9.1.3.3}
+\contentsline {subsubsection}{\numberline {9.1.3.4}Beep}{18}{subsubsection.9.1.3.4}
+\contentsline {subsubsection}{\numberline {9.1.3.5}checksum}{18}{subsubsection.9.1.3.5}
+\contentsline {subsubsection}{\numberline {9.1.3.6}continuity}{18}{subsubsection.9.1.3.6}
+\contentsline {subsubsection}{\numberline {9.1.3.7}dash}{18}{subsubsection.9.1.3.7}
+\contentsline {subsubsection}{\numberline {9.1.3.8}d\discretionary {-}{}{}Bm}{18}{subsubsection.9.1.3.8}
+\contentsline {subsubsection}{\numberline {9.1.3.9}Diode}{18}{subsubsection.9.1.3.9}
+\contentsline {subsubsection}{\numberline {9.1.3.10}D\discretionary {-}{}{}P}{18}{subsubsection.9.1.3.10}
+\contentsline {subsubsection}{\numberline {9.1.3.11}F}{18}{subsubsection.9.1.3.11}
+\contentsline {subsubsection}{\numberline {9.1.3.12}h\discretionary {-}{}{}F\discretionary {-}{}{}E}{18}{subsubsection.9.1.3.12}
+\contentsline {subsubsection}{\numberline {9.1.3.13}Hold}{18}{subsubsection.9.1.3.13}
+\contentsline {subsubsection}{\numberline {9.1.3.14}Hz}{18}{subsubsection.9.1.3.14}
+\contentsline {subsubsection}{\numberline {9.1.3.15}k}{19}{subsubsection.9.1.3.15}
+\contentsline {subsubsection}{\numberline {9.1.3.16}M}{19}{subsubsection.9.1.3.16}
+\contentsline {subsubsection}{\numberline {9.1.3.17}m}{19}{subsubsection.9.1.3.17}
+\contentsline {subsubsection}{\numberline {9.1.3.18}M\discretionary {-}{}{}A\discretionary {-}{}{}X}{19}{subsubsection.9.1.3.18}
+\contentsline {subsubsection}{\numberline {9.1.3.19}M\discretionary {-}{}{}I\discretionary {-}{}{}N}{19}{subsubsection.9.1.3.19}
+\contentsline {subsubsection}{\numberline {9.1.3.20}n}{19}{subsubsection.9.1.3.20}
+\contentsline {subsubsection}{\numberline {9.1.3.21}Ohms}{19}{subsubsection.9.1.3.21}
+\contentsline {subsubsection}{\numberline {9.1.3.22}percent}{19}{subsubsection.9.1.3.22}
+\contentsline {subsubsection}{\numberline {9.1.3.23}R\discretionary {-}{}{}E\discretionary {-}{}{}L}{19}{subsubsection.9.1.3.23}
+\contentsline {subsubsection}{\numberline {9.1.3.24}R\discretionary {-}{}{}S232}{19}{subsubsection.9.1.3.24}
+\contentsline {subsubsection}{\numberline {9.1.3.25}s}{19}{subsubsection.9.1.3.25}
+\contentsline {subsubsection}{\numberline {9.1.3.26}tilde}{19}{subsubsection.9.1.3.26}
+\contentsline {subsubsection}{\numberline {9.1.3.27}u}{19}{subsubsection.9.1.3.27}
+\contentsline {subsubsection}{\numberline {9.1.3.28}V}{19}{subsubsection.9.1.3.28}
+\contentsline {section}{\numberline {9.2}L\discretionary {-}{}{}C\discretionary {-}{}{}D Class Reference}{19}{section.9.2}
+\contentsline {subsection}{\numberline {9.2.1}Detailed Description}{20}{subsection.9.2.1}
+\contentsline {subsection}{\numberline {9.2.2}Constructor \& Destructor Documentation}{20}{subsection.9.2.2}
+\contentsline {subsubsection}{\numberline {9.2.2.1}L\discretionary {-}{}{}C\discretionary {-}{}{}D}{20}{subsubsection.9.2.2.1}
+\contentsline {subsection}{\numberline {9.2.3}Member Function Documentation}{21}{subsection.9.2.3}
+\contentsline {subsubsection}{\numberline {9.2.3.1}paint\discretionary {-}{}{}Event}{21}{subsubsection.9.2.3.1}
+\contentsline {subsection}{\numberline {9.2.4}Member Data Documentation}{21}{subsection.9.2.4}
+\contentsline {subsubsection}{\numberline {9.2.4.1}data}{21}{subsubsection.9.2.4.1}
+\contentsline {subsubsection}{\numberline {9.2.4.2}lbl}{21}{subsubsection.9.2.4.2}
+\contentsline {section}{\numberline {9.3}Ui\discretionary {-}{}{}:\discretionary {-}{}{}:Main\discretionary {-}{}{}Window Class Reference}{21}{section.9.3}
+\contentsline {section}{\numberline {9.4}Main\discretionary {-}{}{}Window Class Reference}{22}{section.9.4}
+\contentsline {subsection}{\numberline {9.4.1}Detailed Description}{24}{subsection.9.4.1}
+\contentsline {subsection}{\numberline {9.4.2}Constructor \& Destructor Documentation}{24}{subsection.9.4.2}
+\contentsline {subsubsection}{\numberline {9.4.2.1}Main\discretionary {-}{}{}Window}{24}{subsubsection.9.4.2.1}
+\contentsline {subsubsection}{\numberline {9.4.2.2}$\sim $\discretionary {-}{}{}Main\discretionary {-}{}{}Window}{25}{subsubsection.9.4.2.2}
+\contentsline {subsection}{\numberline {9.4.3}Member Function Documentation}{25}{subsection.9.4.3}
+\contentsline {subsubsection}{\numberline {9.4.3.1}add\discretionary {-}{}{}Data}{25}{subsubsection.9.4.3.1}
+\contentsline {subsubsection}{\numberline {9.4.3.2}on\discretionary {-}{}{}\_\discretionary {-}{}{}connect\discretionary {-}{}{}Button\discretionary {-}{}{}\_\discretionary {-}{}{}clicked}{26}{subsubsection.9.4.3.2}
+\contentsline {subsubsection}{\numberline {9.4.3.3}on\discretionary {-}{}{}\_\discretionary {-}{}{}disconnect\discretionary {-}{}{}Button\discretionary {-}{}{}\_\discretionary {-}{}{}clicked}{26}{subsubsection.9.4.3.3}
+\contentsline {subsubsection}{\numberline {9.4.3.4}reset\discretionary {-}{}{}Data}{27}{subsubsection.9.4.3.4}
+\contentsline {subsection}{\numberline {9.4.4}Member Data Documentation}{27}{subsection.9.4.4}
+\contentsline {subsubsection}{\numberline {9.4.4.1}counter}{27}{subsubsection.9.4.4.1}
+\contentsline {subsubsection}{\numberline {9.4.4.2}graph}{27}{subsubsection.9.4.4.2}
+\contentsline {subsubsection}{\numberline {9.4.4.3}label}{27}{subsubsection.9.4.4.3}
+\contentsline {subsubsection}{\numberline {9.4.4.4}lcd}{27}{subsubsection.9.4.4.4}
+\contentsline {subsubsection}{\numberline {9.4.4.5}max\discretionary {-}{}{}Data}{28}{subsubsection.9.4.4.5}
+\contentsline {subsubsection}{\numberline {9.4.4.6}min\discretionary {-}{}{}Data}{28}{subsubsection.9.4.4.6}
+\contentsline {subsubsection}{\numberline {9.4.4.7}new\discretionary {-}{}{}Data}{28}{subsubsection.9.4.4.7}
+\contentsline {subsubsection}{\numberline {9.4.4.8}port\discretionary {-}{}{}Ptr}{28}{subsubsection.9.4.4.8}
+\contentsline {subsubsection}{\numberline {9.4.4.9}rawdata}{28}{subsubsection.9.4.4.9}
+\contentsline {subsubsection}{\numberline {9.4.4.10}r\discretionary {-}{}{}Data}{28}{subsubsection.9.4.4.10}
+\contentsline {subsubsection}{\numberline {9.4.4.11}scene}{28}{subsubsection.9.4.4.11}
+\contentsline {subsubsection}{\numberline {9.4.4.12}store\discretionary {-}{}{}Data}{28}{subsubsection.9.4.4.12}
+\contentsline {subsubsection}{\numberline {9.4.4.13}time\discretionary {-}{}{}Mark}{28}{subsubsection.9.4.4.13}
+\contentsline {subsubsection}{\numberline {9.4.4.14}time\discretionary {-}{}{}Running}{28}{subsubsection.9.4.4.14}
+\contentsline {subsubsection}{\numberline {9.4.4.15}tmp}{28}{subsubsection.9.4.4.15}
+\contentsline {subsubsection}{\numberline {9.4.4.16}ui}{28}{subsubsection.9.4.4.16}
+\contentsline {section}{\numberline {9.5}plot\discretionary {-}{}{}Graph Class Reference}{28}{section.9.5}
+\contentsline {subsection}{\numberline {9.5.1}Detailed Description}{30}{subsection.9.5.1}
+\contentsline {subsection}{\numberline {9.5.2}Constructor \& Destructor Documentation}{30}{subsection.9.5.2}
+\contentsline {subsubsection}{\numberline {9.5.2.1}plot\discretionary {-}{}{}Graph}{30}{subsubsection.9.5.2.1}
+\contentsline {subsubsection}{\numberline {9.5.2.2}plot\discretionary {-}{}{}Graph}{30}{subsubsection.9.5.2.2}
+\contentsline {subsection}{\numberline {9.5.3}Member Function Documentation}{30}{subsection.9.5.3}
+\contentsline {subsubsection}{\numberline {9.5.3.1}bounding\discretionary {-}{}{}Rect}{30}{subsubsection.9.5.3.1}
+\contentsline {subsubsection}{\numberline {9.5.3.2}label\discretionary {-}{}{}Xaxis}{30}{subsubsection.9.5.3.2}
+\contentsline {subsubsection}{\numberline {9.5.3.3}label\discretionary {-}{}{}Yaxis}{31}{subsubsection.9.5.3.3}
+\contentsline {subsubsection}{\numberline {9.5.3.4}link\discretionary {-}{}{}Data}{31}{subsubsection.9.5.3.4}
+\contentsline {subsubsection}{\numberline {9.5.3.5}paint}{31}{subsubsection.9.5.3.5}
+\contentsline {subsubsection}{\numberline {9.5.3.6}paint\discretionary {-}{}{}Axis}{32}{subsubsection.9.5.3.6}
+\contentsline {subsubsection}{\numberline {9.5.3.7}plot\discretionary {-}{}{}Data}{33}{subsubsection.9.5.3.7}
+\contentsline {subsubsection}{\numberline {9.5.3.8}real2\discretionary {-}{}{}Coord}{33}{subsubsection.9.5.3.8}
+\contentsline {subsubsection}{\numberline {9.5.3.9}set\discretionary {-}{}{}Scene}{34}{subsubsection.9.5.3.9}
+\contentsline {subsubsection}{\numberline {9.5.3.10}set\discretionary {-}{}{}Unit}{34}{subsubsection.9.5.3.10}
+\contentsline {subsubsection}{\numberline {9.5.3.11}set\discretionary {-}{}{}Xaxis}{34}{subsubsection.9.5.3.11}
+\contentsline {subsubsection}{\numberline {9.5.3.12}set\discretionary {-}{}{}Xsticks}{34}{subsubsection.9.5.3.12}
+\contentsline {subsubsection}{\numberline {9.5.3.13}set\discretionary {-}{}{}Yaxis}{35}{subsubsection.9.5.3.13}
+\contentsline {subsubsection}{\numberline {9.5.3.14}set\discretionary {-}{}{}Ysticks}{35}{subsubsection.9.5.3.14}
+\contentsline {subsection}{\numberline {9.5.4}Member Data Documentation}{35}{subsection.9.5.4}
+\contentsline {subsubsection}{\numberline {9.5.4.1}axis\discretionary {-}{}{}Margin}{35}{subsubsection.9.5.4.1}
+\contentsline {subsubsection}{\numberline {9.5.4.2}b\discretionary {-}{}{}Rect}{35}{subsubsection.9.5.4.2}
+\contentsline {subsubsection}{\numberline {9.5.4.3}data}{35}{subsubsection.9.5.4.3}
+\contentsline {subsubsection}{\numberline {9.5.4.4}nx}{35}{subsubsection.9.5.4.4}
+\contentsline {subsubsection}{\numberline {9.5.4.5}ny}{35}{subsubsection.9.5.4.5}
+\contentsline {subsubsection}{\numberline {9.5.4.6}origin}{35}{subsubsection.9.5.4.6}
+\contentsline {subsubsection}{\numberline {9.5.4.7}right\discretionary {-}{}{}X}{35}{subsubsection.9.5.4.7}
+\contentsline {subsubsection}{\numberline {9.5.4.8}scene}{35}{subsubsection.9.5.4.8}
+\contentsline {subsubsection}{\numberline {9.5.4.9}unit}{35}{subsubsection.9.5.4.9}
+\contentsline {subsubsection}{\numberline {9.5.4.10}upper\discretionary {-}{}{}Y}{36}{subsubsection.9.5.4.10}
+\contentsline {subsubsection}{\numberline {9.5.4.11}xmax}{36}{subsubsection.9.5.4.11}
+\contentsline {subsubsection}{\numberline {9.5.4.12}xmin}{36}{subsubsection.9.5.4.12}
+\contentsline {subsubsection}{\numberline {9.5.4.13}ymax}{36}{subsubsection.9.5.4.13}
+\contentsline {subsubsection}{\numberline {9.5.4.14}ymin}{36}{subsubsection.9.5.4.14}
+\contentsline {section}{\numberline {9.6}qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Foo\discretionary {-}{}{}\_\discretionary {-}{}{}t Struct Reference}{36}{section.9.6}
+\contentsline {subsection}{\numberline {9.6.1}Member Data Documentation}{36}{subsection.9.6.1}
+\contentsline {subsubsection}{\numberline {9.6.1.1}data}{36}{subsubsection.9.6.1.1}
+\contentsline {subsubsection}{\numberline {9.6.1.2}stringdata0}{36}{subsubsection.9.6.1.2}
+\contentsline {section}{\numberline {9.7}qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}L\discretionary {-}{}{}C\discretionary {-}{}{}D\discretionary {-}{}{}\_\discretionary {-}{}{}t Struct Reference}{36}{section.9.7}
+\contentsline {subsection}{\numberline {9.7.1}Member Data Documentation}{36}{subsection.9.7.1}
+\contentsline {subsubsection}{\numberline {9.7.1.1}data}{36}{subsubsection.9.7.1.1}
+\contentsline {subsubsection}{\numberline {9.7.1.2}stringdata0}{36}{subsubsection.9.7.1.2}
+\contentsline {section}{\numberline {9.8}qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}L\discretionary {-}{}{}C\discretionary {-}{}{}Dscreen\discretionary {-}{}{}\_\discretionary {-}{}{}t Struct Reference}{37}{section.9.8}
+\contentsline {subsection}{\numberline {9.8.1}Member Data Documentation}{37}{subsection.9.8.1}
+\contentsline {subsubsection}{\numberline {9.8.1.1}data}{37}{subsubsection.9.8.1.1}
+\contentsline {subsubsection}{\numberline {9.8.1.2}stringdata0}{37}{subsubsection.9.8.1.2}
+\contentsline {section}{\numberline {9.9}qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Main\discretionary {-}{}{}Window\discretionary {-}{}{}\_\discretionary {-}{}{}t Struct Reference}{37}{section.9.9}
+\contentsline {subsection}{\numberline {9.9.1}Member Data Documentation}{37}{subsection.9.9.1}
+\contentsline {subsubsection}{\numberline {9.9.1.1}data}{37}{subsubsection.9.9.1.1}
+\contentsline {subsubsection}{\numberline {9.9.1.2}stringdata0}{37}{subsubsection.9.9.1.2}
+\contentsline {section}{\numberline {9.10}qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}plot\discretionary {-}{}{}Graph\discretionary {-}{}{}\_\discretionary {-}{}{}t Struct Reference}{37}{section.9.10}
+\contentsline {subsection}{\numberline {9.10.1}Member Data Documentation}{37}{subsection.9.10.1}
+\contentsline {subsubsection}{\numberline {9.10.1.1}data}{37}{subsubsection.9.10.1.1}
+\contentsline {subsubsection}{\numberline {9.10.1.2}stringdata0}{37}{subsubsection.9.10.1.2}
+\contentsline {section}{\numberline {9.11}qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}R\discretionary {-}{}{}S22812\discretionary {-}{}{}\_\discretionary {-}{}{}t Struct Reference}{38}{section.9.11}
+\contentsline {subsection}{\numberline {9.11.1}Member Data Documentation}{38}{subsection.9.11.1}
+\contentsline {subsubsection}{\numberline {9.11.1.1}data}{38}{subsubsection.9.11.1.1}
+\contentsline {subsubsection}{\numberline {9.11.1.2}stringdata0}{38}{subsubsection.9.11.1.2}
+\contentsline {section}{\numberline {9.12}qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Serial\discretionary {-}{}{}Port\discretionary {-}{}{}\_\discretionary {-}{}{}t Struct Reference}{38}{section.9.12}
+\contentsline {subsection}{\numberline {9.12.1}Member Data Documentation}{38}{subsection.9.12.1}
+\contentsline {subsubsection}{\numberline {9.12.1.1}data}{38}{subsubsection.9.12.1.1}
+\contentsline {subsubsection}{\numberline {9.12.1.2}stringdata0}{38}{subsubsection.9.12.1.2}
+\contentsline {section}{\numberline {9.13}R\discretionary {-}{}{}S22812 Class Reference}{38}{section.9.13}
+\contentsline {subsection}{\numberline {9.13.1}Detailed Description}{40}{subsection.9.13.1}
+\contentsline {subsection}{\numberline {9.13.2}Constructor \& Destructor Documentation}{40}{subsection.9.13.2}
+\contentsline {subsubsection}{\numberline {9.13.2.1}R\discretionary {-}{}{}S22812}{40}{subsubsection.9.13.2.1}
+\contentsline {subsection}{\numberline {9.13.3}Member Function Documentation}{41}{subsection.9.13.3}
+\contentsline {subsubsection}{\numberline {9.13.3.1}byte2\discretionary {-}{}{}Digit}{41}{subsubsection.9.13.3.1}
+\contentsline {subsubsection}{\numberline {9.13.3.2}get\discretionary {-}{}{}Digit\discretionary {-}{}{}String}{41}{subsubsection.9.13.3.2}
+\contentsline {subsubsection}{\numberline {9.13.3.3}get\discretionary {-}{}{}Flags}{42}{subsubsection.9.13.3.3}
+\contentsline {subsubsection}{\numberline {9.13.3.4}get\discretionary {-}{}{}Mode}{42}{subsubsection.9.13.3.4}
+\contentsline {subsubsection}{\numberline {9.13.3.5}get\discretionary {-}{}{}Val}{42}{subsubsection.9.13.3.5}
+\contentsline {subsubsection}{\numberline {9.13.3.6}mode\discretionary {-}{}{}Changed}{43}{subsubsection.9.13.3.6}
+\contentsline {subsubsection}{\numberline {9.13.3.7}new\discretionary {-}{}{}Data}{43}{subsubsection.9.13.3.7}
+\contentsline {subsubsection}{\numberline {9.13.3.8}new\discretionary {-}{}{}Mode}{43}{subsubsection.9.13.3.8}
+\contentsline {subsubsection}{\numberline {9.13.3.9}new\discretionary {-}{}{}Value}{44}{subsubsection.9.13.3.9}
+\contentsline {subsubsection}{\numberline {9.13.3.10}reset\discretionary {-}{}{}Flags}{45}{subsubsection.9.13.3.10}
+\contentsline {subsection}{\numberline {9.13.4}Member Data Documentation}{45}{subsection.9.13.4}
+\contentsline {subsubsection}{\numberline {9.13.4.1}digits}{45}{subsubsection.9.13.4.1}
+\contentsline {subsubsection}{\numberline {9.13.4.2}flags}{45}{subsubsection.9.13.4.2}
+\contentsline {subsubsection}{\numberline {9.13.4.3}mode}{45}{subsubsection.9.13.4.3}
+\contentsline {subsubsection}{\numberline {9.13.4.4}oldflags}{45}{subsubsection.9.13.4.4}
+\contentsline {section}{\numberline {9.14}Serial\discretionary {-}{}{}Port Class Reference}{46}{section.9.14}
+\contentsline {subsection}{\numberline {9.14.1}Detailed Description}{47}{subsection.9.14.1}
+\contentsline {subsection}{\numberline {9.14.2}Constructor \& Destructor Documentation}{47}{subsection.9.14.2}
+\contentsline {subsubsection}{\numberline {9.14.2.1}Serial\discretionary {-}{}{}Port}{47}{subsubsection.9.14.2.1}
+\contentsline {subsubsection}{\numberline {9.14.2.2}$\sim $\discretionary {-}{}{}Serial\discretionary {-}{}{}Port}{47}{subsubsection.9.14.2.2}
+\contentsline {subsection}{\numberline {9.14.3}Member Function Documentation}{48}{subsection.9.14.3}
+\contentsline {subsubsection}{\numberline {9.14.3.1}close\discretionary {-}{}{}Port}{48}{subsubsection.9.14.3.1}
+\contentsline {subsubsection}{\numberline {9.14.3.2}list\discretionary {-}{}{}Ports}{48}{subsubsection.9.14.3.2}
+\contentsline {subsubsection}{\numberline {9.14.3.3}open\discretionary {-}{}{}Port}{49}{subsubsection.9.14.3.3}
+\contentsline {subsubsection}{\numberline {9.14.3.4}read\discretionary {-}{}{}Port}{50}{subsubsection.9.14.3.4}
+\contentsline {subsubsection}{\numberline {9.14.3.5}ready}{50}{subsubsection.9.14.3.5}
+\contentsline {subsubsection}{\numberline {9.14.3.6}ready\discretionary {-}{}{}Read}{51}{subsubsection.9.14.3.6}
+\contentsline {subsection}{\numberline {9.14.4}Member Data Documentation}{51}{subsection.9.14.4}
+\contentsline {subsubsection}{\numberline {9.14.4.1}active\discretionary {-}{}{}Port}{51}{subsubsection.9.14.4.1}
+\contentsline {subsubsection}{\numberline {9.14.4.2}B\discretionary {-}{}{}A\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}R\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}E}{51}{subsubsection.9.14.4.2}
+\contentsline {subsubsection}{\numberline {9.14.4.3}buffer}{51}{subsubsection.9.14.4.3}
+\contentsline {subsubsection}{\numberline {9.14.4.4}D\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}A\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}T\discretionary {-}{}{}S}{51}{subsubsection.9.14.4.4}
+\contentsline {subsubsection}{\numberline {9.14.4.5}is\discretionary {-}{}{}Open}{51}{subsubsection.9.14.4.5}
+\contentsline {subsubsection}{\numberline {9.14.4.6}M\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}E}{51}{subsubsection.9.14.4.6}
+\contentsline {subsubsection}{\numberline {9.14.4.7}P\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}T\discretionary {-}{}{}Y}{51}{subsubsection.9.14.4.7}
+\contentsline {subsubsection}{\numberline {9.14.4.8}ports}{51}{subsubsection.9.14.4.8}
+\contentsline {subsubsection}{\numberline {9.14.4.9}read\discretionary {-}{}{}Connect}{51}{subsubsection.9.14.4.9}
+\contentsline {subsubsection}{\numberline {9.14.4.10}S\discretionary {-}{}{}T\discretionary {-}{}{}O\discretionary {-}{}{}P\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}T\discretionary {-}{}{}S}{52}{subsubsection.9.14.4.10}
+\contentsline {section}{\numberline {9.15}Ui\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Main\discretionary {-}{}{}Window Class Reference}{52}{section.9.15}
+\contentsline {subsection}{\numberline {9.15.1}Member Function Documentation}{53}{subsection.9.15.1}
+\contentsline {subsubsection}{\numberline {9.15.1.1}retranslate\discretionary {-}{}{}Ui}{53}{subsubsection.9.15.1.1}
+\contentsline {subsubsection}{\numberline {9.15.1.2}setup\discretionary {-}{}{}Ui}{53}{subsubsection.9.15.1.2}
+\contentsline {subsection}{\numberline {9.15.2}Member Data Documentation}{53}{subsection.9.15.2}
+\contentsline {subsubsection}{\numberline {9.15.2.1}central\discretionary {-}{}{}Widget}{53}{subsubsection.9.15.2.1}
+\contentsline {subsubsection}{\numberline {9.15.2.2}combo\discretionary {-}{}{}Box\discretionary {-}{}{}Port}{53}{subsubsection.9.15.2.2}
+\contentsline {subsubsection}{\numberline {9.15.2.3}connect\discretionary {-}{}{}Button}{53}{subsubsection.9.15.2.3}
+\contentsline {subsubsection}{\numberline {9.15.2.4}disconnect\discretionary {-}{}{}Button}{53}{subsubsection.9.15.2.4}
+\contentsline {subsubsection}{\numberline {9.15.2.5}graph\discretionary {-}{}{}Plot}{53}{subsubsection.9.15.2.5}
+\contentsline {subsubsection}{\numberline {9.15.2.6}grid\discretionary {-}{}{}Layout}{53}{subsubsection.9.15.2.6}
+\contentsline {subsubsection}{\numberline {9.15.2.7}horizontal\discretionary {-}{}{}Layout}{53}{subsubsection.9.15.2.7}
+\contentsline {subsubsection}{\numberline {9.15.2.8}label\discretionary {-}{}{}Port}{54}{subsubsection.9.15.2.8}
+\contentsline {subsubsection}{\numberline {9.15.2.9}main\discretionary {-}{}{}Tool\discretionary {-}{}{}Bar}{54}{subsubsection.9.15.2.9}
+\contentsline {subsubsection}{\numberline {9.15.2.10}menu\discretionary {-}{}{}Bar}{54}{subsubsection.9.15.2.10}
+\contentsline {subsubsection}{\numberline {9.15.2.11}status\discretionary {-}{}{}Bar}{54}{subsubsection.9.15.2.11}
+\contentsline {subsubsection}{\numberline {9.15.2.12}tool\discretionary {-}{}{}Bar}{54}{subsubsection.9.15.2.12}
+\contentsline {subsubsection}{\numberline {9.15.2.13}vertical\discretionary {-}{}{}Layout}{54}{subsubsection.9.15.2.13}
+\contentsline {subsubsection}{\numberline {9.15.2.14}vertical\discretionary {-}{}{}Layout\discretionary {-}{}{}\_\discretionary {-}{}{}2}{54}{subsubsection.9.15.2.14}
+\contentsline {chapter}{\numberline {10}File Documentation}{55}{chapter.10}
+\contentsline {section}{\numberline {10.1}build-\/multimeter\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I-\/\discretionary {-}{}{}Desktop-\/\discretionary {-}{}{}Debug/moc\discretionary {-}{}{}\_\discretionary {-}{}{}datars22812.cpp File Reference}{55}{section.10.1}
+\contentsline {section}{\numberline {10.2}build-\/multimeter\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I-\/\discretionary {-}{}{}Desktop-\/\discretionary {-}{}{}Debug/moc\discretionary {-}{}{}\_\discretionary {-}{}{}foo.cpp File Reference}{55}{section.10.2}
+\contentsline {subsection}{\numberline {10.2.1}Macro Definition Documentation}{56}{subsection.10.2.1}
+\contentsline {subsubsection}{\numberline {10.2.1.1}Q\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}L\discretionary {-}{}{}I\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}A\discretionary {-}{}{}L}{56}{subsubsection.10.2.1.1}
+\contentsline {subsection}{\numberline {10.2.2}Variable Documentation}{56}{subsection.10.2.2}
+\contentsline {subsubsection}{\numberline {10.2.2.1}qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}data\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Foo}{56}{subsubsection.10.2.2.1}
+\contentsline {subsubsection}{\numberline {10.2.2.2}qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Foo}{56}{subsubsection.10.2.2.2}
+\contentsline {section}{\numberline {10.3}build-\/multimeter\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I-\/\discretionary {-}{}{}Desktop-\/\discretionary {-}{}{}Debug/moc\discretionary {-}{}{}\_\discretionary {-}{}{}lcd.cpp File Reference}{56}{section.10.3}
+\contentsline {subsection}{\numberline {10.3.1}Macro Definition Documentation}{57}{subsection.10.3.1}
+\contentsline {subsubsection}{\numberline {10.3.1.1}Q\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}L\discretionary {-}{}{}I\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}A\discretionary {-}{}{}L}{57}{subsubsection.10.3.1.1}
+\contentsline {subsection}{\numberline {10.3.2}Variable Documentation}{57}{subsection.10.3.2}
+\contentsline {subsubsection}{\numberline {10.3.2.1}qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}data\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}L\discretionary {-}{}{}C\discretionary {-}{}{}D}{57}{subsubsection.10.3.2.1}
+\contentsline {subsubsection}{\numberline {10.3.2.2}qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}L\discretionary {-}{}{}C\discretionary {-}{}{}D}{58}{subsubsection.10.3.2.2}
+\contentsline {section}{\numberline {10.4}build-\/multimeter\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I-\/\discretionary {-}{}{}Desktop-\/\discretionary {-}{}{}Debug/moc\discretionary {-}{}{}\_\discretionary {-}{}{}lcdscreen.cpp File Reference}{58}{section.10.4}
+\contentsline {subsection}{\numberline {10.4.1}Macro Definition Documentation}{59}{subsection.10.4.1}
+\contentsline {subsubsection}{\numberline {10.4.1.1}Q\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}L\discretionary {-}{}{}I\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}A\discretionary {-}{}{}L}{59}{subsubsection.10.4.1.1}
+\contentsline {subsection}{\numberline {10.4.2}Variable Documentation}{59}{subsection.10.4.2}
+\contentsline {subsubsection}{\numberline {10.4.2.1}qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}data\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}L\discretionary {-}{}{}C\discretionary {-}{}{}Dscreen}{59}{subsubsection.10.4.2.1}
+\contentsline {subsubsection}{\numberline {10.4.2.2}qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}L\discretionary {-}{}{}C\discretionary {-}{}{}Dscreen}{59}{subsubsection.10.4.2.2}
+\contentsline {section}{\numberline {10.5}build-\/multimeter\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I-\/\discretionary {-}{}{}Desktop-\/\discretionary {-}{}{}Debug/moc\discretionary {-}{}{}\_\discretionary {-}{}{}mainwindow.cpp File Reference}{59}{section.10.5}
+\contentsline {subsection}{\numberline {10.5.1}Macro Definition Documentation}{60}{subsection.10.5.1}
+\contentsline {subsubsection}{\numberline {10.5.1.1}Q\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}L\discretionary {-}{}{}I\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}A\discretionary {-}{}{}L}{60}{subsubsection.10.5.1.1}
+\contentsline {subsection}{\numberline {10.5.2}Variable Documentation}{60}{subsection.10.5.2}
+\contentsline {subsubsection}{\numberline {10.5.2.1}qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}data\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Main\discretionary {-}{}{}Window}{60}{subsubsection.10.5.2.1}
+\contentsline {subsubsection}{\numberline {10.5.2.2}qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Main\discretionary {-}{}{}Window}{60}{subsubsection.10.5.2.2}
+\contentsline {section}{\numberline {10.6}build-\/multimeter\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I-\/\discretionary {-}{}{}Desktop-\/\discretionary {-}{}{}Debug/moc\discretionary {-}{}{}\_\discretionary {-}{}{}plotgraph.cpp File Reference}{61}{section.10.6}
+\contentsline {subsection}{\numberline {10.6.1}Macro Definition Documentation}{61}{subsection.10.6.1}
+\contentsline {subsubsection}{\numberline {10.6.1.1}Q\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}L\discretionary {-}{}{}I\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}A\discretionary {-}{}{}L}{61}{subsubsection.10.6.1.1}
+\contentsline {subsection}{\numberline {10.6.2}Variable Documentation}{62}{subsection.10.6.2}
+\contentsline {subsubsection}{\numberline {10.6.2.1}qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}data\discretionary {-}{}{}\_\discretionary {-}{}{}plot\discretionary {-}{}{}Graph}{62}{subsubsection.10.6.2.1}
+\contentsline {subsubsection}{\numberline {10.6.2.2}qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}plot\discretionary {-}{}{}Graph}{62}{subsubsection.10.6.2.2}
+\contentsline {section}{\numberline {10.7}build-\/multimeter\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I-\/\discretionary {-}{}{}Desktop-\/\discretionary {-}{}{}Debug/moc\discretionary {-}{}{}\_\discretionary {-}{}{}rs22812.cpp File Reference}{62}{section.10.7}
+\contentsline {subsection}{\numberline {10.7.1}Macro Definition Documentation}{63}{subsection.10.7.1}
+\contentsline {subsubsection}{\numberline {10.7.1.1}Q\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}L\discretionary {-}{}{}I\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}A\discretionary {-}{}{}L}{63}{subsubsection.10.7.1.1}
+\contentsline {subsection}{\numberline {10.7.2}Variable Documentation}{63}{subsection.10.7.2}
+\contentsline {subsubsection}{\numberline {10.7.2.1}qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}data\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}R\discretionary {-}{}{}S22812}{63}{subsubsection.10.7.2.1}
+\contentsline {subsubsection}{\numberline {10.7.2.2}qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}R\discretionary {-}{}{}S22812}{64}{subsubsection.10.7.2.2}
+\contentsline {section}{\numberline {10.8}build-\/multimeter\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I-\/\discretionary {-}{}{}Desktop-\/\discretionary {-}{}{}Debug/moc\discretionary {-}{}{}\_\discretionary {-}{}{}serialport.cpp File Reference}{64}{section.10.8}
+\contentsline {subsection}{\numberline {10.8.1}Macro Definition Documentation}{64}{subsection.10.8.1}
+\contentsline {subsubsection}{\numberline {10.8.1.1}Q\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}L\discretionary {-}{}{}I\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}A\discretionary {-}{}{}L}{64}{subsubsection.10.8.1.1}
+\contentsline {subsection}{\numberline {10.8.2}Variable Documentation}{65}{subsection.10.8.2}
+\contentsline {subsubsection}{\numberline {10.8.2.1}qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}data\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Serial\discretionary {-}{}{}Port}{65}{subsubsection.10.8.2.1}
+\contentsline {subsubsection}{\numberline {10.8.2.2}qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Serial\discretionary {-}{}{}Port}{65}{subsubsection.10.8.2.2}
+\contentsline {section}{\numberline {10.9}build-\/multimeter\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I-\/\discretionary {-}{}{}Desktop-\/\discretionary {-}{}{}Debug/ui\discretionary {-}{}{}\_\discretionary {-}{}{}mainwindow.h File Reference}{66}{section.10.9}
+\contentsline {section}{\numberline {10.10}lcd.\discretionary {-}{}{}cpp File Reference}{66}{section.10.10}
+\contentsline {section}{\numberline {10.11}lcd.\discretionary {-}{}{}h File Reference}{67}{section.10.11}
+\contentsline {section}{\numberline {10.12}main.\discretionary {-}{}{}cpp File Reference}{68}{section.10.12}
+\contentsline {subsection}{\numberline {10.12.1}Function Documentation}{68}{subsection.10.12.1}
+\contentsline {subsubsection}{\numberline {10.12.1.1}main}{68}{subsubsection.10.12.1.1}
+\contentsline {section}{\numberline {10.13}mainwindow.\discretionary {-}{}{}cpp File Reference}{68}{section.10.13}
+\contentsline {section}{\numberline {10.14}mainwindow.\discretionary {-}{}{}h File Reference}{69}{section.10.14}
+\contentsline {section}{\numberline {10.15}plotgraph.\discretionary {-}{}{}cpp File Reference}{69}{section.10.15}
+\contentsline {section}{\numberline {10.16}plotgraph.\discretionary {-}{}{}h File Reference}{70}{section.10.16}
+\contentsline {section}{\numberline {10.17}R\discretionary {-}{}{}E\discretionary {-}{}{}A\discretionary {-}{}{}D\discretionary {-}{}{}M\discretionary {-}{}{}E.\discretionary {-}{}{}md File Reference}{71}{section.10.17}
+\contentsline {section}{\numberline {10.18}rs22812.\discretionary {-}{}{}cpp File Reference}{71}{section.10.18}
+\contentsline {section}{\numberline {10.19}rs22812.\discretionary {-}{}{}h File Reference}{71}{section.10.19}
+\contentsline {section}{\numberline {10.20}serialport.\discretionary {-}{}{}cpp File Reference}{72}{section.10.20}
+\contentsline {section}{\numberline {10.21}serialport.\discretionary {-}{}{}h File Reference}{72}{section.10.21}
+\contentsline {chapter}{Index}{74}{section*.65}

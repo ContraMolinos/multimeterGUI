@@ -16,14 +16,8 @@
    You should have received a copy of the GNU General Public License
    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-/*
- * TO DO:
- * Done 1. Reset data when mode changes.
- * Done 2. Add multipliers to axis.
- * Done 3. Set x axis to time.
- * 4. Add display controls.
- * Done 5. Add resize capabilities.
- * Done 6. Show data as lines.
+/*!
+ * \todo Add display controls.
 */
 
 /* 15-03-2016: v.1.0: Working version.
