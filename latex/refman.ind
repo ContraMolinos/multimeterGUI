@@ -1,0 +1,75 @@
+\begin{theindex}
+
+  \item {close\discretionary {-}{}{}Port}
+    \subitem {Serial\discretionary {-}{}{}Port}, \hyperpage{19}
+
+  \indexspace
+
+  \item {Flags}, \hyperpage{11}
+    \subitem {operator==}, \hyperpage{12}
+
+  \indexspace
+
+  \item {get\discretionary {-}{}{}Val}
+    \subitem {R\discretionary {-}{}{}S22812}, \hyperpage{16}
+
+  \indexspace
+
+  \item {L\discretionary {-}{}{}C\discretionary {-}{}{}D}, 
+		\hyperpage{12}
+    \subitem {L\discretionary {-}{}{}C\discretionary {-}{}{}D}, 
+		\hyperpage{13}
+    \subitem {L\discretionary {-}{}{}C\discretionary {-}{}{}D}, 
+		\hyperpage{13}
+  \item {list\discretionary {-}{}{}Ports}
+    \subitem {Serial\discretionary {-}{}{}Port}, \hyperpage{19}
+
+  \indexspace
+
+  \item {Main\discretionary {-}{}{}Window}, \hyperpage{13}
+    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{14}
+    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{14}
+
+  \indexspace
+
+  \item {new\discretionary {-}{}{}Value}
+    \subitem {R\discretionary {-}{}{}S22812}, \hyperpage{16}
+
+  \indexspace
+
+  \item {open\discretionary {-}{}{}Port}
+    \subitem {Serial\discretionary {-}{}{}Port}, \hyperpage{19}
+  \item {operator==}
+    \subitem {Flags}, \hyperpage{12}
+
+  \indexspace
+
+  \item {paint}
+    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{15}
+  \item {plot\discretionary {-}{}{}Graph}, \hyperpage{14}
+    \subitem {paint}, \hyperpage{15}
+    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{15}
+    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{15}
+
+  \indexspace
+
+  \item {R\discretionary {-}{}{}S22812}, \hyperpage{15}
+    \subitem {get\discretionary {-}{}{}Val}, \hyperpage{16}
+    \subitem {new\discretionary {-}{}{}Value}, \hyperpage{16}
+    \subitem {R\discretionary {-}{}{}S22812}, \hyperpage{16}
+    \subitem {R\discretionary {-}{}{}S22812}, \hyperpage{16}
+
+  \indexspace
+
+  \item {Serial\discretionary {-}{}{}Port}, \hyperpage{18}
+    \subitem {close\discretionary {-}{}{}Port}, \hyperpage{19}
+    \subitem {list\discretionary {-}{}{}Ports}, \hyperpage{19}
+    \subitem {open\discretionary {-}{}{}Port}, \hyperpage{19}
+    \subitem {Serial\discretionary {-}{}{}Port}, \hyperpage{19}
+    \subitem {Serial\discretionary {-}{}{}Port}, \hyperpage{19}
+
+  \indexspace
+
+  \item {Ui}, \hyperpage{9}
+
+\end{theindex}

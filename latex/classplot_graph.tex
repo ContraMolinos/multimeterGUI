@@ -1,0 +1,555 @@
+\hypertarget{classplot_graph}{\section{plot\-Graph Class Reference}
+\label{classplot_graph}\index{plot\-Graph@{plot\-Graph}}
+}
+
+
+The \hyperlink{classplot_graph}{plot\-Graph} class.  
+
+
+
+
+{\ttfamily \#include $<$plotgraph.\-h$>$}
+
+
+
+Inheritance diagram for plot\-Graph\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{classplot_graph__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for plot\-Graph\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{classplot_graph__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classplot_graph_a53902ce2d9f08bfda697a887061b12ca}{plot\-Graph} ()
+\item 
+\hyperlink{classplot_graph_ab906e233fa8fb7af50314e62305d8ca6}{plot\-Graph} (Q\-Graphics\-Scene $\ast$\hyperlink{classplot_graph_ac35eabe1a0ffbb4379fedebe6d5057c3}{scene})
+\item 
+void \hyperlink{classplot_graph_aa72b60c4f95834599921874fab85d01b}{paint} (Q\-Painter $\ast$painter, const Q\-Style\-Option\-Graphics\-Item $\ast$option, Q\-Widget $\ast$widget)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classplot_graph_aa72b60c4f95834599921874fab85d01b}{plot\-Graph\-::paint}. Override of the paint method of Q\-Graphics\-Scene. \end{DoxyCompactList}\item 
+Q\-Rect\-F \hyperlink{classplot_graph_a65061b6dda44811830977d80f46ed15e}{bounding\-Rect} () const 
+\begin{DoxyCompactList}\small\item\em \hyperlink{classplot_graph_a65061b6dda44811830977d80f46ed15e}{plot\-Graph\-::bounding\-Rect}. Returns the bounding rectangle of the graph. \end{DoxyCompactList}\item 
+void \hyperlink{classplot_graph_a860f6e766de63d3a7a251f528dcc4be7}{set\-Xaxis} (qint64 min\-Val, qint64 max\-Val)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classplot_graph_a860f6e766de63d3a7a251f528dcc4be7}{plot\-Graph\-::set\-Xaxis}. Sets the maximum and minimum values of the x axis. \end{DoxyCompactList}\item 
+void \hyperlink{classplot_graph_a0e2e3589bfc5cc726e367bf8bdc8a2f5}{set\-Yaxis} (qreal min\-Val, qreal max\-Val)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classplot_graph_a0e2e3589bfc5cc726e367bf8bdc8a2f5}{plot\-Graph\-::set\-Yaxis} \end{DoxyCompactList}\item 
+void \hyperlink{classplot_graph_ab78b439ee76e1f4df9a9e26ebcd3bc29}{set\-Xsticks} (int n\-Sticks)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classplot_graph_ab78b439ee76e1f4df9a9e26ebcd3bc29}{plot\-Graph\-::set\-Xsticks} \end{DoxyCompactList}\item 
+void \hyperlink{classplot_graph_af5944ac87c177035eeeaf61d64b1a139}{set\-Ysticks} (int n\-Sticks)
+\item 
+void \hyperlink{classplot_graph_a8eb89c53d633e0a9574f1670c9c0d644}{link\-Data} (const Q\-Vector$<$ Q\-Pair$<$ qint64, qreal $>$ $>$ $\ast$dat)
+\item 
+void \hyperlink{classplot_graph_a09a7563bcd8a387e1d9bf3f534ecd990}{set\-Unit} (int U)
+\item 
+void \hyperlink{classplot_graph_ace55db051cab85e9a0c20795f4c2349a}{set\-Scene} (Q\-Graphics\-Scene $\ast$\hyperlink{classplot_graph_ac35eabe1a0ffbb4379fedebe6d5057c3}{scene})
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classplot_graph_a9237c8835c854dfe3156d4a5803663ab}{paint\-Axis} (Q\-Painter $\ast$painter, const Q\-Style\-Option\-Graphics\-Item $\ast$option, Q\-Widget $\ast$widget)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classplot_graph_a9237c8835c854dfe3156d4a5803663ab}{plot\-Graph\-::paint\-Axis} Calculates the scale and limits of the axis and draws it. \end{DoxyCompactList}\item 
+void \hyperlink{classplot_graph_a15feece3d49379208e40d2cd1b560787}{plot\-Data} (Q\-Painter $\ast$painter, const Q\-Style\-Option\-Graphics\-Item $\ast$option, Q\-Widget $\ast$widget)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classplot_graph_a15feece3d49379208e40d2cd1b560787}{plot\-Graph\-::plot\-Data} Draws the data on the widget. \end{DoxyCompactList}\item 
+void \hyperlink{classplot_graph_aafb4adc423d484284f192dee28b00b8a}{label\-Xaxis} (Q\-Painter $\ast$painter, Q\-Point \&p1, Q\-Point \&p2)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classplot_graph_aafb4adc423d484284f192dee28b00b8a}{plot\-Graph\-::label\-Xaxis} Add labels to the X axis. \end{DoxyCompactList}\item 
+void \hyperlink{classplot_graph_a101e15e7b8cb1ca251e736777a091ee3}{label\-Yaxis} (Q\-Painter $\ast$painter, Q\-Point \&p1, Q\-Point \&p2)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classplot_graph_a101e15e7b8cb1ca251e736777a091ee3}{plot\-Graph\-::label\-Yaxis} Adds labels to the Y axis. \end{DoxyCompactList}\item 
+Q\-Point \hyperlink{classplot_graph_afecabc6fb684c043bef8f585eb7e0791}{real2\-Coord} (const Q\-Pair$<$ qreal, qreal $>$ dpoint)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classplot_graph_afecabc6fb684c043bef8f585eb7e0791}{plot\-Graph\-::real2\-Coord} Transform reading coordinates to widget coordinates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\-Rect \hyperlink{classplot_graph_a82ade58d0ea960ec8c13bb3e0b084b8a}{b\-Rect} =Q\-Rect(0,0,0,0)
+\item 
+Q\-Point \hyperlink{classplot_graph_a1d47ee94eb0d3a2894723e4e12765d32}{origin}
+\item 
+Q\-Point \hyperlink{classplot_graph_a07f4680de55428eb49d593106414ccd9}{right\-X}
+\item 
+Q\-Point \hyperlink{classplot_graph_a32de5c2ff068bd201bc627eaf2d18322}{upper\-Y}
+\item 
+const int \hyperlink{classplot_graph_addb0f7d6a06ae97184b3013cccb6f456}{axis\-Margin} =40
+\item 
+qreal \hyperlink{classplot_graph_a45c23930851a6130acdc537755e467fa}{xmin} =0
+\item 
+qreal \hyperlink{classplot_graph_ac270a2ae2617fe5554eb99c9ae631f48}{xmax} =1
+\item 
+qreal \hyperlink{classplot_graph_a5746beef331fbadbf5e1a767b7ed7462}{ymin} =0
+\item 
+qreal \hyperlink{classplot_graph_a14556cbab64df6e06812a0578041956c}{ymax} =1
+\item 
+int \hyperlink{classplot_graph_adb0cd0f56da1aa52084da70231c92255}{nx} =2
+\item 
+int \hyperlink{classplot_graph_a1f6efb75c6de2d3da038666610df3aca}{ny} =2
+\item 
+const Q\-Vector$<$ Q\-Pair$<$ qint64, \\*
+qreal $>$ $>$ $\ast$ \hyperlink{classplot_graph_af219b9987999a1b1c2b9af03a6cb93d1}{data} =N\-U\-L\-L
+\item 
+Q\-String \hyperlink{classplot_graph_a2e0df5fa1ed5f1448bae3d4404b1a6e5}{unit}
+\item 
+Q\-Graphics\-Scene $\ast$ \hyperlink{classplot_graph_ac35eabe1a0ffbb4379fedebe6d5057c3}{scene}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classplot_graph}{plot\-Graph} class. 
+
+This class graphs the values read from the multimeter versus the time. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classplot_graph_a53902ce2d9f08bfda697a887061b12ca}{\index{plot\-Graph@{plot\-Graph}!plot\-Graph@{plot\-Graph}}
+\index{plot\-Graph@{plot\-Graph}!plotGraph@{plot\-Graph}}
+\subsubsection[{plot\-Graph}]{\setlength{\rightskip}{0pt plus 5cm}plot\-Graph\-::plot\-Graph (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classplot_graph_a53902ce2d9f08bfda697a887061b12ca}
+\hypertarget{classplot_graph_ab906e233fa8fb7af50314e62305d8ca6}{\index{plot\-Graph@{plot\-Graph}!plot\-Graph@{plot\-Graph}}
+\index{plot\-Graph@{plot\-Graph}!plotGraph@{plot\-Graph}}
+\subsubsection[{plot\-Graph}]{\setlength{\rightskip}{0pt plus 5cm}plot\-Graph\-::plot\-Graph (
+\begin{DoxyParamCaption}
+\item[{Q\-Graphics\-Scene $\ast$}]{scene}
+\end{DoxyParamCaption}
+)}}\label{classplot_graph_ab906e233fa8fb7af50314e62305d8ca6}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classplot_graph_a65061b6dda44811830977d80f46ed15e}{\index{plot\-Graph@{plot\-Graph}!bounding\-Rect@{bounding\-Rect}}
+\index{bounding\-Rect@{bounding\-Rect}!plotGraph@{plot\-Graph}}
+\subsubsection[{bounding\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Rect\-F plot\-Graph\-::bounding\-Rect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classplot_graph_a65061b6dda44811830977d80f46ed15e}
+
+
+\hyperlink{classplot_graph_a65061b6dda44811830977d80f46ed15e}{plot\-Graph\-::bounding\-Rect}. Returns the bounding rectangle of the graph. 
+
+\begin{DoxyReturn}{Returns}
+So far, it returns a fake value. Need to implement. 
+\end{DoxyReturn}
+\hypertarget{classplot_graph_aafb4adc423d484284f192dee28b00b8a}{\index{plot\-Graph@{plot\-Graph}!label\-Xaxis@{label\-Xaxis}}
+\index{label\-Xaxis@{label\-Xaxis}!plotGraph@{plot\-Graph}}
+\subsubsection[{label\-Xaxis}]{\setlength{\rightskip}{0pt plus 5cm}void plot\-Graph\-::label\-Xaxis (
+\begin{DoxyParamCaption}
+\item[{Q\-Painter $\ast$}]{painter, }
+\item[{Q\-Point \&}]{p1, }
+\item[{Q\-Point \&}]{p2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classplot_graph_aafb4adc423d484284f192dee28b00b8a}
+
+
+\hyperlink{classplot_graph_aafb4adc423d484284f192dee28b00b8a}{plot\-Graph\-::label\-Xaxis} Add labels to the X axis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em painter} & \\
+\hline
+{\em p1} & \\
+\hline
+{\em p2} & \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classplot_graph_aafb4adc423d484284f192dee28b00b8a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classplot_graph_a101e15e7b8cb1ca251e736777a091ee3}{\index{plot\-Graph@{plot\-Graph}!label\-Yaxis@{label\-Yaxis}}
+\index{label\-Yaxis@{label\-Yaxis}!plotGraph@{plot\-Graph}}
+\subsubsection[{label\-Yaxis}]{\setlength{\rightskip}{0pt plus 5cm}void plot\-Graph\-::label\-Yaxis (
+\begin{DoxyParamCaption}
+\item[{Q\-Painter $\ast$}]{painter, }
+\item[{Q\-Point \&}]{p1, }
+\item[{Q\-Point \&}]{p2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classplot_graph_a101e15e7b8cb1ca251e736777a091ee3}
+
+
+\hyperlink{classplot_graph_a101e15e7b8cb1ca251e736777a091ee3}{plot\-Graph\-::label\-Yaxis} Adds labels to the Y axis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em painter} & \\
+\hline
+{\em p1} & \\
+\hline
+{\em p2} & \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classplot_graph_a101e15e7b8cb1ca251e736777a091ee3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classplot_graph_a8eb89c53d633e0a9574f1670c9c0d644}{\index{plot\-Graph@{plot\-Graph}!link\-Data@{link\-Data}}
+\index{link\-Data@{link\-Data}!plotGraph@{plot\-Graph}}
+\subsubsection[{link\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void plot\-Graph\-::link\-Data (
+\begin{DoxyParamCaption}
+\item[{const Q\-Vector$<$ Q\-Pair$<$ qint64, qreal $>$ $>$ $\ast$}]{dat}
+\end{DoxyParamCaption}
+)}}\label{classplot_graph_a8eb89c53d633e0a9574f1670c9c0d644}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classplot_graph_a8eb89c53d633e0a9574f1670c9c0d644_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classplot_graph_aa72b60c4f95834599921874fab85d01b}{\index{plot\-Graph@{plot\-Graph}!paint@{paint}}
+\index{paint@{paint}!plotGraph@{plot\-Graph}}
+\subsubsection[{paint}]{\setlength{\rightskip}{0pt plus 5cm}void plot\-Graph\-::paint (
+\begin{DoxyParamCaption}
+\item[{Q\-Painter $\ast$}]{painter, }
+\item[{const Q\-Style\-Option\-Graphics\-Item $\ast$}]{option, }
+\item[{Q\-Widget $\ast$}]{widget}
+\end{DoxyParamCaption}
+)}}\label{classplot_graph_aa72b60c4f95834599921874fab85d01b}
+
+
+\hyperlink{classplot_graph_aa72b60c4f95834599921874fab85d01b}{plot\-Graph\-::paint}. Override of the paint method of Q\-Graphics\-Scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em painter} & \\
+\hline
+{\em option} & \\
+\hline
+{\em widget} & \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classplot_graph_aa72b60c4f95834599921874fab85d01b_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classplot_graph_a9237c8835c854dfe3156d4a5803663ab}{\index{plot\-Graph@{plot\-Graph}!paint\-Axis@{paint\-Axis}}
+\index{paint\-Axis@{paint\-Axis}!plotGraph@{plot\-Graph}}
+\subsubsection[{paint\-Axis}]{\setlength{\rightskip}{0pt plus 5cm}void plot\-Graph\-::paint\-Axis (
+\begin{DoxyParamCaption}
+\item[{Q\-Painter $\ast$}]{painter, }
+\item[{const Q\-Style\-Option\-Graphics\-Item $\ast$}]{option, }
+\item[{Q\-Widget $\ast$}]{widget}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classplot_graph_a9237c8835c854dfe3156d4a5803663ab}
+
+
+\hyperlink{classplot_graph_a9237c8835c854dfe3156d4a5803663ab}{plot\-Graph\-::paint\-Axis} Calculates the scale and limits of the axis and draws it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em painter} & \\
+\hline
+{\em option} & \\
+\hline
+{\em widget} & \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classplot_graph_a9237c8835c854dfe3156d4a5803663ab_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classplot_graph_a9237c8835c854dfe3156d4a5803663ab_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classplot_graph_a15feece3d49379208e40d2cd1b560787}{\index{plot\-Graph@{plot\-Graph}!plot\-Data@{plot\-Data}}
+\index{plot\-Data@{plot\-Data}!plotGraph@{plot\-Graph}}
+\subsubsection[{plot\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void plot\-Graph\-::plot\-Data (
+\begin{DoxyParamCaption}
+\item[{Q\-Painter $\ast$}]{painter, }
+\item[{const Q\-Style\-Option\-Graphics\-Item $\ast$}]{option, }
+\item[{Q\-Widget $\ast$}]{widget}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classplot_graph_a15feece3d49379208e40d2cd1b560787}
+
+
+\hyperlink{classplot_graph_a15feece3d49379208e40d2cd1b560787}{plot\-Graph\-::plot\-Data} Draws the data on the widget. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em painter} & \\
+\hline
+{\em option} & \\
+\hline
+{\em widget} & \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{classplot_graph_a15feece3d49379208e40d2cd1b560787_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{classplot_graph_a15feece3d49379208e40d2cd1b560787_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classplot_graph_afecabc6fb684c043bef8f585eb7e0791}{\index{plot\-Graph@{plot\-Graph}!real2\-Coord@{real2\-Coord}}
+\index{real2\-Coord@{real2\-Coord}!plotGraph@{plot\-Graph}}
+\subsubsection[{real2\-Coord}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Point plot\-Graph\-::real2\-Coord (
+\begin{DoxyParamCaption}
+\item[{const Q\-Pair$<$ qreal, qreal $>$}]{dpoint}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classplot_graph_afecabc6fb684c043bef8f585eb7e0791}
+
+
+\hyperlink{classplot_graph_afecabc6fb684c043bef8f585eb7e0791}{plot\-Graph\-::real2\-Coord} Transform reading coordinates to widget coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dpoint} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classplot_graph_afecabc6fb684c043bef8f585eb7e0791_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classplot_graph_ace55db051cab85e9a0c20795f4c2349a}{\index{plot\-Graph@{plot\-Graph}!set\-Scene@{set\-Scene}}
+\index{set\-Scene@{set\-Scene}!plotGraph@{plot\-Graph}}
+\subsubsection[{set\-Scene}]{\setlength{\rightskip}{0pt plus 5cm}void plot\-Graph\-::set\-Scene (
+\begin{DoxyParamCaption}
+\item[{Q\-Graphics\-Scene $\ast$}]{scene}
+\end{DoxyParamCaption}
+)}}\label{classplot_graph_ace55db051cab85e9a0c20795f4c2349a}
+\hypertarget{classplot_graph_a09a7563bcd8a387e1d9bf3f534ecd990}{\index{plot\-Graph@{plot\-Graph}!set\-Unit@{set\-Unit}}
+\index{set\-Unit@{set\-Unit}!plotGraph@{plot\-Graph}}
+\subsubsection[{set\-Unit}]{\setlength{\rightskip}{0pt plus 5cm}void plot\-Graph\-::set\-Unit (
+\begin{DoxyParamCaption}
+\item[{int}]{U}
+\end{DoxyParamCaption}
+)}}\label{classplot_graph_a09a7563bcd8a387e1d9bf3f534ecd990}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classplot_graph_a09a7563bcd8a387e1d9bf3f534ecd990_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classplot_graph_a860f6e766de63d3a7a251f528dcc4be7}{\index{plot\-Graph@{plot\-Graph}!set\-Xaxis@{set\-Xaxis}}
+\index{set\-Xaxis@{set\-Xaxis}!plotGraph@{plot\-Graph}}
+\subsubsection[{set\-Xaxis}]{\setlength{\rightskip}{0pt plus 5cm}void plot\-Graph\-::set\-Xaxis (
+\begin{DoxyParamCaption}
+\item[{qint64}]{min\-Val, }
+\item[{qint64}]{max\-Val}
+\end{DoxyParamCaption}
+)}}\label{classplot_graph_a860f6e766de63d3a7a251f528dcc4be7}
+
+
+\hyperlink{classplot_graph_a860f6e766de63d3a7a251f528dcc4be7}{plot\-Graph\-::set\-Xaxis}. Sets the maximum and minimum values of the x axis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min\-Val} & \\
+\hline
+{\em max\-Val} & \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classplot_graph_a860f6e766de63d3a7a251f528dcc4be7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classplot_graph_ab78b439ee76e1f4df9a9e26ebcd3bc29}{\index{plot\-Graph@{plot\-Graph}!set\-Xsticks@{set\-Xsticks}}
+\index{set\-Xsticks@{set\-Xsticks}!plotGraph@{plot\-Graph}}
+\subsubsection[{set\-Xsticks}]{\setlength{\rightskip}{0pt plus 5cm}void plot\-Graph\-::set\-Xsticks (
+\begin{DoxyParamCaption}
+\item[{int}]{n\-Sticks}
+\end{DoxyParamCaption}
+)}}\label{classplot_graph_ab78b439ee76e1f4df9a9e26ebcd3bc29}
+
+
+\hyperlink{classplot_graph_ab78b439ee76e1f4df9a9e26ebcd3bc29}{plot\-Graph\-::set\-Xsticks} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n\-Sticks} & \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classplot_graph_ab78b439ee76e1f4df9a9e26ebcd3bc29_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classplot_graph_a0e2e3589bfc5cc726e367bf8bdc8a2f5}{\index{plot\-Graph@{plot\-Graph}!set\-Yaxis@{set\-Yaxis}}
+\index{set\-Yaxis@{set\-Yaxis}!plotGraph@{plot\-Graph}}
+\subsubsection[{set\-Yaxis}]{\setlength{\rightskip}{0pt plus 5cm}void plot\-Graph\-::set\-Yaxis (
+\begin{DoxyParamCaption}
+\item[{qreal}]{min\-Val, }
+\item[{qreal}]{max\-Val}
+\end{DoxyParamCaption}
+)}}\label{classplot_graph_a0e2e3589bfc5cc726e367bf8bdc8a2f5}
+
+
+\hyperlink{classplot_graph_a0e2e3589bfc5cc726e367bf8bdc8a2f5}{plot\-Graph\-::set\-Yaxis} 
+
+Sets the maximum and minimum values of the y axis. 
+\begin{DoxyParams}{Parameters}
+{\em min\-Val} & \\
+\hline
+{\em max\-Val} & \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classplot_graph_a0e2e3589bfc5cc726e367bf8bdc8a2f5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classplot_graph_af5944ac87c177035eeeaf61d64b1a139}{\index{plot\-Graph@{plot\-Graph}!set\-Ysticks@{set\-Ysticks}}
+\index{set\-Ysticks@{set\-Ysticks}!plotGraph@{plot\-Graph}}
+\subsubsection[{set\-Ysticks}]{\setlength{\rightskip}{0pt plus 5cm}void plot\-Graph\-::set\-Ysticks (
+\begin{DoxyParamCaption}
+\item[{int}]{n\-Sticks}
+\end{DoxyParamCaption}
+)}}\label{classplot_graph_af5944ac87c177035eeeaf61d64b1a139}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classplot_graph_af5944ac87c177035eeeaf61d64b1a139_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classplot_graph_addb0f7d6a06ae97184b3013cccb6f456}{\index{plot\-Graph@{plot\-Graph}!axis\-Margin@{axis\-Margin}}
+\index{axis\-Margin@{axis\-Margin}!plotGraph@{plot\-Graph}}
+\subsubsection[{axis\-Margin}]{\setlength{\rightskip}{0pt plus 5cm}const int plot\-Graph\-::axis\-Margin =40\hspace{0.3cm}{\ttfamily [private]}}}\label{classplot_graph_addb0f7d6a06ae97184b3013cccb6f456}
+\hypertarget{classplot_graph_a82ade58d0ea960ec8c13bb3e0b084b8a}{\index{plot\-Graph@{plot\-Graph}!b\-Rect@{b\-Rect}}
+\index{b\-Rect@{b\-Rect}!plotGraph@{plot\-Graph}}
+\subsubsection[{b\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Rect plot\-Graph\-::b\-Rect =Q\-Rect(0,0,0,0)\hspace{0.3cm}{\ttfamily [private]}}}\label{classplot_graph_a82ade58d0ea960ec8c13bb3e0b084b8a}
+\hypertarget{classplot_graph_af219b9987999a1b1c2b9af03a6cb93d1}{\index{plot\-Graph@{plot\-Graph}!data@{data}}
+\index{data@{data}!plotGraph@{plot\-Graph}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}const Q\-Vector$<$Q\-Pair$<$qint64,qreal$>$ $>$$\ast$ plot\-Graph\-::data =N\-U\-L\-L\hspace{0.3cm}{\ttfamily [private]}}}\label{classplot_graph_af219b9987999a1b1c2b9af03a6cb93d1}
+\hypertarget{classplot_graph_adb0cd0f56da1aa52084da70231c92255}{\index{plot\-Graph@{plot\-Graph}!nx@{nx}}
+\index{nx@{nx}!plotGraph@{plot\-Graph}}
+\subsubsection[{nx}]{\setlength{\rightskip}{0pt plus 5cm}int plot\-Graph\-::nx =2\hspace{0.3cm}{\ttfamily [private]}}}\label{classplot_graph_adb0cd0f56da1aa52084da70231c92255}
+\hypertarget{classplot_graph_a1f6efb75c6de2d3da038666610df3aca}{\index{plot\-Graph@{plot\-Graph}!ny@{ny}}
+\index{ny@{ny}!plotGraph@{plot\-Graph}}
+\subsubsection[{ny}]{\setlength{\rightskip}{0pt plus 5cm}int plot\-Graph\-::ny =2\hspace{0.3cm}{\ttfamily [private]}}}\label{classplot_graph_a1f6efb75c6de2d3da038666610df3aca}
+\hypertarget{classplot_graph_a1d47ee94eb0d3a2894723e4e12765d32}{\index{plot\-Graph@{plot\-Graph}!origin@{origin}}
+\index{origin@{origin}!plotGraph@{plot\-Graph}}
+\subsubsection[{origin}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Point plot\-Graph\-::origin\hspace{0.3cm}{\ttfamily [private]}}}\label{classplot_graph_a1d47ee94eb0d3a2894723e4e12765d32}
+\hypertarget{classplot_graph_a07f4680de55428eb49d593106414ccd9}{\index{plot\-Graph@{plot\-Graph}!right\-X@{right\-X}}
+\index{right\-X@{right\-X}!plotGraph@{plot\-Graph}}
+\subsubsection[{right\-X}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Point plot\-Graph\-::right\-X\hspace{0.3cm}{\ttfamily [private]}}}\label{classplot_graph_a07f4680de55428eb49d593106414ccd9}
+\hypertarget{classplot_graph_ac35eabe1a0ffbb4379fedebe6d5057c3}{\index{plot\-Graph@{plot\-Graph}!scene@{scene}}
+\index{scene@{scene}!plotGraph@{plot\-Graph}}
+\subsubsection[{scene}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Graphics\-Scene$\ast$ plot\-Graph\-::scene\hspace{0.3cm}{\ttfamily [private]}}}\label{classplot_graph_ac35eabe1a0ffbb4379fedebe6d5057c3}
+\hypertarget{classplot_graph_a2e0df5fa1ed5f1448bae3d4404b1a6e5}{\index{plot\-Graph@{plot\-Graph}!unit@{unit}}
+\index{unit@{unit}!plotGraph@{plot\-Graph}}
+\subsubsection[{unit}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String plot\-Graph\-::unit\hspace{0.3cm}{\ttfamily [private]}}}\label{classplot_graph_a2e0df5fa1ed5f1448bae3d4404b1a6e5}
+\hypertarget{classplot_graph_a32de5c2ff068bd201bc627eaf2d18322}{\index{plot\-Graph@{plot\-Graph}!upper\-Y@{upper\-Y}}
+\index{upper\-Y@{upper\-Y}!plotGraph@{plot\-Graph}}
+\subsubsection[{upper\-Y}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Point plot\-Graph\-::upper\-Y\hspace{0.3cm}{\ttfamily [private]}}}\label{classplot_graph_a32de5c2ff068bd201bc627eaf2d18322}
+\hypertarget{classplot_graph_ac270a2ae2617fe5554eb99c9ae631f48}{\index{plot\-Graph@{plot\-Graph}!xmax@{xmax}}
+\index{xmax@{xmax}!plotGraph@{plot\-Graph}}
+\subsubsection[{xmax}]{\setlength{\rightskip}{0pt plus 5cm}qreal plot\-Graph\-::xmax =1\hspace{0.3cm}{\ttfamily [private]}}}\label{classplot_graph_ac270a2ae2617fe5554eb99c9ae631f48}
+\hypertarget{classplot_graph_a45c23930851a6130acdc537755e467fa}{\index{plot\-Graph@{plot\-Graph}!xmin@{xmin}}
+\index{xmin@{xmin}!plotGraph@{plot\-Graph}}
+\subsubsection[{xmin}]{\setlength{\rightskip}{0pt plus 5cm}qreal plot\-Graph\-::xmin =0\hspace{0.3cm}{\ttfamily [private]}}}\label{classplot_graph_a45c23930851a6130acdc537755e467fa}
+\hypertarget{classplot_graph_a14556cbab64df6e06812a0578041956c}{\index{plot\-Graph@{plot\-Graph}!ymax@{ymax}}
+\index{ymax@{ymax}!plotGraph@{plot\-Graph}}
+\subsubsection[{ymax}]{\setlength{\rightskip}{0pt plus 5cm}qreal plot\-Graph\-::ymax =1\hspace{0.3cm}{\ttfamily [private]}}}\label{classplot_graph_a14556cbab64df6e06812a0578041956c}
+\hypertarget{classplot_graph_a5746beef331fbadbf5e1a767b7ed7462}{\index{plot\-Graph@{plot\-Graph}!ymin@{ymin}}
+\index{ymin@{ymin}!plotGraph@{plot\-Graph}}
+\subsubsection[{ymin}]{\setlength{\rightskip}{0pt plus 5cm}qreal plot\-Graph\-::ymin =0\hspace{0.3cm}{\ttfamily [private]}}}\label{classplot_graph_a5746beef331fbadbf5e1a767b7ed7462}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{plotgraph_8h}{plotgraph.\-h}\item 
+\hyperlink{plotgraph_8cpp}{plotgraph.\-cpp}\end{DoxyCompactItemize}

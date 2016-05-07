@@ -1,0 +1,300 @@
+\hypertarget{class_main_window}{\section{Main\-Window Class Reference}
+\label{class_main_window}\index{Main\-Window@{Main\-Window}}
+}
+
+
+The \hyperlink{class_main_window}{Main\-Window} class.  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\-h$>$}
+
+
+
+Inheritance diagram for Main\-Window\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{class_main_window__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Main\-Window\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_window__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}{Main\-Window} (Q\-Widget $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}{Main\-Window\-::\-Main\-Window}. Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{$\sim$\-Main\-Window} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{Main\-Window\-::$\sim$\-Main\-Window}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_main_window_a55cd52e7b00aff669290588f8affea5a}{on\-\_\-connect\-Button\-\_\-clicked} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_main_window_a55cd52e7b00aff669290588f8affea5a}{Main\-Window\-::on\-\_\-connect\-Button\-\_\-clicked}. Open the selected port. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_ab9336d803a096e94955e032ecf9d0e8b}{on\-\_\-disconnect\-Button\-\_\-clicked} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_main_window_ab9336d803a096e94955e032ecf9d0e8b}{Main\-Window\-::on\-\_\-disconnect\-Button\-\_\-clicked}. Disconnect from the current port. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_a7208eaab614587a945fee7216034aa71}{add\-Data} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_main_window_a7208eaab614587a945fee7216034aa71}{Main\-Window\-::add\-Data}. Add new data to the data set. This method will be called when new data has been read from the serial port, it will add the new value to the stored set of pairs (time,value) and update the graph. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_ac9a5649007c5a18e7aa123634866e3a7}{reset\-Data} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_main_window_ac9a5649007c5a18e7aa123634866e3a7}{Main\-Window\-::reset\-Data}. Resets the data stored in memory. This method is called when the multimeter's mode changes, clearing all the data stored in memory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ui_1_1_main_window}{Ui\-::\-Main\-Window} $\ast$ \hyperlink{class_main_window_a35466a70ed47252a0191168126a352a5}{ui}
+\item 
+\hyperlink{class_serial_port}{Serial\-Port} $\ast$ \hyperlink{class_main_window_ae00babad562899a2cd108ff3ee684990}{port\-Ptr}
+\item 
+\hyperlink{class_r_s22812}{R\-S22812} $\ast$ \hyperlink{class_main_window_a478554a221305a416f331e9df2569749}{rawdata}
+\item 
+\hyperlink{class_l_c_d}{L\-C\-D} $\ast$ \hyperlink{class_main_window_a62606e151c6477b9ed1287b792ef2643}{lcd}
+\item 
+Q\-Label $\ast$ \hyperlink{class_main_window_a89e281849b9cf7d03662402c6bc6012c}{label}
+\item 
+\hyperlink{classplot_graph}{plot\-Graph} $\ast$ \hyperlink{class_main_window_ac28b469bbf190a49e26ebfb3ff3c8d22}{graph}
+\item 
+Q\-Graphics\-Scene $\ast$ \hyperlink{class_main_window_a51ac2b126495216832501cea3929c6f6}{scene}
+\item 
+Q\-Vector$<$ Q\-Pair$<$ qint64, qreal $>$ $>$ \hyperlink{class_main_window_a2759b4057b444152680d6c8ec05a6cac}{store\-Data}
+\item 
+qint32 \hyperlink{class_main_window_a414ed704b853734bdbde7f0e8e333b20}{counter} =0
+\item 
+qreal \hyperlink{class_main_window_a02535ba8418420aee9068241aa3e744c}{min\-Data} =99999999
+\item 
+qreal \hyperlink{class_main_window_a6e7a55c985b905d20ae02cfe0f64d2f2}{max\-Data} =-\/99999999
+\item 
+Q\-Meta\-Object\-::\-Connection \hyperlink{class_main_window_acff37cb14f3ab80806cc993856632401}{new\-Data}
+\item 
+Q\-Meta\-Object\-::\-Connection \hyperlink{class_main_window_aa252eef60aa6c3f81a20533a0fe73a2e}{r\-Data}
+\item 
+Q\-Elapsed\-Timer $\ast$ \hyperlink{class_main_window_a8ce9e134300261f607e1f488a9ef8a1d}{time\-Mark}
+\item 
+bool \hyperlink{class_main_window_ac5db45f96085abb0a0ac25e981e8d1df}{time\-Running}
+\item 
+Q\-Vector$<$ Q\-Pair$<$ qreal, qreal $>$ $>$ \hyperlink{class_main_window_a4daf46ba6fc596693c66c97db90cc700}{tmp}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_main_window}{Main\-Window} class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}{\index{Main\-Window@{Main\-Window}!Main\-Window@{Main\-Window}}
+\index{Main\-Window@{Main\-Window}!MainWindow@{Main\-Window}}
+\subsubsection[{Main\-Window}]{\setlength{\rightskip}{0pt plus 5cm}Main\-Window\-::\-Main\-Window (
+\begin{DoxyParamCaption}
+\item[{Q\-Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}
+
+
+\hyperlink{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}{Main\-Window\-::\-Main\-Window}. Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The main window constructor will, in addition to create the corresponding subwidgets, populate the list of available ports and connect signals with slots. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]\-: Temporary. It has to be set automatically. \end{DoxyRefDesc}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{\index{Main\-Window@{Main\-Window}!$\sim$\-Main\-Window@{$\sim$\-Main\-Window}}
+\index{$\sim$\-Main\-Window@{$\sim$\-Main\-Window}!MainWindow@{Main\-Window}}
+\subsubsection[{$\sim$\-Main\-Window}]{\setlength{\rightskip}{0pt plus 5cm}Main\-Window\-::$\sim$\-Main\-Window (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}
+
+
+\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{Main\-Window\-::$\sim$\-Main\-Window}. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_main_window_a7208eaab614587a945fee7216034aa71}{\index{Main\-Window@{Main\-Window}!add\-Data@{add\-Data}}
+\index{add\-Data@{add\-Data}!MainWindow@{Main\-Window}}
+\subsubsection[{add\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::add\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_main_window_a7208eaab614587a945fee7216034aa71}
+
+
+\hyperlink{class_main_window_a7208eaab614587a945fee7216034aa71}{Main\-Window\-::add\-Data}. Add new data to the data set. This method will be called when new data has been read from the serial port, it will add the new value to the stored set of pairs (time,value) and update the graph. 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_main_window_a7208eaab614587a945fee7216034aa71_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_window_a7208eaab614587a945fee7216034aa71_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_main_window_a55cd52e7b00aff669290588f8affea5a}{\index{Main\-Window@{Main\-Window}!on\-\_\-connect\-Button\-\_\-clicked@{on\-\_\-connect\-Button\-\_\-clicked}}
+\index{on\-\_\-connect\-Button\-\_\-clicked@{on\-\_\-connect\-Button\-\_\-clicked}!MainWindow@{Main\-Window}}
+\subsubsection[{on\-\_\-connect\-Button\-\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::on\-\_\-connect\-Button\-\_\-clicked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_main_window_a55cd52e7b00aff669290588f8affea5a}
+
+
+\hyperlink{class_main_window_a55cd52e7b00aff669290588f8affea5a}{Main\-Window\-::on\-\_\-connect\-Button\-\_\-clicked}. Open the selected port. 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_window_a55cd52e7b00aff669290588f8affea5a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_main_window_ab9336d803a096e94955e032ecf9d0e8b}{\index{Main\-Window@{Main\-Window}!on\-\_\-disconnect\-Button\-\_\-clicked@{on\-\_\-disconnect\-Button\-\_\-clicked}}
+\index{on\-\_\-disconnect\-Button\-\_\-clicked@{on\-\_\-disconnect\-Button\-\_\-clicked}!MainWindow@{Main\-Window}}
+\subsubsection[{on\-\_\-disconnect\-Button\-\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::on\-\_\-disconnect\-Button\-\_\-clicked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_main_window_ab9336d803a096e94955e032ecf9d0e8b}
+
+
+\hyperlink{class_main_window_ab9336d803a096e94955e032ecf9d0e8b}{Main\-Window\-::on\-\_\-disconnect\-Button\-\_\-clicked}. Disconnect from the current port. 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_window_ab9336d803a096e94955e032ecf9d0e8b_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_main_window_ac9a5649007c5a18e7aa123634866e3a7}{\index{Main\-Window@{Main\-Window}!reset\-Data@{reset\-Data}}
+\index{reset\-Data@{reset\-Data}!MainWindow@{Main\-Window}}
+\subsubsection[{reset\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::reset\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_main_window_ac9a5649007c5a18e7aa123634866e3a7}
+
+
+\hyperlink{class_main_window_ac9a5649007c5a18e7aa123634866e3a7}{Main\-Window\-::reset\-Data}. Resets the data stored in memory. This method is called when the multimeter's mode changes, clearing all the data stored in memory. 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{class_main_window_ac9a5649007c5a18e7aa123634866e3a7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_window_ac9a5649007c5a18e7aa123634866e3a7_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_main_window_a414ed704b853734bdbde7f0e8e333b20}{\index{Main\-Window@{Main\-Window}!counter@{counter}}
+\index{counter@{counter}!MainWindow@{Main\-Window}}
+\subsubsection[{counter}]{\setlength{\rightskip}{0pt plus 5cm}qint32 Main\-Window\-::counter =0\hspace{0.3cm}{\ttfamily [private]}}}\label{class_main_window_a414ed704b853734bdbde7f0e8e333b20}
+\hypertarget{class_main_window_ac28b469bbf190a49e26ebfb3ff3c8d22}{\index{Main\-Window@{Main\-Window}!graph@{graph}}
+\index{graph@{graph}!MainWindow@{Main\-Window}}
+\subsubsection[{graph}]{\setlength{\rightskip}{0pt plus 5cm}{\bf plot\-Graph}$\ast$ Main\-Window\-::graph\hspace{0.3cm}{\ttfamily [private]}}}\label{class_main_window_ac28b469bbf190a49e26ebfb3ff3c8d22}
+\hypertarget{class_main_window_a89e281849b9cf7d03662402c6bc6012c}{\index{Main\-Window@{Main\-Window}!label@{label}}
+\index{label@{label}!MainWindow@{Main\-Window}}
+\subsubsection[{label}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Label$\ast$ Main\-Window\-::label\hspace{0.3cm}{\ttfamily [private]}}}\label{class_main_window_a89e281849b9cf7d03662402c6bc6012c}
+\hypertarget{class_main_window_a62606e151c6477b9ed1287b792ef2643}{\index{Main\-Window@{Main\-Window}!lcd@{lcd}}
+\index{lcd@{lcd}!MainWindow@{Main\-Window}}
+\subsubsection[{lcd}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-D}$\ast$ Main\-Window\-::lcd\hspace{0.3cm}{\ttfamily [private]}}}\label{class_main_window_a62606e151c6477b9ed1287b792ef2643}
+\hypertarget{class_main_window_a6e7a55c985b905d20ae02cfe0f64d2f2}{\index{Main\-Window@{Main\-Window}!max\-Data@{max\-Data}}
+\index{max\-Data@{max\-Data}!MainWindow@{Main\-Window}}
+\subsubsection[{max\-Data}]{\setlength{\rightskip}{0pt plus 5cm}qreal Main\-Window\-::max\-Data =-\/99999999\hspace{0.3cm}{\ttfamily [private]}}}\label{class_main_window_a6e7a55c985b905d20ae02cfe0f64d2f2}
+\hypertarget{class_main_window_a02535ba8418420aee9068241aa3e744c}{\index{Main\-Window@{Main\-Window}!min\-Data@{min\-Data}}
+\index{min\-Data@{min\-Data}!MainWindow@{Main\-Window}}
+\subsubsection[{min\-Data}]{\setlength{\rightskip}{0pt plus 5cm}qreal Main\-Window\-::min\-Data =99999999\hspace{0.3cm}{\ttfamily [private]}}}\label{class_main_window_a02535ba8418420aee9068241aa3e744c}
+\hypertarget{class_main_window_acff37cb14f3ab80806cc993856632401}{\index{Main\-Window@{Main\-Window}!new\-Data@{new\-Data}}
+\index{new\-Data@{new\-Data}!MainWindow@{Main\-Window}}
+\subsubsection[{new\-Data}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Meta\-Object\-::\-Connection Main\-Window\-::new\-Data\hspace{0.3cm}{\ttfamily [private]}}}\label{class_main_window_acff37cb14f3ab80806cc993856632401}
+\hypertarget{class_main_window_ae00babad562899a2cd108ff3ee684990}{\index{Main\-Window@{Main\-Window}!port\-Ptr@{port\-Ptr}}
+\index{port\-Ptr@{port\-Ptr}!MainWindow@{Main\-Window}}
+\subsubsection[{port\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Serial\-Port}$\ast$ Main\-Window\-::port\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_main_window_ae00babad562899a2cd108ff3ee684990}
+\hypertarget{class_main_window_a478554a221305a416f331e9df2569749}{\index{Main\-Window@{Main\-Window}!rawdata@{rawdata}}
+\index{rawdata@{rawdata}!MainWindow@{Main\-Window}}
+\subsubsection[{rawdata}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S22812}$\ast$ Main\-Window\-::rawdata\hspace{0.3cm}{\ttfamily [private]}}}\label{class_main_window_a478554a221305a416f331e9df2569749}
+\hypertarget{class_main_window_aa252eef60aa6c3f81a20533a0fe73a2e}{\index{Main\-Window@{Main\-Window}!r\-Data@{r\-Data}}
+\index{r\-Data@{r\-Data}!MainWindow@{Main\-Window}}
+\subsubsection[{r\-Data}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Meta\-Object\-::\-Connection Main\-Window\-::r\-Data\hspace{0.3cm}{\ttfamily [private]}}}\label{class_main_window_aa252eef60aa6c3f81a20533a0fe73a2e}
+\hypertarget{class_main_window_a51ac2b126495216832501cea3929c6f6}{\index{Main\-Window@{Main\-Window}!scene@{scene}}
+\index{scene@{scene}!MainWindow@{Main\-Window}}
+\subsubsection[{scene}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Graphics\-Scene$\ast$ Main\-Window\-::scene\hspace{0.3cm}{\ttfamily [private]}}}\label{class_main_window_a51ac2b126495216832501cea3929c6f6}
+\hypertarget{class_main_window_a2759b4057b444152680d6c8ec05a6cac}{\index{Main\-Window@{Main\-Window}!store\-Data@{store\-Data}}
+\index{store\-Data@{store\-Data}!MainWindow@{Main\-Window}}
+\subsubsection[{store\-Data}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Vector$<$Q\-Pair$<$qint64,qreal$>$ $>$ Main\-Window\-::store\-Data\hspace{0.3cm}{\ttfamily [private]}}}\label{class_main_window_a2759b4057b444152680d6c8ec05a6cac}
+\hypertarget{class_main_window_a8ce9e134300261f607e1f488a9ef8a1d}{\index{Main\-Window@{Main\-Window}!time\-Mark@{time\-Mark}}
+\index{time\-Mark@{time\-Mark}!MainWindow@{Main\-Window}}
+\subsubsection[{time\-Mark}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Elapsed\-Timer$\ast$ Main\-Window\-::time\-Mark\hspace{0.3cm}{\ttfamily [private]}}}\label{class_main_window_a8ce9e134300261f607e1f488a9ef8a1d}
+\hypertarget{class_main_window_ac5db45f96085abb0a0ac25e981e8d1df}{\index{Main\-Window@{Main\-Window}!time\-Running@{time\-Running}}
+\index{time\-Running@{time\-Running}!MainWindow@{Main\-Window}}
+\subsubsection[{time\-Running}]{\setlength{\rightskip}{0pt plus 5cm}bool Main\-Window\-::time\-Running\hspace{0.3cm}{\ttfamily [private]}}}\label{class_main_window_ac5db45f96085abb0a0ac25e981e8d1df}
+\hypertarget{class_main_window_a4daf46ba6fc596693c66c97db90cc700}{\index{Main\-Window@{Main\-Window}!tmp@{tmp}}
+\index{tmp@{tmp}!MainWindow@{Main\-Window}}
+\subsubsection[{tmp}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Vector$<$Q\-Pair$<$qreal,qreal$>$ $>$ Main\-Window\-::tmp\hspace{0.3cm}{\ttfamily [private]}}}\label{class_main_window_a4daf46ba6fc596693c66c97db90cc700}
+\hypertarget{class_main_window_a35466a70ed47252a0191168126a352a5}{\index{Main\-Window@{Main\-Window}!ui@{ui}}
+\index{ui@{ui}!MainWindow@{Main\-Window}}
+\subsubsection[{ui}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ui\-::\-Main\-Window}$\ast$ Main\-Window\-::ui\hspace{0.3cm}{\ttfamily [private]}}}\label{class_main_window_a35466a70ed47252a0191168126a352a5}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mainwindow_8h}{mainwindow.\-h}\item 
+\hyperlink{mainwindow_8cpp}{mainwindow.\-cpp}\end{DoxyCompactItemize}

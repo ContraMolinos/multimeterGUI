@@ -1,0 +1,4 @@
+<map id="LCD::paintEvent" name="LCD::paintEvent">
+<area shape="rect" id="node2" href="$class_r_s22812.html#a4ae945cdd647a66f6e7d54f20f77502e" title="RS22812::getFlags Gets the current flags structure. " alt="" coords="185,5,321,32"/>
+<area shape="rect" id="node3" href="$class_r_s22812.html#aee09c692d82aacb68a598091ea4b6597" title="RS22812::getDigitString It returns the multimeter reading in string format. " alt="" coords="172,56,335,83"/>
+</map>

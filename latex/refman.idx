@@ -1,0 +1,31 @@
+\indexentry{Ui@{Ui}|hyperpage}{9}
+\indexentry{Flags@{Flags}|hyperpage}{11}
+\indexentry{Flags@{Flags}!operator==@{operator==}|hyperpage}{12}
+\indexentry{operator==@{operator==}!Flags@{Flags}|hyperpage}{12}
+\indexentry{L\discretionary {-}{}{}C\discretionary {-}{}{}D@{L\discretionary {-}{}{}C\discretionary {-}{}{}D}|hyperpage}{12}
+\indexentry{L\discretionary {-}{}{}C\discretionary {-}{}{}D@{L\discretionary {-}{}{}C\discretionary {-}{}{}D}!L\discretionary {-}{}{}C\discretionary {-}{}{}D@{L\discretionary {-}{}{}C\discretionary {-}{}{}D}|hyperpage}{13}
+\indexentry{L\discretionary {-}{}{}C\discretionary {-}{}{}D@{L\discretionary {-}{}{}C\discretionary {-}{}{}D}!LCD@{L\discretionary {-}{}{}C\discretionary {-}{}{}D}|hyperpage}{13}
+\indexentry{Main\discretionary {-}{}{}Window@{Main\discretionary {-}{}{}Window}|hyperpage}{13}
+\indexentry{Main\discretionary {-}{}{}Window@{Main\discretionary {-}{}{}Window}!Main\discretionary {-}{}{}Window@{Main\discretionary {-}{}{}Window}|hyperpage}{14}
+\indexentry{Main\discretionary {-}{}{}Window@{Main\discretionary {-}{}{}Window}!MainWindow@{Main\discretionary {-}{}{}Window}|hyperpage}{14}
+\indexentry{plot\discretionary {-}{}{}Graph@{plot\discretionary {-}{}{}Graph}|hyperpage}{14}
+\indexentry{plot\discretionary {-}{}{}Graph@{plot\discretionary {-}{}{}Graph}!plot\discretionary {-}{}{}Graph@{plot\discretionary {-}{}{}Graph}|hyperpage}{15}
+\indexentry{plot\discretionary {-}{}{}Graph@{plot\discretionary {-}{}{}Graph}!plotGraph@{plot\discretionary {-}{}{}Graph}|hyperpage}{15}
+\indexentry{plot\discretionary {-}{}{}Graph@{plot\discretionary {-}{}{}Graph}!paint@{paint}|hyperpage}{15}
+\indexentry{paint@{paint}!plotGraph@{plot\discretionary {-}{}{}Graph}|hyperpage}{15}
+\indexentry{R\discretionary {-}{}{}S22812@{R\discretionary {-}{}{}S22812}|hyperpage}{15}
+\indexentry{R\discretionary {-}{}{}S22812@{R\discretionary {-}{}{}S22812}!R\discretionary {-}{}{}S22812@{R\discretionary {-}{}{}S22812}|hyperpage}{16}
+\indexentry{R\discretionary {-}{}{}S22812@{R\discretionary {-}{}{}S22812}!RS22812@{R\discretionary {-}{}{}S22812}|hyperpage}{16}
+\indexentry{R\discretionary {-}{}{}S22812@{R\discretionary {-}{}{}S22812}!get\discretionary {-}{}{}Val@{get\discretionary {-}{}{}Val}|hyperpage}{16}
+\indexentry{get\discretionary {-}{}{}Val@{get\discretionary {-}{}{}Val}!RS22812@{R\discretionary {-}{}{}S22812}|hyperpage}{16}
+\indexentry{R\discretionary {-}{}{}S22812@{R\discretionary {-}{}{}S22812}!new\discretionary {-}{}{}Value@{new\discretionary {-}{}{}Value}|hyperpage}{16}
+\indexentry{new\discretionary {-}{}{}Value@{new\discretionary {-}{}{}Value}!RS22812@{R\discretionary {-}{}{}S22812}|hyperpage}{16}
+\indexentry{Serial\discretionary {-}{}{}Port@{Serial\discretionary {-}{}{}Port}|hyperpage}{18}
+\indexentry{Serial\discretionary {-}{}{}Port@{Serial\discretionary {-}{}{}Port}!Serial\discretionary {-}{}{}Port@{Serial\discretionary {-}{}{}Port}|hyperpage}{19}
+\indexentry{Serial\discretionary {-}{}{}Port@{Serial\discretionary {-}{}{}Port}!SerialPort@{Serial\discretionary {-}{}{}Port}|hyperpage}{19}
+\indexentry{Serial\discretionary {-}{}{}Port@{Serial\discretionary {-}{}{}Port}!close\discretionary {-}{}{}Port@{close\discretionary {-}{}{}Port}|hyperpage}{19}
+\indexentry{close\discretionary {-}{}{}Port@{close\discretionary {-}{}{}Port}!SerialPort@{Serial\discretionary {-}{}{}Port}|hyperpage}{19}
+\indexentry{Serial\discretionary {-}{}{}Port@{Serial\discretionary {-}{}{}Port}!list\discretionary {-}{}{}Ports@{list\discretionary {-}{}{}Ports}|hyperpage}{19}
+\indexentry{list\discretionary {-}{}{}Ports@{list\discretionary {-}{}{}Ports}!SerialPort@{Serial\discretionary {-}{}{}Port}|hyperpage}{19}
+\indexentry{Serial\discretionary {-}{}{}Port@{Serial\discretionary {-}{}{}Port}!open\discretionary {-}{}{}Port@{open\discretionary {-}{}{}Port}|hyperpage}{19}
+\indexentry{open\discretionary {-}{}{}Port@{open\discretionary {-}{}{}Port}!SerialPort@{Serial\discretionary {-}{}{}Port}|hyperpage}{19}

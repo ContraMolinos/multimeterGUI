@@ -1,0 +1,380 @@
+\hypertarget{class_r_s22812}{\section{R\-S22812 Class Reference}
+\label{class_r_s22812}\index{R\-S22812@{R\-S22812}}
+}
+
+
+Decoding of the data sent by the Radio Shack 22-\/812.  
+
+
+
+
+{\ttfamily \#include $<$rs22812.\-h$>$}
+
+
+
+Inheritance diagram for R\-S22812\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=136pt]{class_r_s22812__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for R\-S22812\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{class_r_s22812__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_r_s22812_a5de59c9521bc80e37745c8c3243d9229}{new\-Value} (const Q\-Byte\-Array \&data)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_r_s22812_a5de59c9521bc80e37745c8c3243d9229}{R\-S22812\-::new\-Value} Reads a new packet and reformats the data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_r_s22812_a47691c122c8ad0716dc7c86b1bf01bb8}{new\-Mode} ()
+\item 
+void \hyperlink{class_r_s22812_afdbd28cc7f8abb95f13ad9d795c6c10d}{new\-Data} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_r_s22812_ac5e60fb0fe61e2be5db4d5caab46c827}{R\-S22812} (Q\-Object $\ast$parent=0)
+\item 
+float \hyperlink{class_r_s22812_a80e53a20cbe5c9c670e8b8309d043475}{get\-Val} () const 
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_r_s22812_a80e53a20cbe5c9c670e8b8309d043475}{R\-S22812\-::get\-Val} Returns the numeric value of the reading. \end{DoxyCompactList}\item 
+\hyperlink{struct_flags}{Flags} \hyperlink{class_r_s22812_a4ae945cdd647a66f6e7d54f20f77502e}{get\-Flags} () const 
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_r_s22812_a4ae945cdd647a66f6e7d54f20f77502e}{R\-S22812\-::get\-Flags} Gets the current flags structure. \end{DoxyCompactList}\item 
+Q\-String \hyperlink{class_r_s22812_aee09c692d82aacb68a598091ea4b6597}{get\-Digit\-String} () const 
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_r_s22812_aee09c692d82aacb68a598091ea4b6597}{R\-S22812\-::get\-Digit\-String} It returns the multimeter reading in string format. \end{DoxyCompactList}\item 
+uint \hyperlink{class_r_s22812_a72884c3f25b59129ac21dca9f68a664f}{get\-Mode} () const 
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_r_s22812_a72884c3f25b59129ac21dca9f68a664f}{R\-S22812\-::get\-Mode}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_r_s22812_a551bff514434f8710316a06c529d1f3c}{mode\-Changed} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_r_s22812_a551bff514434f8710316a06c529d1f3c}{R\-S22812\-::mode\-Changed} Checks the flags structure to see whether the read mode changed. \end{DoxyCompactList}\item 
+Q\-String \hyperlink{class_r_s22812_aee6ba6536ad3d47239501d812d5db994}{byte2\-Digit} (uchar byte)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_r_s22812_aee6ba6536ad3d47239501d812d5db994}{R\-S22812\-::byte2\-Digit} Translates the R\-S 22-\/812 byte value of the \hyperlink{class_l_c_d}{L\-C\-D} mapping into a digit. \end{DoxyCompactList}\item 
+void \hyperlink{class_r_s22812_a64f4658259e355d64dcaaa92eac65e93}{reset\-Flags} (\hyperlink{struct_flags}{Flags} \&f)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_r_s22812_a64f4658259e355d64dcaaa92eac65e93}{R\-S22812\-::reset\-Flags} Sets all the flags to false. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint \hyperlink{class_r_s22812_a368cc94b2c66bdc6d456e413de9217be}{mode}
+\item 
+\hyperlink{struct_flags}{Flags} \hyperlink{class_r_s22812_a6c8e4c27f876fdfd10bf153b36bd6254}{flags}
+\item 
+\hyperlink{struct_flags}{Flags} \hyperlink{class_r_s22812_a167304591d2e351f70975b608718946b}{oldflags}
+\item 
+Q\-String \hyperlink{class_r_s22812_a4514e9e982441cab9143a9c36a64429c}{digits}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Decoding of the data sent by the Radio Shack 22-\/812. 
+
+Part of the information was obtained from \href{http://sigrok.org/wiki/RadioShack_22-812}{\tt http\-://sigrok.\-org/wiki/\-Radio\-Shack\-\_\-22-\/812} and \href{https://code.google.com/archive/p/rs22812/}{\tt https\-://code.\-google.\-com/archive/p/rs22812/}
+
+R\-S 22-\/812 sends 9bytes packets. Each packect is a mapping of the \hyperlink{class_l_c_d}{L\-C\-D} of the screen plus some extra information. Bit Byte 7 6 5 4 3 2 1 0 0 -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- Mode -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- 1 Hz Ohms K M F A V m 2 u n d\-Bm s \% h\-F\-E R\-E\-L M\-I\-N 3 4\-D 4\-C 4\-G 4\-B D\-P3 4\-E 4\-F 4\-A 4 3\-D 3\-C 3\-G 3\-B D\-P2 3\-E 3\-F 3\-A 5 2\-D 2\-C 2\-G 2\-B D\-P1 2\-E 2\-F 2\-A 6 1\-D 1\-C 1\-G 1\-B M\-A\-X 1\-E 1\-F 1\-A 7 Beep Diode Bat Hold -\/ $\sim$ R\-S232 Auto 8 -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- Checksum -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---
+
+The L\-E\-D mapping is\-: $\vert$--A--$\vert$ $\vert$ $\vert$ F B $\vert$ $\vert$ $\vert$--G--$\vert$ $\vert$ $\vert$ E C $\vert$ $\vert$ $\vert$--D--$\vert$
+
+So, the equivalence between int value and digit are\-: 215 \-: \char`\"{}0\char`\"{}, 80 \-: \char`\"{}1\char`\"{}, 181 \-: \char`\"{}2\char`\"{}, 241 \-: \char`\"{}3\char`\"{}, 114 \-: \char`\"{}4\char`\"{}, 227 \-: \char`\"{}5\char`\"{}, 231 \-: \char`\"{}6\char`\"{}, 81 \-: \char`\"{}7\char`\"{}, 247 \-: \char`\"{}8\char`\"{}, 243 \-: \char`\"{}9\char`\"{}, 39 \-: \char`\"{}\-F\char`\"{}, 55 \-: \char`\"{}\-P\char`\"{}, 167 \-: \char`\"{}\-E\char`\"{}, 135 \-: \char`\"{}\-C\char`\"{}, 134 \-: \char`\"{}\-L\char`\"{}, 118 \-: \char`\"{}\-H\char`\"{}, 6 \-: \char`\"{}\-I\char`\"{}, 102 \-: \char`\"{}h\char`\"{}, 36 \-: \char`\"{}r\char`\"{}, 166 \-: \char`\"{}t\char`\"{}, 100 \-: \char`\"{}n\char`\"{}, 32 \-: \char`\"{}-\/\char`\"{}, 0 \-: \char`\"{} \char`\"{}
+
+And the possible modes are\-: 0=D\-C V 1=A\-C V 2=D\-C u\-A 3=D\-C m\-A 4=D\-C A 5=A\-C u\-A 6=A\-C m\-A 7=A\-C A 8=O\-H\-M 9=C\-A\-P 10=H\-Z 11=N\-E\-T H\-Z 12=A\-M\-P H\-Z 13=D\-U\-T\-Y 14=N\-E\-T D\-U\-T\-Y 15=A\-M\-P D\-U\-T\-Y 16=W\-I\-D\-T\-H 17=N\-E\-T W\-I\-D\-T\-H 18=A\-M\-P W\-I\-D\-T\-H 19=D\-I\-O\-D\-E 20=C\-O\-N\-T 21=H\-F\-E 22=L\-O\-G\-I\-C 23=D\-B\-M 24=E\-F 25=T\-E\-M\-P 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_r_s22812_ac5e60fb0fe61e2be5db4d5caab46c827}{\index{R\-S22812@{R\-S22812}!R\-S22812@{R\-S22812}}
+\index{R\-S22812@{R\-S22812}!RS22812@{R\-S22812}}
+\subsubsection[{R\-S22812}]{\setlength{\rightskip}{0pt plus 5cm}R\-S22812\-::\-R\-S22812 (
+\begin{DoxyParamCaption}
+\item[{Q\-Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{class_r_s22812_ac5e60fb0fe61e2be5db4d5caab46c827}
+Multimeter G\-U\-I G\-U\-I for the R\-S-\/232 mode of the Radio Shack 22-\/812. Copyright (C) 2016 F\-J Salguero
+
+This program is free software\-: you can redistribute it and/or modify it under the terms of the G\-N\-U General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\-I\-T\-H\-O\-U\-T A\-N\-Y W\-A\-R\-R\-A\-N\-T\-Y; without even the implied warranty of M\-E\-R\-C\-H\-A\-N\-T\-A\-B\-I\-L\-I\-T\-Y or F\-I\-T\-N\-E\-S\-S F\-O\-R A P\-A\-R\-T\-I\-C\-U\-L\-A\-R P\-U\-R\-P\-O\-S\-E. See the G\-N\-U General Public License for more details.
+
+You should have received a copy of the G\-N\-U General Public License along with this program. If not, see \href{http://www.gnu.org/licenses/}{\tt http\-://www.\-gnu.\-org/licenses/}. 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{class_r_s22812_ac5e60fb0fe61e2be5db4d5caab46c827_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_r_s22812_aee6ba6536ad3d47239501d812d5db994}{\index{R\-S22812@{R\-S22812}!byte2\-Digit@{byte2\-Digit}}
+\index{byte2\-Digit@{byte2\-Digit}!RS22812@{R\-S22812}}
+\subsubsection[{byte2\-Digit}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S22812\-::byte2\-Digit (
+\begin{DoxyParamCaption}
+\item[{uchar}]{byte}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_r_s22812_aee6ba6536ad3d47239501d812d5db994}
+
+
+\hyperlink{class_r_s22812_aee6ba6536ad3d47239501d812d5db994}{R\-S22812\-::byte2\-Digit} Translates the R\-S 22-\/812 byte value of the \hyperlink{class_l_c_d}{L\-C\-D} mapping into a digit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em byte} & R\-S 22-\/812 byte value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String with the equivalent digit. 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_r_s22812_aee6ba6536ad3d47239501d812d5db994_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_r_s22812_aee09c692d82aacb68a598091ea4b6597}{\index{R\-S22812@{R\-S22812}!get\-Digit\-String@{get\-Digit\-String}}
+\index{get\-Digit\-String@{get\-Digit\-String}!RS22812@{R\-S22812}}
+\subsubsection[{get\-Digit\-String}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S22812\-::get\-Digit\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_r_s22812_aee09c692d82aacb68a598091ea4b6597}
+
+
+\hyperlink{class_r_s22812_aee09c692d82aacb68a598091ea4b6597}{R\-S22812\-::get\-Digit\-String} It returns the multimeter reading in string format. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{class_r_s22812_aee09c692d82aacb68a598091ea4b6597_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_r_s22812_a4ae945cdd647a66f6e7d54f20f77502e}{\index{R\-S22812@{R\-S22812}!get\-Flags@{get\-Flags}}
+\index{get\-Flags@{get\-Flags}!RS22812@{R\-S22812}}
+\subsubsection[{get\-Flags}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Flags} R\-S22812\-::get\-Flags (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_r_s22812_a4ae945cdd647a66f6e7d54f20f77502e}
+
+
+\hyperlink{class_r_s22812_a4ae945cdd647a66f6e7d54f20f77502e}{R\-S22812\-::get\-Flags} Gets the current flags structure. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{class_r_s22812_a4ae945cdd647a66f6e7d54f20f77502e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_r_s22812_a72884c3f25b59129ac21dca9f68a664f}{\index{R\-S22812@{R\-S22812}!get\-Mode@{get\-Mode}}
+\index{get\-Mode@{get\-Mode}!RS22812@{R\-S22812}}
+\subsubsection[{get\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}uint R\-S22812\-::get\-Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_r_s22812_a72884c3f25b59129ac21dca9f68a664f}
+
+
+\hyperlink{class_r_s22812_a72884c3f25b59129ac21dca9f68a664f}{R\-S22812\-::get\-Mode}. 
+
+\begin{DoxyReturn}{Returns}
+It returns the mode on which the multimeter is working. 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_r_s22812_a72884c3f25b59129ac21dca9f68a664f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_r_s22812_a80e53a20cbe5c9c670e8b8309d043475}{\index{R\-S22812@{R\-S22812}!get\-Val@{get\-Val}}
+\index{get\-Val@{get\-Val}!RS22812@{R\-S22812}}
+\subsubsection[{get\-Val}]{\setlength{\rightskip}{0pt plus 5cm}float R\-S22812\-::get\-Val (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_r_s22812_a80e53a20cbe5c9c670e8b8309d043475}
+
+
+\hyperlink{class_r_s22812_a80e53a20cbe5c9c670e8b8309d043475}{R\-S22812\-::get\-Val} Returns the numeric value of the reading. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_r_s22812_a80e53a20cbe5c9c670e8b8309d043475_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_r_s22812_a551bff514434f8710316a06c529d1f3c}{\index{R\-S22812@{R\-S22812}!mode\-Changed@{mode\-Changed}}
+\index{mode\-Changed@{mode\-Changed}!RS22812@{R\-S22812}}
+\subsubsection[{mode\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S22812\-::mode\-Changed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_r_s22812_a551bff514434f8710316a06c529d1f3c}
+
+
+\hyperlink{class_r_s22812_a551bff514434f8710316a06c529d1f3c}{R\-S22812\-::mode\-Changed} Checks the flags structure to see whether the read mode changed. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_r_s22812_a551bff514434f8710316a06c529d1f3c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_r_s22812_afdbd28cc7f8abb95f13ad9d795c6c10d}{\index{R\-S22812@{R\-S22812}!new\-Data@{new\-Data}}
+\index{new\-Data@{new\-Data}!RS22812@{R\-S22812}}
+\subsubsection[{new\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S22812\-::new\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}}\label{class_r_s22812_afdbd28cc7f8abb95f13ad9d795c6c10d}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_r_s22812_afdbd28cc7f8abb95f13ad9d795c6c10d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_r_s22812_a47691c122c8ad0716dc7c86b1bf01bb8}{\index{R\-S22812@{R\-S22812}!new\-Mode@{new\-Mode}}
+\index{new\-Mode@{new\-Mode}!RS22812@{R\-S22812}}
+\subsubsection[{new\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S22812\-::new\-Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}}\label{class_r_s22812_a47691c122c8ad0716dc7c86b1bf01bb8}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_r_s22812_a47691c122c8ad0716dc7c86b1bf01bb8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_r_s22812_a5de59c9521bc80e37745c8c3243d9229}{\index{R\-S22812@{R\-S22812}!new\-Value@{new\-Value}}
+\index{new\-Value@{new\-Value}!RS22812@{R\-S22812}}
+\subsubsection[{new\-Value}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S22812\-::new\-Value (
+\begin{DoxyParamCaption}
+\item[{const Q\-Byte\-Array \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{class_r_s22812_a5de59c9521bc80e37745c8c3243d9229}
+
+
+\hyperlink{class_r_s22812_a5de59c9521bc80e37745c8c3243d9229}{R\-S22812\-::new\-Value} Reads a new packet and reformats the data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_r_s22812_a5de59c9521bc80e37745c8c3243d9229_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_r_s22812_a64f4658259e355d64dcaaa92eac65e93}{\index{R\-S22812@{R\-S22812}!reset\-Flags@{reset\-Flags}}
+\index{reset\-Flags@{reset\-Flags}!RS22812@{R\-S22812}}
+\subsubsection[{reset\-Flags}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S22812\-::reset\-Flags (
+\begin{DoxyParamCaption}
+\item[{{\bf Flags} \&}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_r_s22812_a64f4658259e355d64dcaaa92eac65e93}
+
+
+\hyperlink{class_r_s22812_a64f4658259e355d64dcaaa92eac65e93}{R\-S22812\-::reset\-Flags} Sets all the flags to false. 
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{class_r_s22812_a64f4658259e355d64dcaaa92eac65e93_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_r_s22812_a4514e9e982441cab9143a9c36a64429c}{\index{R\-S22812@{R\-S22812}!digits@{digits}}
+\index{digits@{digits}!RS22812@{R\-S22812}}
+\subsubsection[{digits}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S22812\-::digits\hspace{0.3cm}{\ttfamily [private]}}}\label{class_r_s22812_a4514e9e982441cab9143a9c36a64429c}
+\hypertarget{class_r_s22812_a6c8e4c27f876fdfd10bf153b36bd6254}{\index{R\-S22812@{R\-S22812}!flags@{flags}}
+\index{flags@{flags}!RS22812@{R\-S22812}}
+\subsubsection[{flags}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Flags} R\-S22812\-::flags\hspace{0.3cm}{\ttfamily [private]}}}\label{class_r_s22812_a6c8e4c27f876fdfd10bf153b36bd6254}
+\hypertarget{class_r_s22812_a368cc94b2c66bdc6d456e413de9217be}{\index{R\-S22812@{R\-S22812}!mode@{mode}}
+\index{mode@{mode}!RS22812@{R\-S22812}}
+\subsubsection[{mode}]{\setlength{\rightskip}{0pt plus 5cm}uint R\-S22812\-::mode\hspace{0.3cm}{\ttfamily [private]}}}\label{class_r_s22812_a368cc94b2c66bdc6d456e413de9217be}
+\hypertarget{class_r_s22812_a167304591d2e351f70975b608718946b}{\index{R\-S22812@{R\-S22812}!oldflags@{oldflags}}
+\index{oldflags@{oldflags}!RS22812@{R\-S22812}}
+\subsubsection[{oldflags}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Flags} R\-S22812\-::oldflags\hspace{0.3cm}{\ttfamily [private]}}}\label{class_r_s22812_a167304591d2e351f70975b608718946b}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{rs22812_8h}{rs22812.\-h}\item 
+build-\/multimeter\-G\-U\-I-\/\-Desktop-\/\-Debug/\hyperlink{moc__rs22812_8cpp}{moc\-\_\-rs22812.\-cpp}\item 
+\hyperlink{rs22812_8cpp}{rs22812.\-cpp}\end{DoxyCompactItemize}

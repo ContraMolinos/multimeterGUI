@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['rawdata',['rawdata',['../class_main_window.html#a478554a221305a416f331e9df2569749',1,'MainWindow']]],
+  ['rdata',['rData',['../class_main_window.html#aa252eef60aa6c3f81a20533a0fe73a2e',1,'MainWindow']]],
+  ['readconnect',['readConnect',['../class_serial_port.html#a63896cd014af7968402b8e7f051f24b3',1,'SerialPort']]],
+  ['readme_2emd',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
+  ['readport',['readPort',['../class_serial_port.html#a708a04f46660c9803112fda4f60defe1',1,'SerialPort']]],
+  ['ready',['ready',['../class_serial_port.html#a76a7bb63e3f581ccb55a5951bf97a4e3',1,'SerialPort']]],
+  ['readyread',['readyRead',['../class_serial_port.html#a3ec0fe7fd001c56fb95e010da11817c0',1,'SerialPort']]],
+  ['real2coord',['real2Coord',['../classplot_graph.html#afecabc6fb684c043bef8f585eb7e0791',1,'plotGraph']]],
+  ['rel',['REL',['../struct_flags.html#ad1097dab069d0300050facba2594321e',1,'Flags']]],
+  ['resetdata',['resetData',['../class_main_window.html#ac9a5649007c5a18e7aa123634866e3a7',1,'MainWindow']]],
+  ['resetflags',['resetFlags',['../class_r_s22812.html#a64f4658259e355d64dcaaa92eac65e93',1,'RS22812']]],
+  ['retranslateui',['retranslateUi',['../class_ui___main_window.html#a097dd160c3534a204904cb374412c618',1,'Ui_MainWindow']]],
+  ['rightx',['rightX',['../classplot_graph.html#a07f4680de55428eb49d593106414ccd9',1,'plotGraph']]],
+  ['rs22812',['RS22812',['../class_r_s22812.html',1,'RS22812'],['../class_r_s22812.html#ac5e60fb0fe61e2be5db4d5caab46c827',1,'RS22812::RS22812()']]],
+  ['rs22812_2ecpp',['rs22812.cpp',['../rs22812_8cpp.html',1,'']]],
+  ['rs22812_2eh',['rs22812.h',['../rs22812_8h.html',1,'']]],
+  ['rs232',['RS232',['../struct_flags.html#a7ebb04ba14f8d6fa9ad362e2fb5d705b',1,'Flags']]]
+];

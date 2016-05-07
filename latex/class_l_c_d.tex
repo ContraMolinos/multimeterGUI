@@ -1,0 +1,128 @@
+\hypertarget{class_l_c_d}{\section{L\-C\-D Class Reference}
+\label{class_l_c_d}\index{L\-C\-D@{L\-C\-D}}
+}
+
+
+The \hyperlink{class_l_c_d}{L\-C\-D} class displays the numerical value read.  
+
+
+
+
+{\ttfamily \#include $<$lcd.\-h$>$}
+
+
+
+Inheritance diagram for L\-C\-D\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=129pt]{class_l_c_d__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for L\-C\-D\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{class_l_c_d__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_l_c_d_a525b305d4aaf0d45cfd04b9b16096482}{L\-C\-D} (const \hyperlink{class_r_s22812}{R\-S22812} $\ast$\hyperlink{class_l_c_d_a04c1fe4d60f692978d1d428521e2d2a2}{data}, Q\-Widget $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_l_c_d_a525b305d4aaf0d45cfd04b9b16096482}{L\-C\-D\-::\-L\-C\-D}. Constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_l_c_d_a259fac152add9afdeb4543af4998d14b}{paint\-Event} (Q\-Paint\-Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_l_c_d_a259fac152add9afdeb4543af4998d14b}{L\-C\-D\-::paint\-Event}. Paint event handler. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const Q\-Vector$<$ Q\-String $>$ \hyperlink{class_l_c_d_a80e55f48f0e7c7b791fe1602640f708a}{lbl} =\{\char`\"{}Auto\char`\"{},\char`\"{}R\-S232\char`\"{},\char`\"{}Hold\char`\"{},\char`\"{}Rel\char`\"{},\char`\"{}M\-A\-X\char`\"{},\char`\"{}M\-I\-N\char`\"{},\char`\"{}h\-F\-E\char`\"{},\char`\"{}d\-Bm\char`\"{},\char`\"{}Cont\char`\"{},\char`\"{}Diode\char`\"{},\char`\"{}\%\char`\"{},\char`\"{}S\char`\"{}\}
+\item 
+const \hyperlink{class_r_s22812}{R\-S22812} $\ast$ \hyperlink{class_l_c_d_a04c1fe4d60f692978d1d428521e2d2a2}{data}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_l_c_d}{L\-C\-D} class displays the numerical value read. 
+
+This class will show a representation of the multimeter's display showing the same values that are shown in the multimeter. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_l_c_d_a525b305d4aaf0d45cfd04b9b16096482}{\index{L\-C\-D@{L\-C\-D}!L\-C\-D@{L\-C\-D}}
+\index{L\-C\-D@{L\-C\-D}!LCD@{L\-C\-D}}
+\subsubsection[{L\-C\-D}]{\setlength{\rightskip}{0pt plus 5cm}L\-C\-D\-::\-L\-C\-D (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S22812} $\ast$}]{data, }
+\item[{Q\-Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{class_l_c_d_a525b305d4aaf0d45cfd04b9b16096482}
+
+
+\hyperlink{class_l_c_d_a525b305d4aaf0d45cfd04b9b16096482}{L\-C\-D\-::\-L\-C\-D}. Constructor. 
+
+Multimeter G\-U\-I G\-U\-I for the R\-S-\/232 mode of the Radio Shack 22-\/812. Copyright (C) 2016 F\-J Salguero
+
+This program is free software\-: you can redistribute it and/or modify it under the terms of the G\-N\-U General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\-I\-T\-H\-O\-U\-T A\-N\-Y W\-A\-R\-R\-A\-N\-T\-Y; without even the implied warranty of M\-E\-R\-C\-H\-A\-N\-T\-A\-B\-I\-L\-I\-T\-Y or F\-I\-T\-N\-E\-S\-S F\-O\-R A P\-A\-R\-T\-I\-C\-U\-L\-A\-R P\-U\-R\-P\-O\-S\-E. See the G\-N\-U General Public License for more details.
+
+You should have received a copy of the G\-N\-U General Public License along with this program. If not, see \href{http://www.gnu.org/licenses/}{\tt http\-://www.\-gnu.\-org/licenses/}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \\
+\hline
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_l_c_d_a259fac152add9afdeb4543af4998d14b}{\index{L\-C\-D@{L\-C\-D}!paint\-Event@{paint\-Event}}
+\index{paint\-Event@{paint\-Event}!LCD@{L\-C\-D}}
+\subsubsection[{paint\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void L\-C\-D\-::paint\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Paint\-Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_l_c_d_a259fac152add9afdeb4543af4998d14b}
+
+
+\hyperlink{class_l_c_d_a259fac152add9afdeb4543af4998d14b}{L\-C\-D\-::paint\-Event}. Paint event handler. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & It redraws the \hyperlink{class_l_c_d}{L\-C\-D} widget every time there is an update. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{class_l_c_d_a259fac152add9afdeb4543af4998d14b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_l_c_d_a04c1fe4d60f692978d1d428521e2d2a2}{\index{L\-C\-D@{L\-C\-D}!data@{data}}
+\index{data@{data}!LCD@{L\-C\-D}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf R\-S22812}$\ast$ L\-C\-D\-::data\hspace{0.3cm}{\ttfamily [private]}}}\label{class_l_c_d_a04c1fe4d60f692978d1d428521e2d2a2}
+\hypertarget{class_l_c_d_a80e55f48f0e7c7b791fe1602640f708a}{\index{L\-C\-D@{L\-C\-D}!lbl@{lbl}}
+\index{lbl@{lbl}!LCD@{L\-C\-D}}
+\subsubsection[{lbl}]{\setlength{\rightskip}{0pt plus 5cm}const Q\-Vector$<$Q\-String$>$ L\-C\-D\-::lbl =\{\char`\"{}Auto\char`\"{},\char`\"{}R\-S232\char`\"{},\char`\"{}Hold\char`\"{},\char`\"{}Rel\char`\"{},\char`\"{}M\-A\-X\char`\"{},\char`\"{}M\-I\-N\char`\"{},\char`\"{}h\-F\-E\char`\"{},\char`\"{}d\-Bm\char`\"{},\char`\"{}Cont\char`\"{},\char`\"{}Diode\char`\"{},\char`\"{}\%\char`\"{},\char`\"{}S\char`\"{}\}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_l_c_d_a80e55f48f0e7c7b791fe1602640f708a}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{lcd_8h}{lcd.\-h}\item 
+\hyperlink{lcd_8cpp}{lcd.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+<map id="plotGraph::labelYaxis" name="plotGraph::labelYaxis">
+<area shape="rect" id="node2" href="$classplot_graph.html#a9237c8835c854dfe3156d4a5803663ab" title="plotGraph::paintAxis Calculates the scale and limits of the axis and draws it. " alt="" coords="204,5,347,32"/>
+<area shape="rect" id="node3" href="$classplot_graph.html#aa72b60c4f95834599921874fab85d01b" title="plotGraph::paint. Override of the paint method of QGraphicsScene. " alt="" coords="395,5,511,32"/>
+</map>

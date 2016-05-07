@@ -1,0 +1,9 @@
+<map id="MainWindow" name="MainWindow">
+<area shape="rect" id="node3" href="$class_ui_1_1_main_window.html" title="Ui::MainWindow" alt="" coords="141,211,261,237"/>
+<area shape="rect" id="node4" href="$class_ui___main_window.html" title="Ui_MainWindow" alt="" coords="141,109,260,136"/>
+<area shape="rect" id="node5" href="$class_serial_port.html" title="Class to manage the communication with a serial port. " alt="" coords="268,160,349,187"/>
+<area shape="rect" id="node9" href="$class_r_s22812.html" title="Decoding of the data sent by the Radio Shack 22&#45;812. " alt="" coords="362,109,437,136"/>
+<area shape="rect" id="node7" href="$class_l_c_d.html" title="The LCD class displays the numerical value read. " alt="" coords="477,211,527,237"/>
+<area shape="rect" id="node10" href="$struct_flags.html" title="Definition of custom data type. " alt="" coords="371,5,427,32"/>
+<area shape="rect" id="node11" href="$classplot_graph.html" title="The plotGraph class. " alt="" coords="562,211,642,237"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="plotGraph::real2Coord" name="plotGraph::real2Coord">
+<area shape="rect" id="node2" href="$classplot_graph.html#a15feece3d49379208e40d2cd1b560787" title="plotGraph::plotData Draws the data on the widget. " alt="" coords="209,5,348,32"/>
+<area shape="rect" id="node3" href="$classplot_graph.html#aa72b60c4f95834599921874fab85d01b" title="plotGraph::paint. Override of the paint method of QGraphicsScene. " alt="" coords="396,5,512,32"/>
+</map>

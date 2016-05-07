@@ -1,0 +1,337 @@
+\hypertarget{class_serial_port}{\section{Serial\-Port Class Reference}
+\label{class_serial_port}\index{Serial\-Port@{Serial\-Port}}
+}
+
+
+Class to manage the communication with a serial port.  
+
+
+
+
+{\ttfamily \#include $<$serialport.\-h$>$}
+
+
+
+Inheritance diagram for Serial\-Port\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=141pt]{class_serial_port__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Serial\-Port\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=141pt]{class_serial_port__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_serial_port_a76a7bb63e3f581ccb55a5951bf97a4e3}{ready} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_serial_port_a76a7bb63e3f581ccb55a5951bf97a4e3}{Serial\-Port\-::ready} Re-\/emits the ready\-Read signal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_serial_port_a3ec0fe7fd001c56fb95e010da11817c0}{ready\-Read} (Q\-Byte\-Array \hyperlink{class_serial_port_af5ff5c504f070840bd28ee371f353f05}{buffer})
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_serial_port_ae68e4a28e607b4acbab2c2a894cb3e2b}{Serial\-Port} (Q\-Object $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_serial_port_ae68e4a28e607b4acbab2c2a894cb3e2b}{Serial\-Port\-::\-Serial\-Port} Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_serial_port_a8e09f366ed9b26b0456b66ae7bd8c702}{$\sim$\-Serial\-Port} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_serial_port_a8e09f366ed9b26b0456b66ae7bd8c702}{Serial\-Port\-::$\sim$\-Serial\-Port}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_serial_port_a746e1ff02d45d8bf6b94e8bcbde6bb0d}{open\-Port} (const Q\-String port\-Name)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_serial_port_a746e1ff02d45d8bf6b94e8bcbde6bb0d}{Serial\-Port\-::open\-Port} Opens a serial port for reading. If port name is empty, it does nothing. If port name is not available. Does nothing and raises a warning. \end{DoxyCompactList}\item 
+bool \hyperlink{class_serial_port_a71c52f501f57ab491d0dc83cbc5e6a14}{close\-Port} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_serial_port_a71c52f501f57ab491d0dc83cbc5e6a14}{Serial\-Port\-::close\-Port}. \end{DoxyCompactList}\item 
+Q\-List$<$ Q\-Serial\-Port\-Info $>$ \hyperlink{class_serial_port_acd94c96dd2608f90a9ead0ced2742d17}{list\-Ports} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_serial_port_acd94c96dd2608f90a9ead0ced2742d17}{Serial\-Port\-::list\-Ports} Obtains and return the list of available ports. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_serial_port_a708a04f46660c9803112fda4f60defe1}{read\-Port} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_serial_port_a708a04f46660c9803112fda4f60defe1}{Serial\-Port\-::read\-Port} Reads the available data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\-Serial\-Port\-Info $\ast$ \hyperlink{class_serial_port_aead0028dd7ba1073c5a0cf6f1775106b}{ports}
+\item 
+Q\-Serial\-Port $\ast$ \hyperlink{class_serial_port_abf454cb55d0053b354080a0dd6a43800}{active\-Port}
+\item 
+bool \hyperlink{class_serial_port_ab4a0ae7dd5d94991088247289935424d}{is\-Open}
+\item 
+Q\-Byte\-Array \hyperlink{class_serial_port_af5ff5c504f070840bd28ee371f353f05}{buffer}
+\item 
+Q\-Meta\-Object\-::\-Connection \hyperlink{class_serial_port_a63896cd014af7968402b8e7f051f24b3}{read\-Connect}
+\item 
+const Q\-Serial\-Port\-::\-Open\-Mode \hyperlink{class_serial_port_a92c94e506ac3ae86ea1e787c0d7b138f}{M\-O\-D\-E} =Q\-Serial\-Port\-::\-Read\-Only
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const Q\-Serial\-Port\-::\-Baud\-Rate \hyperlink{class_serial_port_af5e3812b185f5f72c3ac1c298497694b}{B\-A\-U\-D\-R\-A\-T\-E} =Q\-Serial\-Port\-::\-Baud4800
+\item 
+static const Q\-Serial\-Port\-::\-Data\-Bits \hyperlink{class_serial_port_a74455f210ee1c4704daf3347b7d2b088}{D\-A\-T\-A\-B\-I\-T\-S} =Q\-Serial\-Port\-::\-Data8
+\item 
+static const Q\-Serial\-Port\-::\-Stop\-Bits \hyperlink{class_serial_port_a52f45df73cda27a0c096ddbfa53ff025}{S\-T\-O\-P\-B\-I\-T\-S} =Q\-Serial\-Port\-::\-One\-Stop
+\item 
+static const Q\-Serial\-Port\-::\-Parity \hyperlink{class_serial_port_afb8f52adfc0898451eb78eb5961b125c}{P\-A\-R\-I\-T\-Y} =Q\-Serial\-Port\-::\-No\-Parity
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class to manage the communication with a serial port. 
+
+R\-S 22-\/812 sends 9bytes long packets with the codified information. This class is meant to read those packets and send it to the \hyperlink{class_r_s22812}{R\-S22812} class to store and interpret. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_serial_port_ae68e4a28e607b4acbab2c2a894cb3e2b}{\index{Serial\-Port@{Serial\-Port}!Serial\-Port@{Serial\-Port}}
+\index{Serial\-Port@{Serial\-Port}!SerialPort@{Serial\-Port}}
+\subsubsection[{Serial\-Port}]{\setlength{\rightskip}{0pt plus 5cm}Serial\-Port\-::\-Serial\-Port (
+\begin{DoxyParamCaption}
+\item[{Q\-Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{class_serial_port_ae68e4a28e607b4acbab2c2a894cb3e2b}
+
+
+\hyperlink{class_serial_port_ae68e4a28e607b4acbab2c2a894cb3e2b}{Serial\-Port\-::\-Serial\-Port} Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_serial_port_a8e09f366ed9b26b0456b66ae7bd8c702}{\index{Serial\-Port@{Serial\-Port}!$\sim$\-Serial\-Port@{$\sim$\-Serial\-Port}}
+\index{$\sim$\-Serial\-Port@{$\sim$\-Serial\-Port}!SerialPort@{Serial\-Port}}
+\subsubsection[{$\sim$\-Serial\-Port}]{\setlength{\rightskip}{0pt plus 5cm}Serial\-Port\-::$\sim$\-Serial\-Port (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_serial_port_a8e09f366ed9b26b0456b66ae7bd8c702}
+
+
+\hyperlink{class_serial_port_a8e09f366ed9b26b0456b66ae7bd8c702}{Serial\-Port\-::$\sim$\-Serial\-Port}. 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{class_serial_port_a8e09f366ed9b26b0456b66ae7bd8c702_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_serial_port_a71c52f501f57ab491d0dc83cbc5e6a14}{\index{Serial\-Port@{Serial\-Port}!close\-Port@{close\-Port}}
+\index{close\-Port@{close\-Port}!SerialPort@{Serial\-Port}}
+\subsubsection[{close\-Port}]{\setlength{\rightskip}{0pt plus 5cm}bool Serial\-Port\-::close\-Port (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_serial_port_a71c52f501f57ab491d0dc83cbc5e6a14}
+
+
+\hyperlink{class_serial_port_a71c52f501f57ab491d0dc83cbc5e6a14}{Serial\-Port\-::close\-Port}. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial_port_a71c52f501f57ab491d0dc83cbc5e6a14_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_serial_port_acd94c96dd2608f90a9ead0ced2742d17}{\index{Serial\-Port@{Serial\-Port}!list\-Ports@{list\-Ports}}
+\index{list\-Ports@{list\-Ports}!SerialPort@{Serial\-Port}}
+\subsubsection[{list\-Ports}]{\setlength{\rightskip}{0pt plus 5cm}Q\-List$<$ Q\-Serial\-Port\-Info $>$ Serial\-Port\-::list\-Ports (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_serial_port_acd94c96dd2608f90a9ead0ced2742d17}
+
+
+\hyperlink{class_serial_port_acd94c96dd2608f90a9ead0ced2742d17}{Serial\-Port\-::list\-Ports} Obtains and return the list of available ports. 
+
+\begin{DoxyReturn}{Returns}
+Q\-List$<$\-Q\-Serial\-Port\-Info$>$ 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial_port_acd94c96dd2608f90a9ead0ced2742d17_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_serial_port_a746e1ff02d45d8bf6b94e8bcbde6bb0d}{\index{Serial\-Port@{Serial\-Port}!open\-Port@{open\-Port}}
+\index{open\-Port@{open\-Port}!SerialPort@{Serial\-Port}}
+\subsubsection[{open\-Port}]{\setlength{\rightskip}{0pt plus 5cm}bool Serial\-Port\-::open\-Port (
+\begin{DoxyParamCaption}
+\item[{const Q\-String}]{port\-Name}
+\end{DoxyParamCaption}
+)}}\label{class_serial_port_a746e1ff02d45d8bf6b94e8bcbde6bb0d}
+
+
+\hyperlink{class_serial_port_a746e1ff02d45d8bf6b94e8bcbde6bb0d}{Serial\-Port\-::open\-Port} Opens a serial port for reading. If port name is empty, it does nothing. If port name is not available. Does nothing and raises a warning. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port\-Name} & Name of the port as returned from Q\-Serial\-Port\-Info. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If sucessful, returns 1. Else it returns 0; 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial_port_a746e1ff02d45d8bf6b94e8bcbde6bb0d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial_port_a746e1ff02d45d8bf6b94e8bcbde6bb0d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_serial_port_a708a04f46660c9803112fda4f60defe1}{\index{Serial\-Port@{Serial\-Port}!read\-Port@{read\-Port}}
+\index{read\-Port@{read\-Port}!SerialPort@{Serial\-Port}}
+\subsubsection[{read\-Port}]{\setlength{\rightskip}{0pt plus 5cm}void Serial\-Port\-::read\-Port (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_serial_port_a708a04f46660c9803112fda4f60defe1}
+
+
+\hyperlink{class_serial_port_a708a04f46660c9803112fda4f60defe1}{Serial\-Port\-::read\-Port} Reads the available data. 
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial_port_a708a04f46660c9803112fda4f60defe1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_serial_port_a76a7bb63e3f581ccb55a5951bf97a4e3}{\index{Serial\-Port@{Serial\-Port}!ready@{ready}}
+\index{ready@{ready}!SerialPort@{Serial\-Port}}
+\subsubsection[{ready}]{\setlength{\rightskip}{0pt plus 5cm}void Serial\-Port\-::ready (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{class_serial_port_a76a7bb63e3f581ccb55a5951bf97a4e3}
+
+
+\hyperlink{class_serial_port_a76a7bb63e3f581ccb55a5951bf97a4e3}{Serial\-Port\-::ready} Re-\/emits the ready\-Read signal. 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{class_serial_port_a76a7bb63e3f581ccb55a5951bf97a4e3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial_port_a76a7bb63e3f581ccb55a5951bf97a4e3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_serial_port_a3ec0fe7fd001c56fb95e010da11817c0}{\index{Serial\-Port@{Serial\-Port}!ready\-Read@{ready\-Read}}
+\index{ready\-Read@{ready\-Read}!SerialPort@{Serial\-Port}}
+\subsubsection[{ready\-Read}]{\setlength{\rightskip}{0pt plus 5cm}void Serial\-Port\-::ready\-Read (
+\begin{DoxyParamCaption}
+\item[{Q\-Byte\-Array}]{buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}}\label{class_serial_port_a3ec0fe7fd001c56fb95e010da11817c0}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial_port_a3ec0fe7fd001c56fb95e010da11817c0_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_serial_port_abf454cb55d0053b354080a0dd6a43800}{\index{Serial\-Port@{Serial\-Port}!active\-Port@{active\-Port}}
+\index{active\-Port@{active\-Port}!SerialPort@{Serial\-Port}}
+\subsubsection[{active\-Port}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Serial\-Port$\ast$ Serial\-Port\-::active\-Port\hspace{0.3cm}{\ttfamily [private]}}}\label{class_serial_port_abf454cb55d0053b354080a0dd6a43800}
+\hypertarget{class_serial_port_af5e3812b185f5f72c3ac1c298497694b}{\index{Serial\-Port@{Serial\-Port}!B\-A\-U\-D\-R\-A\-T\-E@{B\-A\-U\-D\-R\-A\-T\-E}}
+\index{B\-A\-U\-D\-R\-A\-T\-E@{B\-A\-U\-D\-R\-A\-T\-E}!SerialPort@{Serial\-Port}}
+\subsubsection[{B\-A\-U\-D\-R\-A\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}const Q\-Serial\-Port\-::\-Baud\-Rate Serial\-Port\-::\-B\-A\-U\-D\-R\-A\-T\-E =Q\-Serial\-Port\-::\-Baud4800\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_serial_port_af5e3812b185f5f72c3ac1c298497694b}
+\hypertarget{class_serial_port_af5ff5c504f070840bd28ee371f353f05}{\index{Serial\-Port@{Serial\-Port}!buffer@{buffer}}
+\index{buffer@{buffer}!SerialPort@{Serial\-Port}}
+\subsubsection[{buffer}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Byte\-Array Serial\-Port\-::buffer\hspace{0.3cm}{\ttfamily [private]}}}\label{class_serial_port_af5ff5c504f070840bd28ee371f353f05}
+\hypertarget{class_serial_port_a74455f210ee1c4704daf3347b7d2b088}{\index{Serial\-Port@{Serial\-Port}!D\-A\-T\-A\-B\-I\-T\-S@{D\-A\-T\-A\-B\-I\-T\-S}}
+\index{D\-A\-T\-A\-B\-I\-T\-S@{D\-A\-T\-A\-B\-I\-T\-S}!SerialPort@{Serial\-Port}}
+\subsubsection[{D\-A\-T\-A\-B\-I\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}const Q\-Serial\-Port\-::\-Data\-Bits Serial\-Port\-::\-D\-A\-T\-A\-B\-I\-T\-S =Q\-Serial\-Port\-::\-Data8\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_serial_port_a74455f210ee1c4704daf3347b7d2b088}
+\hypertarget{class_serial_port_ab4a0ae7dd5d94991088247289935424d}{\index{Serial\-Port@{Serial\-Port}!is\-Open@{is\-Open}}
+\index{is\-Open@{is\-Open}!SerialPort@{Serial\-Port}}
+\subsubsection[{is\-Open}]{\setlength{\rightskip}{0pt plus 5cm}bool Serial\-Port\-::is\-Open\hspace{0.3cm}{\ttfamily [private]}}}\label{class_serial_port_ab4a0ae7dd5d94991088247289935424d}
+\hypertarget{class_serial_port_a92c94e506ac3ae86ea1e787c0d7b138f}{\index{Serial\-Port@{Serial\-Port}!M\-O\-D\-E@{M\-O\-D\-E}}
+\index{M\-O\-D\-E@{M\-O\-D\-E}!SerialPort@{Serial\-Port}}
+\subsubsection[{M\-O\-D\-E}]{\setlength{\rightskip}{0pt plus 5cm}const Q\-Serial\-Port\-::\-Open\-Mode Serial\-Port\-::\-M\-O\-D\-E =Q\-Serial\-Port\-::\-Read\-Only\hspace{0.3cm}{\ttfamily [private]}}}\label{class_serial_port_a92c94e506ac3ae86ea1e787c0d7b138f}
+\hypertarget{class_serial_port_afb8f52adfc0898451eb78eb5961b125c}{\index{Serial\-Port@{Serial\-Port}!P\-A\-R\-I\-T\-Y@{P\-A\-R\-I\-T\-Y}}
+\index{P\-A\-R\-I\-T\-Y@{P\-A\-R\-I\-T\-Y}!SerialPort@{Serial\-Port}}
+\subsubsection[{P\-A\-R\-I\-T\-Y}]{\setlength{\rightskip}{0pt plus 5cm}const Q\-Serial\-Port\-::\-Parity Serial\-Port\-::\-P\-A\-R\-I\-T\-Y =Q\-Serial\-Port\-::\-No\-Parity\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_serial_port_afb8f52adfc0898451eb78eb5961b125c}
+\hypertarget{class_serial_port_aead0028dd7ba1073c5a0cf6f1775106b}{\index{Serial\-Port@{Serial\-Port}!ports@{ports}}
+\index{ports@{ports}!SerialPort@{Serial\-Port}}
+\subsubsection[{ports}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Serial\-Port\-Info$\ast$ Serial\-Port\-::ports\hspace{0.3cm}{\ttfamily [private]}}}\label{class_serial_port_aead0028dd7ba1073c5a0cf6f1775106b}
+\hypertarget{class_serial_port_a63896cd014af7968402b8e7f051f24b3}{\index{Serial\-Port@{Serial\-Port}!read\-Connect@{read\-Connect}}
+\index{read\-Connect@{read\-Connect}!SerialPort@{Serial\-Port}}
+\subsubsection[{read\-Connect}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Meta\-Object\-::\-Connection Serial\-Port\-::read\-Connect\hspace{0.3cm}{\ttfamily [private]}}}\label{class_serial_port_a63896cd014af7968402b8e7f051f24b3}
+\hypertarget{class_serial_port_a52f45df73cda27a0c096ddbfa53ff025}{\index{Serial\-Port@{Serial\-Port}!S\-T\-O\-P\-B\-I\-T\-S@{S\-T\-O\-P\-B\-I\-T\-S}}
+\index{S\-T\-O\-P\-B\-I\-T\-S@{S\-T\-O\-P\-B\-I\-T\-S}!SerialPort@{Serial\-Port}}
+\subsubsection[{S\-T\-O\-P\-B\-I\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}const Q\-Serial\-Port\-::\-Stop\-Bits Serial\-Port\-::\-S\-T\-O\-P\-B\-I\-T\-S =Q\-Serial\-Port\-::\-One\-Stop\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_serial_port_a52f45df73cda27a0c096ddbfa53ff025}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{serialport_8h}{serialport.\-h}\item 
+build-\/multimeter\-G\-U\-I-\/\-Desktop-\/\-Debug/\hyperlink{moc__serialport_8cpp}{moc\-\_\-serialport.\-cpp}\item 
+\hyperlink{serialport_8cpp}{serialport.\-cpp}\end{DoxyCompactItemize}

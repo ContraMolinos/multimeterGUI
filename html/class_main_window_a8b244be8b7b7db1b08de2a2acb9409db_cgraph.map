@@ -1,0 +1,15 @@
+<map id="MainWindow::MainWindow" name="MainWindow::MainWindow">
+<area shape="rect" id="node2" href="$class_ui___main_window.html#acf4a0872c4c77d8f43a2ec66ed849b58" title="Ui_MainWindow::setupUi" alt="" coords="240,5,411,32"/>
+<area shape="rect" id="node4" href="$class_serial_port.html#acd94c96dd2608f90a9ead0ced2742d17" title="SerialPort::listPorts Obtains and return the list of available ports. " alt="" coords="257,56,393,83"/>
+<area shape="rect" id="node5" href="$classplot_graph.html#a860f6e766de63d3a7a251f528dcc4be7" title="plotGraph::setXaxis. Sets the maximum and minimum values of the x axis. " alt="" coords="490,107,630,133"/>
+<area shape="rect" id="node6" href="$classplot_graph.html#a0e2e3589bfc5cc726e367bf8bdc8a2f5" title="plotGraph::setYaxis " alt="" coords="490,348,630,375"/>
+<area shape="rect" id="node7" href="$classplot_graph.html#ab78b439ee76e1f4df9a9e26ebcd3bc29" title="plotGraph::setXsticks " alt="" coords="251,208,400,235"/>
+<area shape="rect" id="node8" href="$classplot_graph.html#af5944ac87c177035eeeaf61d64b1a139" title="plotGraph::setYsticks" alt="" coords="251,259,400,285"/>
+<area shape="rect" id="node9" href="$classplot_graph.html#a8eb89c53d633e0a9574f1670c9c0d644" title="plotGraph::linkData" alt="" coords="257,309,394,336"/>
+<area shape="rect" id="node10" href="$classplot_graph.html#a09a7563bcd8a387e1d9bf3f534ecd990" title="plotGraph::setUnit" alt="" coords="496,424,624,451"/>
+<area shape="rect" id="node11" href="$class_r_s22812.html#a72884c3f25b59129ac21dca9f68a664f" title="RS22812::getMode. " alt="" coords="491,493,629,520"/>
+<area shape="rect" id="node12" href="$class_main_window.html#a7208eaab614587a945fee7216034aa71" title="MainWindow::addData. Add new data to the data set. This method will be called when new data has been ..." alt="" coords="245,157,406,184"/>
+<area shape="rect" id="node14" href="$class_main_window.html#ac9a5649007c5a18e7aa123634866e3a7" title="MainWindow::resetData. Resets the data stored in memory. This method is called when the multimeter&#39;s ..." alt="" coords="242,461,409,488"/>
+<area shape="rect" id="node3" href="$class_ui___main_window.html#a097dd160c3534a204904cb374412c618" title="Ui_MainWindow::retranslateUi" alt="" coords="459,5,661,32"/>
+<area shape="rect" id="node13" href="$class_r_s22812.html#a80e53a20cbe5c9c670e8b8309d043475" title="RS22812::getVal Returns the numeric value of the reading. " alt="" coords="499,157,621,184"/>
+</map>

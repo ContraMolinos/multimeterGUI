@@ -1,0 +1,4 @@
+<map id="plotGraph::setUnit" name="plotGraph::setUnit">
+<area shape="rect" id="node2" href="$class_main_window.html#a8b244be8b7b7db1b08de2a2acb9409db" title="MainWindow::MainWindow. Constructor. " alt="" coords="396,5,583,32"/>
+<area shape="rect" id="node3" href="$class_main_window.html#ac9a5649007c5a18e7aa123634866e3a7" title="MainWindow::resetData. Resets the data stored in memory. This method is called when the multimeter&#39;s ..." alt="" coords="181,31,348,57"/>
+</map>
