@@ -1,4 +1,5 @@
-/*! Multimeter GUI
+/*! \mainpage
+ * Multimeter GUI
  * GUI for the RS-232 mode of the Radio Shack 22-812.
    Copyright (C) 2016  FJ Salguero
 

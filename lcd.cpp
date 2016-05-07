@@ -19,6 +19,10 @@
 
 #include<QDebug>
 
+/*! \brief LCD::LCD. Constructor
+ * \param data
+ * \param parent
+ */
 LCD::LCD(const RS22812 *data, QWidget *parent):QLabel(parent), data(data)
 {
     if(parent!=NULL)
@@ -36,6 +40,11 @@ LCD::LCD(const RS22812 *data, QWidget *parent):QLabel(parent), data(data)
     }
 }
 
+/*!
+ * \brief LCD::paintEvent. Paint event handler.
+ * \param event
+ * It redraws the LCD widget every time there is an update.
+ */
 void LCD::paintEvent(QPaintEvent *event)
 {
     QPainter painter(this);

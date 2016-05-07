@@ -75,16 +75,31 @@ float RS22812::getVal() const
     return val;
 }
 
+/*!
+ * \brief RS22812::getFlags
+ * Gets the current flags structure.
+ * \return
+ */
 Flags RS22812::getFlags() const
 {
     return flags;
 }
 
+/*!
+ * \brief RS22812::getDigitString
+ * It returns the multimeter reading in string format.
+ * \return
+ */
 QString RS22812::getDigitString() const
 {
     return digits;
 }
 
+/*!
+ * \brief RS22812::getMode
+ * \return
+ * It returns the mode on which the multimeter is working.
+ */
 uint RS22812::getMode() const
 {
     return mode;
@@ -192,7 +207,7 @@ QString RS22812::byte2Digit(uchar byte)
 
 /*!
  * \brief RS22812::resetFlags
- * Set all the flags to false.
+ * Sets all the flags to false.
  */
 void RS22812::resetFlags(Flags &f)
 {

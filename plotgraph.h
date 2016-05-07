@@ -1,19 +1,4 @@
-/*! Multimeter GUI
- * GUI for the RS-232 mode of the Radio Shack 22-812.
-   Copyright (C) 2016  FJ Salguero
-
-   This program is free software: you can redistribute it and/or modify
-   it under the terms of the GNU General Public License as published by
-   the Free Software Foundation, either version 3 of the License, or
-   (at your option) any later version.
-
-   This program is distributed in the hope that it will be useful,
-   but WITHOUT ANY WARRANTY; without even the implied warranty of
-   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-   GNU General Public License for more details.
-
-   You should have received a copy of the GNU General Public License
-   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+/*! \file plotgraph.h
 */
 
 #ifndef PLOTGRAPH_H
@@ -26,7 +11,11 @@
 #include <QVector>
 #include <algorithm>
 #include <QGraphicsScene>
-
+/*! \class plotGraph
+ * \brief The plotGraph class.
+ *
+ * This class graphs the values read from the multimeter versus the time.
+ */
 class plotGraph : public QGraphicsItem
 {
     Q_GADGET

@@ -1,32 +1,18 @@
-/*! Multimeter GUI
- * GUI for the RS-232 mode of the Radio Shack 22-812.
-   Copyright (C) 2016  FJ Salguero
-
-   This program is free software: you can redistribute it and/or modify
-   it under the terms of the GNU General Public License as published by
-   the Free Software Foundation, either version 3 of the License, or
-   (at your option) any later version.
-
-   This program is distributed in the hope that it will be useful,
-   but WITHOUT ANY WARRANTY; without even the implied warranty of
-   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-   GNU General Public License for more details.
-
-   You should have received a copy of the GNU General Public License
-   along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*/
-
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
 #include <QDebug>
 
+/*!
+ * \brief MainWindow::MainWindow. Constructor
+ * \param parent
+ * The main window constructor will, in addition to create the corresponding subwidgets, populate the list of available ports and connect signals with slots.
+ */
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    //ui->lcdDisplay->setStyleSheet("QLabel {background-color:white;}");
 
     //Looks for available ports and populate the combo box
     ui->comboBoxPort->addItem("");  //Empty item to be the default at the beginning.
@@ -51,11 +37,8 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->graphPlot->setScene(scene);
     scene->addItem(graph);
-    /*
-    scene->setSceneRect(bound);
-    qDebug()<<bound;*/
 
-    //Temporary. It has to be set automatically.
+    /// \todo: Temporary. It has to be set automatically.
     graph->setXaxis(0,counter);
     graph->setYaxis(minData,maxData);
     graph->setXsticks(10);
@@ -71,6 +54,9 @@ MainWindow::MainWindow(QWidget *parent) :
     timeMark=new QElapsedTimer;
 }
 
+/*!
+ * \brief MainWindow::~MainWindow
+ */
 MainWindow::~MainWindow()
 {
     delete portPtr;
@@ -81,16 +67,25 @@ MainWindow::~MainWindow()
     delete timeMark;
 }
 
+/*!
+ * \brief MainWindow::on_connectButton_clicked. Open the selected port.
+ */
 void MainWindow::on_connectButton_clicked()
 {
     portPtr->openPort(ui->comboBoxPort->currentText());
 }
 
+/*!
+ * \brief MainWindow::on_disconnectButton_clicked. Disconnect from the current port.
+ */
 void MainWindow::on_disconnectButton_clicked()
 {
     portPtr->closePort();
 }
-
+/*!
+ * \brief MainWindow::addData. Add new data to the data set.
+ * This method will be called when new data has been read from the serial port, it will add the new value to the stored set of pairs (time,value) and update the graph.
+ */
 void MainWindow::addData()
 {
     if(!timeRunning)
@@ -107,11 +102,8 @@ void MainWindow::addData()
         return;
     }
 
-    //counter++;
-    //storeData.append(QPair<qreal,qreal>(counter,val));
     qint64 time=timeMark->elapsed();
     storeData.append(QPair<qint64,qreal>(time,val));
-    //qDebug()<<timeMark->elapsed();
 
     //Update axis. This is temporary. User will be given more control.
     graph->setXaxis(0,time);
@@ -128,6 +120,10 @@ void MainWindow::addData()
     ui->graphPlot->viewport()->update();
 }
 
+/*!
+ * \brief MainWindow::resetData. Resets the data stored in memory.
+ * This method is called when the multimeter's mode changes, clearing all the data stored in memory.
+ */
 void MainWindow::resetData()
 {
     storeData.clear();

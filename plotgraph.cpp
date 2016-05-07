@@ -1,19 +1,4 @@
-/*! Multimeter GUI
- * GUI for the RS-232 mode of the Radio Shack 22-812.
-   Copyright (C) 2016  FJ Salguero
-
-   This program is free software: you can redistribute it and/or modify
-   it under the terms of the GNU General Public License as published by
-   the Free Software Foundation, either version 3 of the License, or
-   (at your option) any later version.
-
-   This program is distributed in the hope that it will be useful,
-   but WITHOUT ANY WARRANTY; without even the implied warranty of
-   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-   GNU General Public License for more details.
-
-   You should have received a copy of the GNU General Public License
-   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+/*! \file plotgraph.cpp
 */
 
 #include "plotgraph.h"
@@ -30,7 +15,7 @@ plotGraph::plotGraph(QGraphicsScene *scene)
 }
 
 /*!
- * \brief plotGraph::paint
+ * \brief plotGraph::paint. Override of the paint method of QGraphicsScene.
  * \param painter
  * \param option
  * \param widget
@@ -45,12 +30,21 @@ void plotGraph::paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
     //qDebug()<<widget->accessibleName()<<widget->winId()<<widget->rect();
 }
 
-//So far, it returns a fake value. Need to implement.
+/*!
+ * \brief plotGraph::boundingRect. Returns the bounding rectangle of the graph.
+ * \return
+ * So far, it returns a fake value. Need to implement.
+ */
 QRectF plotGraph::boundingRect() const
 {
     return QRectF(0,0,100,100);
 }
 
+/*!
+ * \brief plotGraph::setXaxis. Sets the maximum and minimum values of the x axis.
+ * \param minVal
+ * \param maxVal
+ */
 void plotGraph::setXaxis(qint64 minVal, qint64 maxVal)
 {
     qint64 diff=maxVal-minVal;
@@ -66,6 +60,12 @@ void plotGraph::setXaxis(qint64 minVal, qint64 maxVal)
     }
 }
 
+/*!
+ * \brief plotGraph::setYaxis
+ * \brief Sets the maximum and minimum values of the y axis.
+ * \param minVal
+ * \param maxVal
+ */
 void plotGraph::setYaxis(qreal minVal, qreal maxVal)
 {
     qreal diff=maxVal-minVal;
@@ -81,6 +81,10 @@ void plotGraph::setYaxis(qreal minVal, qreal maxVal)
     }
 }
 
+/*!
+ * \brief plotGraph::setXsticks
+ * \param nSticks
+ */
 void plotGraph::setXsticks(int nSticks)
 {
     nx=nSticks;

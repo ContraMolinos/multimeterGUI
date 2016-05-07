@@ -1,76 +1,11 @@
-/*! Multimeter GUI
- * GUI for the RS-232 mode of the Radio Shack 22-812.
-   Copyright (C) 2016  FJ Salguero
-
-   This program is free software: you can redistribute it and/or modify
-   it under the terms of the GNU General Public License as published by
-   the Free Software Foundation, either version 3 of the License, or
-   (at your option) any later version.
-
-   This program is distributed in the hope that it will be useful,
-   but WITHOUT ANY WARRANTY; without even the implied warranty of
-   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-   GNU General Public License for more details.
-
-   You should have received a copy of the GNU General Public License
-   along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*/
-
-/*!
-  RS22812
-  Decoding of the data sent by the Radio Shack 22-812.
-  Part of the information was obtained from http://sigrok.org/wiki/RadioShack_22-812
-  and https://code.google.com/archive/p/rs22812/
-
-  RS 22-812 sends 9bytes packets. Each packect is a mapping of the LCD of the screen
-  plus some extra information.
-                                       Bit
-    Byte    7       6       5       4       3       2       1       0
-    0       ---------------------- Mode -----------------------------
-    1       Hz      Ohms    K       M       F       A       V       m
-    2       u       n       dBm     s       %       hFE     REL     MIN
-    3       4D      4C      4G      4B      DP3     4E      4F      4A
-    4       3D      3C      3G      3B      DP2     3E      3F      3A
-    5       2D      2C      2G      2B      DP1     2E      2F      2A
-    6       1D      1C      1G      1B      MAX     1E      1F      1A
-    7       Beep    Diode   Bat     Hold    -       ~       RS232   Auto
-    8       -------------------- Checksum ---------------------------
-
-    The LED mapping is:
-    |--A--|
-    |     |
-    F     B
-    |     |
-    |--G--|
-    |     |
-    E     C
-    |     |
-    |--D--|
-
-    So, the equivalence between int value and digit are:
-    215 : "0", 80 : "1", 181 : "2", 241 : "3", 114 : "4",
-    227 : "5", 231 : "6", 81 : "7", 247 : "8", 243 : "9", 39 : "F",
-    55 : "P", 167 : "E", 135 : "C", 134 : "L", 118 : "H", 6 : "I",
-    102 : "h", 36 : "r", 166 : "t", 100 : "n", 32 : "-", 0 : " "
-
-    And the possible modes are:
-    0=DC V       1=AC V    2=DC uA
-    3=DC mA      4=DC A    5=AC uA
-    6=AC mA      7=AC A    8=OHM
-    9=CAP        10=HZ     11=NET HZ
-    12=AMP HZ    13=DUTY   14=NET DUTY
-    15=AMP DUTY  16=WIDTH  17=NET WIDTH
-    18=AMP WIDTH 19=DIODE  20=CONT
-    21=HFE       22=LOGIC  23=DBM
-    24=EF        25=TEMP
-*/
-
 #ifndef RS22812_H
 #define RS22812_H
 
 #include <QObject>
 
-//Definition of custom data type.
+/*! \struct Flags
+ * \brief Definition of custom data type.
+*/
 
 struct Flags
 {
@@ -124,6 +59,54 @@ struct Flags
         return !(*this==f2);
     }
 };
+/*! \class  RS22812.
+  \brief Decoding of the data sent by the Radio Shack 22-812.
+
+  Part of the information was obtained from http://sigrok.org/wiki/RadioShack_22-812
+  and https://code.google.com/archive/p/rs22812/
+
+  RS 22-812 sends 9bytes packets. Each packect is a mapping of the LCD of the screen
+  plus some extra information.
+                                       Bit
+    Byte    7       6       5       4       3       2       1       0
+    0       ---------------------- Mode -----------------------------
+    1       Hz      Ohms    K       M       F       A       V       m
+    2       u       n       dBm     s       %       hFE     REL     MIN
+    3       4D      4C      4G      4B      DP3     4E      4F      4A
+    4       3D      3C      3G      3B      DP2     3E      3F      3A
+    5       2D      2C      2G      2B      DP1     2E      2F      2A
+    6       1D      1C      1G      1B      MAX     1E      1F      1A
+    7       Beep    Diode   Bat     Hold    -       ~       RS232   Auto
+    8       -------------------- Checksum ---------------------------
+
+    The LED mapping is:
+    |--A--|
+    |     |
+    F     B
+    |     |
+    |--G--|
+    |     |
+    E     C
+    |     |
+    |--D--|
+
+    So, the equivalence between int value and digit are:
+    215 : "0", 80 : "1", 181 : "2", 241 : "3", 114 : "4",
+    227 : "5", 231 : "6", 81 : "7", 247 : "8", 243 : "9", 39 : "F",
+    55 : "P", 167 : "E", 135 : "C", 134 : "L", 118 : "H", 6 : "I",
+    102 : "h", 36 : "r", 166 : "t", 100 : "n", 32 : "-", 0 : " "
+
+    And the possible modes are:
+    0=DC V       1=AC V    2=DC uA
+    3=DC mA      4=DC A    5=AC uA
+    6=AC mA      7=AC A    8=OHM
+    9=CAP        10=HZ     11=NET HZ
+    12=AMP HZ    13=DUTY   14=NET DUTY
+    15=AMP DUTY  16=WIDTH  17=NET WIDTH
+    18=AMP WIDTH 19=DIODE  20=CONT
+    21=HFE       22=LOGIC  23=DBM
+    24=EF        25=TEMP
+*/
 
 class RS22812 : public QObject
 {
