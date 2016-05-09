@@ -16,12 +16,15 @@
 #include <QtWidgets/QComboBox>
 #include <QtWidgets/QGraphicsView>
 #include <QtWidgets/QGridLayout>
+#include <QtWidgets/QGroupBox>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QRadioButton>
+#include <QtWidgets/QScrollBar>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QToolBar>
 #include <QtWidgets/QVBoxLayout>
@@ -42,16 +45,30 @@ public:
     QLabel *labelPort;
     QComboBox *comboBoxPort;
     QGraphicsView *graphPlot;
+    QGroupBox *auxGroupBox;
+    QWidget *layoutWidget;
+    QVBoxLayout *verticalLayout_3;
+    QRadioButton *radioAutoRescaling;
+    QRadioButton *radioNoRescaling;
+    QRadioButton *radioFixed;
+    QScrollBar *xAxisScrollBar;
+    QLabel *xSliderValue;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
     QToolBar *toolBar;
+    QButtonGroup *buttonGroup;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
         MainWindow->resize(747, 430);
+        QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Preferred);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(MainWindow->sizePolicy().hasHeightForWidth());
+        MainWindow->setSizePolicy(sizePolicy);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         gridLayout = new QGridLayout(centralWidget);
@@ -113,9 +130,56 @@ public:
 
         gridLayout->addWidget(graphPlot, 1, 0, 1, 1);
 
-        gridLayout->setColumnMinimumWidth(0, 400);
-        gridLayout->setRowMinimumHeight(0, 80);
-        gridLayout->setRowMinimumHeight(1, 200);
+        auxGroupBox = new QGroupBox(centralWidget);
+        auxGroupBox->setObjectName(QStringLiteral("auxGroupBox"));
+        auxGroupBox->setEnabled(true);
+        layoutWidget = new QWidget(auxGroupBox);
+        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
+        layoutWidget->setGeometry(QRect(0, 20, 121, 83));
+        verticalLayout_3 = new QVBoxLayout(layoutWidget);
+        verticalLayout_3->setSpacing(6);
+        verticalLayout_3->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_3->setObjectName(QStringLiteral("verticalLayout_3"));
+        verticalLayout_3->setContentsMargins(0, 0, 0, 0);
+        radioAutoRescaling = new QRadioButton(layoutWidget);
+        buttonGroup = new QButtonGroup(MainWindow);
+        buttonGroup->setObjectName(QStringLiteral("buttonGroup"));
+        buttonGroup->addButton(radioAutoRescaling);
+        radioAutoRescaling->setObjectName(QStringLiteral("radioAutoRescaling"));
+        radioAutoRescaling->setChecked(true);
+
+        verticalLayout_3->addWidget(radioAutoRescaling);
+
+        radioNoRescaling = new QRadioButton(layoutWidget);
+        buttonGroup->addButton(radioNoRescaling);
+        radioNoRescaling->setObjectName(QStringLiteral("radioNoRescaling"));
+
+        verticalLayout_3->addWidget(radioNoRescaling);
+
+        radioFixed = new QRadioButton(layoutWidget);
+        buttonGroup->addButton(radioFixed);
+        radioFixed->setObjectName(QStringLiteral("radioFixed"));
+
+        verticalLayout_3->addWidget(radioFixed);
+
+        xAxisScrollBar = new QScrollBar(auxGroupBox);
+        xAxisScrollBar->setObjectName(QStringLiteral("xAxisScrollBar"));
+        xAxisScrollBar->setGeometry(QRect(10, 250, 160, 16));
+        xAxisScrollBar->setOrientation(Qt::Horizontal);
+        xSliderValue = new QLabel(auxGroupBox);
+        xSliderValue->setObjectName(QStringLiteral("xSliderValue"));
+        xSliderValue->setGeometry(QRect(90, 230, 31, 17));
+        QSizePolicy sizePolicy1(QSizePolicy::Fixed, QSizePolicy::Preferred);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(xSliderValue->sizePolicy().hasHeightForWidth());
+        xSliderValue->setSizePolicy(sizePolicy1);
+        xSliderValue->setFrameShape(QFrame::NoFrame);
+        xSliderValue->setFrameShadow(QFrame::Plain);
+        xSliderValue->setLineWidth(2);
+
+        gridLayout->addWidget(auxGroupBox, 1, 1, 1, 1);
+
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -142,6 +206,11 @@ public:
         connectButton->setText(QApplication::translate("MainWindow", "Connect", 0));
         disconnectButton->setText(QApplication::translate("MainWindow", "Disconnect", 0));
         labelPort->setText(QApplication::translate("MainWindow", "Select Port", 0));
+        auxGroupBox->setTitle(QString());
+        radioAutoRescaling->setText(QApplication::translate("MainWindow", "Auto resca&ling", 0));
+        radioNoRescaling->setText(QApplication::translate("MainWindow", "Percentage &view", 0));
+        radioFixed->setText(QApplication::translate("MainWindow", "Set origin", 0));
+        xSliderValue->setText(QApplication::translate("MainWindow", "0", 0));
         toolBar->setWindowTitle(QApplication::translate("MainWindow", "toolBar", 0));
     } // retranslateUi
 

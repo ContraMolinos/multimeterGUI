@@ -8,6 +8,7 @@
 #include <QPainter>
 #include <QWidget>
 #include <QPair>
+#include <QList>
 #include <QVector>
 #include <algorithm>
 #include <QGraphicsScene>
@@ -37,28 +38,31 @@ public:
     void setXaxis(qint64 minVal,qint64 maxVal);
     void setYaxis(qreal minVal,qreal maxVal);
     /*!
-     * \brief plotGraph::setXsticks.
-     *
-     * Sets the number of sticks in the x axis.
+     * \brief Sets the number of sticks in the x axis.
      * \param nSticks
      */
     void setXsticks(int nSticks) {nx=nSticks;}
-
     /*!
-     * \brief plotGraph::setYsticks.
-     *
-     * Sets the number of sticks in the y axis.
+     * \brief Sets the number of sticks in the y axis.
      * \param nSticks
      */
     void setYsticks(int nSticks) {ny=nSticks;}
+    /*!
+     * \brief Getter for x axis minimum value.
+     * \return
+     */
+    qreal getXMin() {return xmin;}
+    /*!
+     * \brief Getter for x axis maximum value.
+     * \return
+     */
+    qreal getXMax() {return xmax;}
 
     /*!
-     * \brief plotGraph::linkData.
-     *
-     * Links the data being plotted with the data vector that is being acquired from the port.
+     * \brief Links the data being plotted with the data list that is being acquired from the port.
      * \param dat
      */
-    void linkData(const QVector<QPair<qint64, qreal> > *dat) {data=dat;}
+    void linkData(const QList<QPair<qint64, qreal> > *dat) {data=dat;}
     void setUnit(int U);
     void setScene(QGraphicsScene *scene);
 
@@ -78,7 +82,7 @@ private:
     qreal ymax=1;
     int nx=2;
     int ny=2;
-    const QVector<QPair<qint64,qreal> > *data=NULL;
+    const QList<QPair<qint64,qreal> > *data=NULL;
 
     QString unit;
     QGraphicsScene *scene;

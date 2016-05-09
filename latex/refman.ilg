@@ -4,8 +4,8 @@ Scanning input file refman.idx....
    -- Extra `!' at position 35 of first argument.
 !! Input index error (file = refman.idx, line = 4):
    -- Extra `!' at position 24 of first argument.
-done (377 entries accepted, 2 rejected).
-Sorting entries......done (3515 comparisons).
-Generating output file refman.ind....done (708 lines written, 0 warnings).
+done (352 entries accepted, 2 rejected).
+Sorting entries......done (3459 comparisons).
+Generating output file refman.ind....done (656 lines written, 0 warnings).
 Output written in refman.ind.
 Transcript written in refman.ilg.

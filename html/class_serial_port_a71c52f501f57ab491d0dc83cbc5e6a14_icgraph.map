@@ -1,6 +1,6 @@
 <map id="SerialPort::closePort" name="SerialPort::closePort">
-<area shape="rect" id="node2" href="$class_main_window.html#ab9336d803a096e94955e032ecf9d0e8b" title="MainWindow::on_disconnectButton_clicked. Disconnect from the current port. " alt="" coords="200,5,395,47"/>
-<area shape="rect" id="node3" href="$class_serial_port.html#a8e09f366ed9b26b0456b66ae7bd8c702" title="SerialPort::~SerialPort. " alt="" coords="219,71,375,98"/>
-<area shape="rect" id="node4" href="$class_serial_port.html#a746e1ff02d45d8bf6b94e8bcbde6bb0d" title="SerialPort::openPort Opens a serial port for reading. If port name is empty, it does nothing..." alt="" coords="226,122,369,149"/>
-<area shape="rect" id="node5" href="$class_main_window.html#a55cd52e7b00aff669290588f8affea5a" title="MainWindow::on_connectButton_clicked. Open the selected port. " alt="" coords="443,115,657,156"/>
+<area shape="rect" id="node2" href="$class_main_window.xhtml#ab9336d803a096e94955e032ecf9d0e8b" title="Disconnect from the current port. " alt="" coords="200,5,395,47"/>
+<area shape="rect" id="node3" href="$class_serial_port.xhtml#a8e09f366ed9b26b0456b66ae7bd8c702" title="Destructor. " alt="" coords="219,71,375,98"/>
+<area shape="rect" id="node4" href="$class_serial_port.xhtml#a746e1ff02d45d8bf6b94e8bcbde6bb0d" title="Opens a serial port for reading. If port name is empty, it does nothing. If port name is not availabl..." alt="" coords="226,122,369,149"/>
+<area shape="rect" id="node5" href="$class_main_window.xhtml#a55cd52e7b00aff669290588f8affea5a" title="Opens the selected port. " alt="" coords="443,115,657,156"/>
 </map>

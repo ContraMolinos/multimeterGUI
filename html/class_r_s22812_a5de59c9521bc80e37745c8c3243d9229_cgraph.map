@@ -1,5 +1,5 @@
 <map id="RS22812::newValue" name="RS22812::newValue">
-<area shape="rect" id="node2" href="$class_r_s22812.html#a64f4658259e355d64dcaaa92eac65e93" title="RS22812::resetFlags Sets all the flags to false. " alt="" coords="210,5,357,32"/>
-<area shape="rect" id="node3" href="$class_r_s22812.html#aee6ba6536ad3d47239501d812d5db994" title="RS22812::byte2Digit Translates the RS 22&#45;812 byte value of the LCD mapping into a digit..." alt="" coords="212,56,355,83"/>
-<area shape="rect" id="node4" href="$class_r_s22812.html#a551bff514434f8710316a06c529d1f3c" title="RS22812::modeChanged Checks the flags structure to see whether the read mode changed. " alt="" coords="196,107,371,133"/>
+<area shape="rect" id="node2" href="$class_r_s22812.xhtml#a64f4658259e355d64dcaaa92eac65e93" title="Sets all the flags to false. " alt="" coords="210,5,357,32"/>
+<area shape="rect" id="node3" href="$class_r_s22812.xhtml#aee6ba6536ad3d47239501d812d5db994" title="Translates the RS 22&#45;812 byte value of the LCD mapping into a digit. " alt="" coords="212,56,355,83"/>
+<area shape="rect" id="node4" href="$class_r_s22812.xhtml#a551bff514434f8710316a06c529d1f3c" title="Checks the flags structure to see whether the read mode changed. " alt="" coords="196,107,371,133"/>
 </map>

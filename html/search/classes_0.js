@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['flags',['Flags',['../struct_flags.html',1,'']]]
+  ['flags',['Flags',['../struct_flags.xhtml',1,'']]]
 ];

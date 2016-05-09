@@ -5,7 +5,7 @@
 #include <QDebug>
 
 /*!
- * \brief plotGraph::paint. Override of the paint method of QGraphicsScene.
+ * \brief Override of the paint method of QGraphicsScene.
  * \param painter
  * \param option
  * \param widget
@@ -21,7 +21,7 @@ void plotGraph::paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
 }
 
 /*!
- * \brief plotGraph::boundingRect. Returns the bounding rectangle of the graph.
+ * \brief Returns the bounding rectangle of the graph.
  * \return
  * So far, it returns a fake value. Need to implement.
  */
@@ -31,7 +31,7 @@ QRectF plotGraph::boundingRect() const
 }
 
 /*!
- * \brief plotGraph::setXaxis. Sets the maximum and minimum values of the x axis.
+ * \brief Sets the maximum and minimum values of the x axis.
  * \param minVal
  * \param maxVal
  */
@@ -51,7 +51,6 @@ void plotGraph::setXaxis(qint64 minVal, qint64 maxVal)
 }
 
 /*!
- * \brief plotGraph::setYaxis
  * \brief Sets the maximum and minimum values of the y axis.
  * \param minVal
  * \param maxVal
@@ -72,9 +71,7 @@ void plotGraph::setYaxis(qreal minVal, qreal maxVal)
 }
 
 /*!
- * \brief plotGraph::setUnit
- *
- * Select the appropriate unit depending on the multimeter setting.
+ * \brief Selects the appropriate unit depending on the multimeter setting.
  * \param U
  */
 void plotGraph::setUnit(int U)
@@ -121,9 +118,7 @@ void plotGraph::setUnit(int U)
 }
 
 /*!
- * \brief plotGraph::paintAxis.
- *
- * Calculates the scale and limits of the axis and draws it.
+ * \brief Calculates the scale and limits of the axis and draws it.
  * \param painter
  * \param option
  * \param widget
@@ -154,22 +149,21 @@ void plotGraph::paintAxis(QPainter *painter, const QStyleOptionGraphicsItem *opt
 }
 
 /*!
- * \brief plotGraph::plotData.
- *
- * Draws the data on the widget.
+ * \brief Draws the data on the widget.
  * \param painter
  * \param option
  * \param widget
  */
 void plotGraph::plotData(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
-    QVector<QPoint> datPoint;
+    QList<QPoint> datPoint;
     QVector<QLineF> datLines;
-    for(QVector<QPair<qint64,qreal> >::const_iterator i=data->begin();i!=data->end();++i)
+    for(QList<QPair<qint64,qreal> >::const_iterator i=data->begin();i!=data->end();++i)
     {
         try
         {
-        datPoint.append(real2Coord(*i));
+            if((*i).first>=xmin)
+                datPoint.append(real2Coord(*i));
         }catch(std::out_of_range e)
         {
             qWarning()<<e.what();
@@ -177,7 +171,7 @@ void plotGraph::plotData(QPainter *painter, const QStyleOptionGraphicsItem *opti
     }
     if(datPoint.size()<2)
         return;
-    for(QVector<QPoint>::const_iterator i=datPoint.begin();i!=datPoint.end()-1;++i)
+    for(QList<QPoint>::const_iterator i=datPoint.begin();i!=datPoint.end()-1;++i)
     {
         datLines.append(QLineF((*i),(*(i+1))));
     }
@@ -185,27 +179,27 @@ void plotGraph::plotData(QPainter *painter, const QStyleOptionGraphicsItem *opti
 }
 
 /*!
- * \brief plotGraph::labelXaxis.
- *
- * Add labels to the X axis.
+ * \brief Adds labels to the X axis.
  * \param painter
- * \param p1
- * \param p2
+ * \param p1  QPoint variable that will hold the coordinates of the upper side of the tick lines.
+ * \param p2  QPoint variable that will hold the coordinates of the lower side of the tick lines.
  */
 void plotGraph::labelXaxis(QPainter *painter, QPoint &p1, QPoint &p2)
 {
 
     QFontMetrics fm(painter->font());
+    int step=static_cast<int>(round((xmax-xmin)/nx));
     for(int i=0;i<nx;++i)
     {
         p1=origin+QPoint(i*(rightX.x()-origin.x())/nx,0);
         p2=p1+QPoint(0,5);
-        //So far, x axis is reading number, not time.
-        //QString str=QString::number(round(xmin+i*(xmax-xmin)/nx),'f',0);
         //Setting time in x axis
-        int vecPos=static_cast<int>(round(i*data->length()/nx));
-        QPair<qint64,qreal> val=(*(data->begin()+vecPos));
-        QString str=QString::number(static_cast<float>(val.first)/1000,'f',2);
+        qreal val;
+        if(data->isEmpty())
+            val=0;
+        else
+            val=xmin+i*step;
+        QString str=QString::number(static_cast<float>(val)/1000,'f',2);
         painter->drawLine(p1,p2);
         painter->drawText(p2+QPoint(-fm.width(str)/2,fm.height()),str);
     }
@@ -215,12 +209,10 @@ void plotGraph::labelXaxis(QPainter *painter, QPoint &p1, QPoint &p2)
 }
 
 /*!
- * \brief plotGraph::labelYaxis.
- *
- * Adds labels to the Y axis.
+ * \brief Adds labels to the Y axis.
  * \param painter
- * \param p1
- * \param p2
+ * \param p1  QPoint variable that will hold the coordinates of the right side of the tick lines.
+ * \param p2  QPoint variable that will hold the coordinates of the left side of the tick lines.
  */
 void plotGraph::labelYaxis(QPainter *painter, QPoint &p1, QPoint &p2)
 {
@@ -262,9 +254,7 @@ void plotGraph::labelYaxis(QPainter *painter, QPoint &p1, QPoint &p2)
 }
 
 /*!
- * \brief plotGraph::real2Coord.
- *
- * Transform reading coordinates to widget coordinates.
+ * \brief Transforms reading coordinates to widget coordinates.
  * \param dpoint
  * \return
  */
@@ -277,7 +267,7 @@ QPoint plotGraph::real2Coord(const QPair<qreal, qreal> dpoint)
     //The value is out of range.
     if(x<origin.x()||y<upperY.y()||x>rightX.x()||y>origin.y())
     {
-        QString error="Value out of range:"+QString::number(dpoint.first)+","+QString::number(dpoint.second)+
+        QString error="Value out of range: "+QString::number(dpoint.first)+","+QString::number(dpoint.second)+
                 " ("+QString::number(origin.x())+","+QString::number(origin.y())+") "+
                 " ("+QString::number(upperY.y())+","+QString::number(rightX.x())+") ->"
                 "("+QString::number(x)+","+QString::number(y)+")";

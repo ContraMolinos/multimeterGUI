@@ -15,6 +15,8 @@
 
    You should have received a copy of the GNU General Public License
    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+   \author F.J. Salguero.
 */
 /*!
  * \todo Add display controls.
@@ -23,6 +25,7 @@
 /* 15-03-2016: v.1.0: Working version.
  * 01-04-2016: v.1.2: All elements become resizable.
  *                      X axis shows time.
+ * 09-05-2016: v.1.3: Scaling of x axis is user-selectable.
 */
 
 #include "mainwindow.h"

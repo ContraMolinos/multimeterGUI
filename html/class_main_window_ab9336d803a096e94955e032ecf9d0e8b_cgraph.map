@@ -1,3 +1,3 @@
 <map id="MainWindow::on_disconnectButton_clicked" name="MainWindow::on_disconnectButton_clicked">
-<area shape="rect" id="node2" href="$class_serial_port.html#a71c52f501f57ab491d0dc83cbc5e6a14" title="SerialPort::closePort. " alt="" coords="248,13,395,39"/>
+<area shape="rect" id="node2" href="$class_serial_port.xhtml#a71c52f501f57ab491d0dc83cbc5e6a14" title="Closes the port if it is open and disconnects the readConnect signal. " alt="" coords="248,13,395,39"/>
 </map>

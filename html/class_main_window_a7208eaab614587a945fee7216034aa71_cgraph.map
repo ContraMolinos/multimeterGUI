@@ -1,5 +1,5 @@
 <map id="MainWindow::addData" name="MainWindow::addData">
-<area shape="rect" id="node2" href="$class_r_s22812.html#a80e53a20cbe5c9c670e8b8309d043475" title="RS22812::getVal Returns the numeric value of the reading. " alt="" coords="223,5,346,32"/>
-<area shape="rect" id="node3" href="$classplot_graph.html#a860f6e766de63d3a7a251f528dcc4be7" title="plotGraph::setXaxis. Sets the maximum and minimum values of the x axis. " alt="" coords="215,56,355,83"/>
-<area shape="rect" id="node4" href="$classplot_graph.html#a0e2e3589bfc5cc726e367bf8bdc8a2f5" title="plotGraph::setYaxis " alt="" coords="215,107,355,133"/>
+<area shape="rect" id="node2" href="$class_r_s22812.xhtml#a80e53a20cbe5c9c670e8b8309d043475" title="Returns the numeric value of the reading. " alt="" coords="223,5,346,32"/>
+<area shape="rect" id="node3" href="$classplot_graph.xhtml#a860f6e766de63d3a7a251f528dcc4be7" title="Sets the maximum and minimum values of the x axis. " alt="" coords="215,56,355,83"/>
+<area shape="rect" id="node4" href="$classplot_graph.xhtml#a0e2e3589bfc5cc726e367bf8bdc8a2f5" title="Sets the maximum and minimum values of the y axis. " alt="" coords="215,107,355,133"/>
 </map>

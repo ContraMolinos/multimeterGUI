@@ -6,8 +6,7 @@
 #include <QDebug>
 
 /*!
- * \brief SerialPort::SerialPort
- * Constructor.
+ * \brief Constructor.
  * \param parent
  */
 SerialPort::SerialPort(QObject *parent) : QObject(parent), isOpen(false)
@@ -18,7 +17,9 @@ SerialPort::SerialPort(QObject *parent) : QObject(parent), isOpen(false)
 }
 
 /*!
- * \brief SerialPort::~SerialPort
+ * \brief Destructor.
+ *
+ * It closes the port if it is open.
  */
 SerialPort::~SerialPort()
 {
@@ -28,8 +29,7 @@ SerialPort::~SerialPort()
 }
 
 /*!
- * \brief SerialPort::openPort
- * Opens a serial port for reading. If port name is empty, it does nothing.
+ * \brief Opens a serial port for reading. If port name is empty, it does nothing.
  * If port name is not available. Does nothing and raises a warning.
  * \param portName  Name of the port as returned from QSerialPortInfo.
  * \return  If sucessful, returns 1. Else it returns 0;
@@ -69,7 +69,7 @@ bool SerialPort::openPort(const QString portName)
 }
 
 /*!
- * \brief SerialPort::closePort
+ * \brief Closes the port if it is open and disconnects the readConnect signal.
  * \return
  */
 bool SerialPort::closePort()
@@ -84,8 +84,7 @@ bool SerialPort::closePort()
 }
 
 /*!
- * \brief SerialPort::listPorts
- * Obtains and return the list of available ports.
+ * \brief Obtains and return the list of available ports.
  * \return QList<QSerialPortInfo>
  */
 QList<QSerialPortInfo> SerialPort::listPorts()
@@ -94,8 +93,7 @@ QList<QSerialPortInfo> SerialPort::listPorts()
 }
 
 /*!
- * \brief SerialPort::readPort
- * Reads the available data.
+ * \brief Reads the available data.
  */
 void SerialPort::readPort()
 {
@@ -106,8 +104,7 @@ void SerialPort::readPort()
 }
 
 /*!
- * \brief SerialPort::ready
- * Re-emits the readyRead signal.
+ * \brief Re-emits the readyRead signal.
  */
 void SerialPort::ready()
 {

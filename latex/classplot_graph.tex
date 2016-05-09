@@ -32,40 +32,40 @@ Collaboration diagram for plot\-Graph\-:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classplot_graph_a53902ce2d9f08bfda697a887061b12ca}{plot\-Graph} ()
-\item 
-\hyperlink{classplot_graph_ab906e233fa8fb7af50314e62305d8ca6}{plot\-Graph} (Q\-Graphics\-Scene $\ast$\hyperlink{classplot_graph_ac35eabe1a0ffbb4379fedebe6d5057c3}{scene})
-\item 
+\begin{DoxyCompactList}\small\item\em \hyperlink{classplot_graph}{plot\-Graph}. Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classplot_graph_ad42c2f82cf414d72aec713f03e1cba0e}{plot\-Graph} (Q\-Graphics\-Scene $\ast$\-\_\-scene)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classplot_graph}{plot\-Graph}. Constructor. \end{DoxyCompactList}\item 
 void \hyperlink{classplot_graph_aa72b60c4f95834599921874fab85d01b}{paint} (Q\-Painter $\ast$painter, const Q\-Style\-Option\-Graphics\-Item $\ast$option, Q\-Widget $\ast$widget)
-\begin{DoxyCompactList}\small\item\em \hyperlink{classplot_graph_aa72b60c4f95834599921874fab85d01b}{plot\-Graph\-::paint}. Override of the paint method of Q\-Graphics\-Scene. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Override of the paint method of Q\-Graphics\-Scene. \end{DoxyCompactList}\item 
 Q\-Rect\-F \hyperlink{classplot_graph_a65061b6dda44811830977d80f46ed15e}{bounding\-Rect} () const 
-\begin{DoxyCompactList}\small\item\em \hyperlink{classplot_graph_a65061b6dda44811830977d80f46ed15e}{plot\-Graph\-::bounding\-Rect}. Returns the bounding rectangle of the graph. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Returns the bounding rectangle of the graph. \end{DoxyCompactList}\item 
 void \hyperlink{classplot_graph_a860f6e766de63d3a7a251f528dcc4be7}{set\-Xaxis} (qint64 min\-Val, qint64 max\-Val)
-\begin{DoxyCompactList}\small\item\em \hyperlink{classplot_graph_a860f6e766de63d3a7a251f528dcc4be7}{plot\-Graph\-::set\-Xaxis}. Sets the maximum and minimum values of the x axis. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Sets the maximum and minimum values of the x axis. \end{DoxyCompactList}\item 
 void \hyperlink{classplot_graph_a0e2e3589bfc5cc726e367bf8bdc8a2f5}{set\-Yaxis} (qreal min\-Val, qreal max\-Val)
-\begin{DoxyCompactList}\small\item\em \hyperlink{classplot_graph_a0e2e3589bfc5cc726e367bf8bdc8a2f5}{plot\-Graph\-::set\-Yaxis} \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Sets the maximum and minimum values of the y axis. \end{DoxyCompactList}\item 
 void \hyperlink{classplot_graph_ab78b439ee76e1f4df9a9e26ebcd3bc29}{set\-Xsticks} (int n\-Sticks)
-\begin{DoxyCompactList}\small\item\em \hyperlink{classplot_graph_ab78b439ee76e1f4df9a9e26ebcd3bc29}{plot\-Graph\-::set\-Xsticks} \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Sets the number of sticks in the x axis. \end{DoxyCompactList}\item 
 void \hyperlink{classplot_graph_af5944ac87c177035eeeaf61d64b1a139}{set\-Ysticks} (int n\-Sticks)
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the number of sticks in the y axis. \end{DoxyCompactList}\item 
 void \hyperlink{classplot_graph_a8eb89c53d633e0a9574f1670c9c0d644}{link\-Data} (const Q\-Vector$<$ Q\-Pair$<$ qint64, qreal $>$ $>$ $\ast$dat)
-\item 
+\begin{DoxyCompactList}\small\item\em Links the data being plotted with the data vector that is being acquired from the port. \end{DoxyCompactList}\item 
 void \hyperlink{classplot_graph_a09a7563bcd8a387e1d9bf3f534ecd990}{set\-Unit} (int U)
-\item 
+\begin{DoxyCompactList}\small\item\em Selects the appropriate unit depending on the multimeter setting. \end{DoxyCompactList}\item 
 void \hyperlink{classplot_graph_ace55db051cab85e9a0c20795f4c2349a}{set\-Scene} (Q\-Graphics\-Scene $\ast$\hyperlink{classplot_graph_ac35eabe1a0ffbb4379fedebe6d5057c3}{scene})
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \hyperlink{classplot_graph_a9237c8835c854dfe3156d4a5803663ab}{paint\-Axis} (Q\-Painter $\ast$painter, const Q\-Style\-Option\-Graphics\-Item $\ast$option, Q\-Widget $\ast$widget)
-\begin{DoxyCompactList}\small\item\em \hyperlink{classplot_graph_a9237c8835c854dfe3156d4a5803663ab}{plot\-Graph\-::paint\-Axis} Calculates the scale and limits of the axis and draws it. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Calculates the scale and limits of the axis and draws it. \end{DoxyCompactList}\item 
 void \hyperlink{classplot_graph_a15feece3d49379208e40d2cd1b560787}{plot\-Data} (Q\-Painter $\ast$painter, const Q\-Style\-Option\-Graphics\-Item $\ast$option, Q\-Widget $\ast$widget)
-\begin{DoxyCompactList}\small\item\em \hyperlink{classplot_graph_a15feece3d49379208e40d2cd1b560787}{plot\-Graph\-::plot\-Data} Draws the data on the widget. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Draws the data on the widget. \end{DoxyCompactList}\item 
 void \hyperlink{classplot_graph_aafb4adc423d484284f192dee28b00b8a}{label\-Xaxis} (Q\-Painter $\ast$painter, Q\-Point \&p1, Q\-Point \&p2)
-\begin{DoxyCompactList}\small\item\em \hyperlink{classplot_graph_aafb4adc423d484284f192dee28b00b8a}{plot\-Graph\-::label\-Xaxis} Add labels to the X axis. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Adds labels to the X axis. \end{DoxyCompactList}\item 
 void \hyperlink{classplot_graph_a101e15e7b8cb1ca251e736777a091ee3}{label\-Yaxis} (Q\-Painter $\ast$painter, Q\-Point \&p1, Q\-Point \&p2)
-\begin{DoxyCompactList}\small\item\em \hyperlink{classplot_graph_a101e15e7b8cb1ca251e736777a091ee3}{plot\-Graph\-::label\-Yaxis} Adds labels to the Y axis. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Adds labels to the Y axis. \end{DoxyCompactList}\item 
 Q\-Point \hyperlink{classplot_graph_afecabc6fb684c043bef8f585eb7e0791}{real2\-Coord} (const Q\-Pair$<$ qreal, qreal $>$ dpoint)
-\begin{DoxyCompactList}\small\item\em \hyperlink{classplot_graph_afecabc6fb684c043bef8f585eb7e0791}{plot\-Graph\-::real2\-Coord} Transform reading coordinates to widget coordinates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Transforms reading coordinates to widget coordinates. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -112,14 +112,27 @@ This class graphs the values read from the multimeter versus the time.
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{classplot_graph_a53902ce2d9f08bfda697a887061b12ca}
-\hypertarget{classplot_graph_ab906e233fa8fb7af50314e62305d8ca6}{\index{plot\-Graph@{plot\-Graph}!plot\-Graph@{plot\-Graph}}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classplot_graph_a53902ce2d9f08bfda697a887061b12ca}
+
+
+\hyperlink{classplot_graph}{plot\-Graph}. Default constructor. 
+
+\hypertarget{classplot_graph_ad42c2f82cf414d72aec713f03e1cba0e}{\index{plot\-Graph@{plot\-Graph}!plot\-Graph@{plot\-Graph}}
 \index{plot\-Graph@{plot\-Graph}!plotGraph@{plot\-Graph}}
 \subsubsection[{plot\-Graph}]{\setlength{\rightskip}{0pt plus 5cm}plot\-Graph\-::plot\-Graph (
 \begin{DoxyParamCaption}
-\item[{Q\-Graphics\-Scene $\ast$}]{scene}
+\item[{Q\-Graphics\-Scene $\ast$}]{\-\_\-scene}
 \end{DoxyParamCaption}
-)}}\label{classplot_graph_ab906e233fa8fb7af50314e62305d8ca6}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classplot_graph_ad42c2f82cf414d72aec713f03e1cba0e}
+
+
+\hyperlink{classplot_graph}{plot\-Graph}. Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-scene} & \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Member Function Documentation}
@@ -132,7 +145,7 @@ This class graphs the values read from the multimeter versus the time.
 ) const}}\label{classplot_graph_a65061b6dda44811830977d80f46ed15e}
 
 
-\hyperlink{classplot_graph_a65061b6dda44811830977d80f46ed15e}{plot\-Graph\-::bounding\-Rect}. Returns the bounding rectangle of the graph. 
+Returns the bounding rectangle of the graph. 
 
 \begin{DoxyReturn}{Returns}
 So far, it returns a fake value. Need to implement. 
@@ -148,7 +161,7 @@ So far, it returns a fake value. Need to implement.
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{classplot_graph_aafb4adc423d484284f192dee28b00b8a}
 
 
-\hyperlink{classplot_graph_aafb4adc423d484284f192dee28b00b8a}{plot\-Graph\-::label\-Xaxis} Add labels to the X axis. 
+Adds labels to the X axis. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -161,7 +174,8 @@ So far, it returns a fake value. Need to implement.
 \end{DoxyParams}
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -181,7 +195,7 @@ Here is the caller graph for this function\-:\nopagebreak
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{classplot_graph_a101e15e7b8cb1ca251e736777a091ee3}
 
 
-\hyperlink{classplot_graph_a101e15e7b8cb1ca251e736777a091ee3}{plot\-Graph\-::label\-Yaxis} Adds labels to the Y axis. 
+Adds labels to the Y axis. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -194,7 +208,8 @@ Here is the caller graph for this function\-:\nopagebreak
 \end{DoxyParams}
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -209,10 +224,20 @@ Here is the caller graph for this function\-:\nopagebreak
 \begin{DoxyParamCaption}
 \item[{const Q\-Vector$<$ Q\-Pair$<$ qint64, qreal $>$ $>$ $\ast$}]{dat}
 \end{DoxyParamCaption}
-)}}\label{classplot_graph_a8eb89c53d633e0a9574f1670c9c0d644}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classplot_graph_a8eb89c53d633e0a9574f1670c9c0d644}
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Links the data being plotted with the data vector that is being acquired from the port. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dat} & \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -232,7 +257,7 @@ Here is the caller graph for this function\-:\nopagebreak
 )}}\label{classplot_graph_aa72b60c4f95834599921874fab85d01b}
 
 
-\hyperlink{classplot_graph_aa72b60c4f95834599921874fab85d01b}{plot\-Graph\-::paint}. Override of the paint method of Q\-Graphics\-Scene. 
+Override of the paint method of Q\-Graphics\-Scene. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -245,7 +270,8 @@ Here is the caller graph for this function\-:\nopagebreak
 \end{DoxyParams}
 
 
-Here is the call graph for this function\-:\nopagebreak
+Here is the call graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -265,7 +291,7 @@ Here is the call graph for this function\-:\nopagebreak
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{classplot_graph_a9237c8835c854dfe3156d4a5803663ab}
 
 
-\hyperlink{classplot_graph_a9237c8835c854dfe3156d4a5803663ab}{plot\-Graph\-::paint\-Axis} Calculates the scale and limits of the axis and draws it. 
+Calculates the scale and limits of the axis and draws it. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -278,7 +304,8 @@ Here is the call graph for this function\-:\nopagebreak
 \end{DoxyParams}
 
 
-Here is the call graph for this function\-:\nopagebreak
+Here is the call graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -289,7 +316,8 @@ Here is the call graph for this function\-:\nopagebreak
 
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -309,7 +337,7 @@ Here is the caller graph for this function\-:\nopagebreak
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{classplot_graph_a15feece3d49379208e40d2cd1b560787}
 
 
-\hyperlink{classplot_graph_a15feece3d49379208e40d2cd1b560787}{plot\-Graph\-::plot\-Data} Draws the data on the widget. 
+Draws the data on the widget. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -322,7 +350,8 @@ Here is the caller graph for this function\-:\nopagebreak
 \end{DoxyParams}
 
 
-Here is the call graph for this function\-:\nopagebreak
+Here is the call graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -333,7 +362,8 @@ Here is the call graph for this function\-:\nopagebreak
 
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -351,7 +381,7 @@ Here is the caller graph for this function\-:\nopagebreak
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{classplot_graph_afecabc6fb684c043bef8f585eb7e0791}
 
 
-\hyperlink{classplot_graph_afecabc6fb684c043bef8f585eb7e0791}{plot\-Graph\-::real2\-Coord} Transform reading coordinates to widget coordinates. 
+Transforms reading coordinates to widget coordinates. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -363,7 +393,8 @@ Here is the caller graph for this function\-:\nopagebreak
 \end{DoxyReturn}
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -388,7 +419,17 @@ Here is the caller graph for this function\-:\nopagebreak
 )}}\label{classplot_graph_a09a7563bcd8a387e1d9bf3f534ecd990}
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Selects the appropriate unit depending on the multimeter setting. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em U} & \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -407,7 +448,7 @@ Here is the caller graph for this function\-:\nopagebreak
 )}}\label{classplot_graph_a860f6e766de63d3a7a251f528dcc4be7}
 
 
-\hyperlink{classplot_graph_a860f6e766de63d3a7a251f528dcc4be7}{plot\-Graph\-::set\-Xaxis}. Sets the maximum and minimum values of the x axis. 
+Sets the maximum and minimum values of the x axis. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -418,7 +459,8 @@ Here is the caller graph for this function\-:\nopagebreak
 \end{DoxyParams}
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -433,10 +475,10 @@ Here is the caller graph for this function\-:\nopagebreak
 \begin{DoxyParamCaption}
 \item[{int}]{n\-Sticks}
 \end{DoxyParamCaption}
-)}}\label{classplot_graph_ab78b439ee76e1f4df9a9e26ebcd3bc29}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classplot_graph_ab78b439ee76e1f4df9a9e26ebcd3bc29}
 
 
-\hyperlink{classplot_graph_ab78b439ee76e1f4df9a9e26ebcd3bc29}{plot\-Graph\-::set\-Xsticks} 
+Sets the number of sticks in the x axis. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -445,7 +487,8 @@ Here is the caller graph for this function\-:\nopagebreak
 \end{DoxyParams}
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -464,9 +507,9 @@ Here is the caller graph for this function\-:\nopagebreak
 )}}\label{classplot_graph_a0e2e3589bfc5cc726e367bf8bdc8a2f5}
 
 
-\hyperlink{classplot_graph_a0e2e3589bfc5cc726e367bf8bdc8a2f5}{plot\-Graph\-::set\-Yaxis} 
-
 Sets the maximum and minimum values of the y axis. 
+
+
 \begin{DoxyParams}{Parameters}
 {\em min\-Val} & \\
 \hline
@@ -475,7 +518,8 @@ Sets the maximum and minimum values of the y axis.
 \end{DoxyParams}
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -490,10 +534,20 @@ Here is the caller graph for this function\-:\nopagebreak
 \begin{DoxyParamCaption}
 \item[{int}]{n\-Sticks}
 \end{DoxyParamCaption}
-)}}\label{classplot_graph_af5944ac87c177035eeeaf61d64b1a139}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classplot_graph_af5944ac87c177035eeeaf61d64b1a139}
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Sets the number of sticks in the y axis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n\-Sticks} & \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

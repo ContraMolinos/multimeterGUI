@@ -1,4 +1,4 @@
 <map id="MainWindow::resetData" name="MainWindow::resetData">
-<area shape="rect" id="node2" href="$classplot_graph.html#a09a7563bcd8a387e1d9bf3f534ecd990" title="plotGraph::setUnit" alt="" coords="225,5,353,32"/>
-<area shape="rect" id="node3" href="$class_r_s22812.html#a72884c3f25b59129ac21dca9f68a664f" title="RS22812::getMode. " alt="" coords="220,56,357,83"/>
+<area shape="rect" id="node2" href="$classplot_graph.xhtml#a09a7563bcd8a387e1d9bf3f534ecd990" title="Selects the appropriate unit depending on the multimeter setting. " alt="" coords="225,5,353,32"/>
+<area shape="rect" id="node3" href="$class_r_s22812.xhtml#a72884c3f25b59129ac21dca9f68a664f" title="getMode " alt="" coords="220,56,357,83"/>
 </map>

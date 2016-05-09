@@ -1,11 +1,11 @@
 <map id="rs22812.h" name="rs22812.h">
-<area shape="rect" id="node2" href="$lcd_8h.html" title="lcd.h" alt="" coords="246,87,297,114"/>
-<area shape="rect" id="node4" href="$mainwindow_8h.html" title="mainwindow.h" alt="" coords="315,177,422,203"/>
-<area shape="rect" id="node9" href="$moc__rs22812_8cpp.html" title="build&#45;multimeterGUI\l&#45;Desktop&#45;Debug/moc_rs22812.cpp" alt="" coords="394,80,621,121"/>
-<area shape="rect" id="node10" href="$rs22812_8cpp.html" title="rs22812.cpp" alt="" coords="645,87,737,114"/>
-<area shape="rect" id="node3" href="$moc__lcd_8cpp.html" title="build&#45;multimeterGUI\l&#45;Desktop&#45;Debug/moc_lcd.cpp" alt="" coords="5,169,204,211"/>
-<area shape="rect" id="node8" href="$lcd_8cpp.html" title="lcd.cpp" alt="" coords="227,177,291,203"/>
-<area shape="rect" id="node5" href="$moc__mainwindow_8cpp.html" title="build&#45;multimeterGUI\l&#45;Desktop&#45;Debug/moc_mainwindow.cpp" alt="" coords="51,259,307,300"/>
-<area shape="rect" id="node6" href="$main_8cpp.html" title="main.cpp" alt="" coords="331,266,406,293"/>
-<area shape="rect" id="node7" href="$mainwindow_8cpp.html" title="mainwindow.cpp" alt="" coords="431,266,552,293"/>
+<area shape="rect" id="node2" href="$lcd_8h.xhtml" title="lcd.h" alt="" coords="246,87,297,114"/>
+<area shape="rect" id="node4" href="$mainwindow_8h.xhtml" title="mainwindow.h" alt="" coords="315,177,422,203"/>
+<area shape="rect" id="node9" href="$moc__rs22812_8cpp.xhtml" title="build&#45;multimeterGUI\l&#45;Desktop&#45;Debug/moc_rs22812.cpp" alt="" coords="394,80,621,121"/>
+<area shape="rect" id="node10" href="$rs22812_8cpp.xhtml" title="rs22812.cpp" alt="" coords="645,87,737,114"/>
+<area shape="rect" id="node3" href="$moc__lcd_8cpp.xhtml" title="build&#45;multimeterGUI\l&#45;Desktop&#45;Debug/moc_lcd.cpp" alt="" coords="5,169,204,211"/>
+<area shape="rect" id="node8" href="$lcd_8cpp.xhtml" title="lcd.cpp" alt="" coords="227,177,291,203"/>
+<area shape="rect" id="node5" href="$moc__mainwindow_8cpp.xhtml" title="build&#45;multimeterGUI\l&#45;Desktop&#45;Debug/moc_mainwindow.cpp" alt="" coords="51,259,307,300"/>
+<area shape="rect" id="node6" href="$main_8cpp.xhtml" title="main.cpp" alt="" coords="331,266,406,293"/>
+<area shape="rect" id="node7" href="$mainwindow_8cpp.xhtml" title="mainwindow.cpp" alt="" coords="431,266,552,293"/>
 </map>

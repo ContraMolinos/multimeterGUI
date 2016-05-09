@@ -1,7 +1,7 @@
 \begin{theindex}
 
   \item {$\sim $\discretionary {-}{}{}Main\discretionary {-}{}{}Window}
-    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{25}
+    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{24}
   \item {$\sim $\discretionary {-}{}{}Serial\discretionary {-}{}{}Port}
     \subitem {Serial\discretionary {-}{}{}Port}, \hyperpage{47}
 
@@ -12,18 +12,18 @@
   \item {active\discretionary {-}{}{}Port}
     \subitem {Serial\discretionary {-}{}{}Port}, \hyperpage{51}
   \item {add\discretionary {-}{}{}Data}
-    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{25}
+    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{24}
   \item {Auto}
     \subitem {Flags}, \hyperpage{18}
   \item {axis\discretionary {-}{}{}Margin}
-    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{35}
+    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{36}
 
   \indexspace
 
   \item {B\discretionary {-}{}{}A\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}R\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}E}
     \subitem {Serial\discretionary {-}{}{}Port}, \hyperpage{51}
   \item {b\discretionary {-}{}{}Rect}
-    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{35}
+    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{36}
   \item {Bat}
     \subitem {Flags}, \hyperpage{18}
   \item {Beep}
@@ -32,24 +32,18 @@
     \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{30}
   \item {buffer}
     \subitem {Serial\discretionary {-}{}{}Port}, \hyperpage{51}
-  \item {build-\/multimeter\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I-\/\discretionary {-}{}{}Desktop-\/\discretionary {-}{}{}Debug/moc\discretionary {-}{}{}\_\discretionary {-}{}{}datars22812.\discretionary {-}{}{}cpp}, 
-		\hyperpage{55}
-  \item {build-\/multimeter\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I-\/\discretionary {-}{}{}Desktop-\/\discretionary {-}{}{}Debug/moc\discretionary {-}{}{}\_\discretionary {-}{}{}foo.\discretionary {-}{}{}cpp}, 
-		\hyperpage{55}
   \item {build-\/multimeter\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I-\/\discretionary {-}{}{}Desktop-\/\discretionary {-}{}{}Debug/moc\discretionary {-}{}{}\_\discretionary {-}{}{}lcd.\discretionary {-}{}{}cpp}, 
-		\hyperpage{56}
-  \item {build-\/multimeter\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I-\/\discretionary {-}{}{}Desktop-\/\discretionary {-}{}{}Debug/moc\discretionary {-}{}{}\_\discretionary {-}{}{}lcdscreen.\discretionary {-}{}{}cpp}, 
-		\hyperpage{58}
+		\hyperpage{55}
   \item {build-\/multimeter\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I-\/\discretionary {-}{}{}Desktop-\/\discretionary {-}{}{}Debug/moc\discretionary {-}{}{}\_\discretionary {-}{}{}mainwindow.\discretionary {-}{}{}cpp}, 
-		\hyperpage{59}
+		\hyperpage{56}
   \item {build-\/multimeter\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I-\/\discretionary {-}{}{}Desktop-\/\discretionary {-}{}{}Debug/moc\discretionary {-}{}{}\_\discretionary {-}{}{}plotgraph.\discretionary {-}{}{}cpp}, 
-		\hyperpage{61}
+		\hyperpage{58}
   \item {build-\/multimeter\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I-\/\discretionary {-}{}{}Desktop-\/\discretionary {-}{}{}Debug/moc\discretionary {-}{}{}\_\discretionary {-}{}{}rs22812.\discretionary {-}{}{}cpp}, 
-		\hyperpage{62}
+		\hyperpage{59}
   \item {build-\/multimeter\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I-\/\discretionary {-}{}{}Desktop-\/\discretionary {-}{}{}Debug/moc\discretionary {-}{}{}\_\discretionary {-}{}{}serialport.\discretionary {-}{}{}cpp}, 
-		\hyperpage{64}
+		\hyperpage{61}
   \item {build-\/multimeter\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I-\/\discretionary {-}{}{}Desktop-\/\discretionary {-}{}{}Debug/ui\discretionary {-}{}{}\_\discretionary {-}{}{}mainwindow.\discretionary {-}{}{}h}, 
-		\hyperpage{66}
+		\hyperpage{63}
   \item {byte2\discretionary {-}{}{}Digit}
     \subitem {R\discretionary {-}{}{}S22812}, \hyperpage{41}
 
@@ -71,7 +65,7 @@
   \item {continuity}
     \subitem {Flags}, \hyperpage{18}
   \item {counter}
-    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{27}
+    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{26}
 
   \indexspace
 
@@ -86,17 +80,13 @@
   \item {data}
     \subitem {L\discretionary {-}{}{}C\discretionary {-}{}{}D}, 
 		\hyperpage{21}
-    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{35}
-    \subitem {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Foo\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
-		\hyperpage{36}
+    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{36}
     \subitem {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}L\discretionary {-}{}{}C\discretionary {-}{}{}D\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
-		\hyperpage{36}
-    \subitem {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}L\discretionary {-}{}{}C\discretionary {-}{}{}Dscreen\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
 		\hyperpage{37}
     \subitem {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Main\discretionary {-}{}{}Window\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
 		\hyperpage{37}
     \subitem {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}plot\discretionary {-}{}{}Graph\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
-		\hyperpage{37}
+		\hyperpage{38}
     \subitem {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}R\discretionary {-}{}{}S22812\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
 		\hyperpage{38}
     \subitem {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Serial\discretionary {-}{}{}Port\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
@@ -153,15 +143,15 @@
   \indexspace
 
   \item {get\discretionary {-}{}{}Digit\discretionary {-}{}{}String}
-    \subitem {R\discretionary {-}{}{}S22812}, \hyperpage{41}
+    \subitem {R\discretionary {-}{}{}S22812}, \hyperpage{42}
   \item {get\discretionary {-}{}{}Flags}
     \subitem {R\discretionary {-}{}{}S22812}, \hyperpage{42}
   \item {get\discretionary {-}{}{}Mode}
     \subitem {R\discretionary {-}{}{}S22812}, \hyperpage{42}
   \item {get\discretionary {-}{}{}Val}
-    \subitem {R\discretionary {-}{}{}S22812}, \hyperpage{42}
+    \subitem {R\discretionary {-}{}{}S22812}, \hyperpage{43}
   \item {graph}
-    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{27}
+    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{26}
   \item {graph\discretionary {-}{}{}Plot}
     \subitem {Ui\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Main\discretionary {-}{}{}Window}, 
 		\hyperpage{53}
@@ -203,7 +193,7 @@
 		\hyperpage{20}
     \subitem {paint\discretionary {-}{}{}Event}, \hyperpage{21}
   \item {label}
-    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{27}
+    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{26}
   \item {label\discretionary {-}{}{}Port}
     \subitem {Ui\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Main\discretionary {-}{}{}Window}, 
 		\hyperpage{53}
@@ -215,9 +205,9 @@
     \subitem {L\discretionary {-}{}{}C\discretionary {-}{}{}D}, 
 		\hyperpage{21}
   \item {lcd}
-    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{27}
-  \item {lcd.\discretionary {-}{}{}cpp}, \hyperpage{66}
-  \item {lcd.\discretionary {-}{}{}h}, \hyperpage{67}
+    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{26}
+  \item {lcd.\discretionary {-}{}{}cpp}, \hyperpage{63}
+  \item {lcd.\discretionary {-}{}{}h}, \hyperpage{64}
   \item {link\discretionary {-}{}{}Data}
     \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{31}
   \item {list\discretionary {-}{}{}Ports}
@@ -236,117 +226,103 @@
   \item {M\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}E}
     \subitem {Serial\discretionary {-}{}{}Port}, \hyperpage{51}
   \item {main}
-    \subitem {main.\discretionary {-}{}{}cpp}, \hyperpage{68}
-  \item {main.\discretionary {-}{}{}cpp}, \hyperpage{68}
-    \subitem {main}, \hyperpage{68}
+    \subitem {main.\discretionary {-}{}{}cpp}, \hyperpage{65}
+  \item {main.\discretionary {-}{}{}cpp}, \hyperpage{65}
+    \subitem {main}, \hyperpage{65}
   \item {main\discretionary {-}{}{}Tool\discretionary {-}{}{}Bar}
     \subitem {Ui\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Main\discretionary {-}{}{}Window}, 
 		\hyperpage{54}
-  \item {Main\discretionary {-}{}{}Window}, \hyperpage{22}
+  \item {Main\discretionary {-}{}{}Window}, \hyperpage{21}
     \subitem {$\sim $\discretionary {-}{}{}Main\discretionary {-}{}{}Window}, 
-		\hyperpage{25}
-    \subitem {add\discretionary {-}{}{}Data}, \hyperpage{25}
-    \subitem {counter}, \hyperpage{27}
-    \subitem {graph}, \hyperpage{27}
-    \subitem {label}, \hyperpage{27}
-    \subitem {lcd}, \hyperpage{27}
-    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{24}
-    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{24}
-    \subitem {max\discretionary {-}{}{}Data}, \hyperpage{27}
-    \subitem {min\discretionary {-}{}{}Data}, \hyperpage{28}
-    \subitem {new\discretionary {-}{}{}Data}, \hyperpage{28}
+		\hyperpage{24}
+    \subitem {add\discretionary {-}{}{}Data}, \hyperpage{24}
+    \subitem {counter}, \hyperpage{26}
+    \subitem {graph}, \hyperpage{26}
+    \subitem {label}, \hyperpage{26}
+    \subitem {lcd}, \hyperpage{26}
+    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{23}
+    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{23}
+    \subitem {max\discretionary {-}{}{}Data}, \hyperpage{26}
+    \subitem {min\discretionary {-}{}{}Data}, \hyperpage{27}
+    \subitem {new\discretionary {-}{}{}Data}, \hyperpage{27}
     \subitem {on\discretionary {-}{}{}\_\discretionary {-}{}{}connect\discretionary {-}{}{}Button\discretionary {-}{}{}\_\discretionary {-}{}{}clicked}, 
-		\hyperpage{26}
+		\hyperpage{25}
     \subitem {on\discretionary {-}{}{}\_\discretionary {-}{}{}disconnect\discretionary {-}{}{}Button\discretionary {-}{}{}\_\discretionary {-}{}{}clicked}, 
-		\hyperpage{26}
-    \subitem {port\discretionary {-}{}{}Ptr}, \hyperpage{28}
-    \subitem {r\discretionary {-}{}{}Data}, \hyperpage{28}
-    \subitem {rawdata}, \hyperpage{28}
-    \subitem {reset\discretionary {-}{}{}Data}, \hyperpage{27}
-    \subitem {scene}, \hyperpage{28}
-    \subitem {store\discretionary {-}{}{}Data}, \hyperpage{28}
-    \subitem {time\discretionary {-}{}{}Mark}, \hyperpage{28}
-    \subitem {time\discretionary {-}{}{}Running}, \hyperpage{28}
-    \subitem {tmp}, \hyperpage{28}
-    \subitem {ui}, \hyperpage{28}
-  \item {mainwindow.\discretionary {-}{}{}cpp}, \hyperpage{68}
-  \item {mainwindow.\discretionary {-}{}{}h}, \hyperpage{69}
+		\hyperpage{25}
+    \subitem {port\discretionary {-}{}{}Ptr}, \hyperpage{27}
+    \subitem {r\discretionary {-}{}{}Data}, \hyperpage{27}
+    \subitem {rawdata}, \hyperpage{27}
+    \subitem {reset\discretionary {-}{}{}Data}, \hyperpage{26}
+    \subitem {scene}, \hyperpage{27}
+    \subitem {store\discretionary {-}{}{}Data}, \hyperpage{27}
+    \subitem {time\discretionary {-}{}{}Mark}, \hyperpage{27}
+    \subitem {time\discretionary {-}{}{}Running}, \hyperpage{27}
+    \subitem {tmp}, \hyperpage{27}
+    \subitem {ui}, \hyperpage{27}
+  \item {mainwindow.\discretionary {-}{}{}cpp}, \hyperpage{65}
+  \item {mainwindow.\discretionary {-}{}{}h}, \hyperpage{66}
   \item {max\discretionary {-}{}{}Data}
-    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{27}
+    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{26}
   \item {menu\discretionary {-}{}{}Bar}
     \subitem {Ui\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Main\discretionary {-}{}{}Window}, 
 		\hyperpage{54}
   \item {min\discretionary {-}{}{}Data}
-    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{28}
-  \item {moc\discretionary {-}{}{}\_\discretionary {-}{}{}foo.\discretionary {-}{}{}cpp}
-    \subitem {Q\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}L\discretionary {-}{}{}I\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}A\discretionary {-}{}{}L}, 
-		\hyperpage{56}
-    \subitem {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}data\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Foo}, 
-		\hyperpage{56}
-    \subitem {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Foo}, 
-		\hyperpage{56}
+    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{27}
   \item {moc\discretionary {-}{}{}\_\discretionary {-}{}{}lcd.\discretionary {-}{}{}cpp}
     \subitem {Q\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}L\discretionary {-}{}{}I\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}A\discretionary {-}{}{}L}, 
-		\hyperpage{57}
+		\hyperpage{56}
     \subitem {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}data\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}L\discretionary {-}{}{}C\discretionary {-}{}{}D}, 
-		\hyperpage{57}
+		\hyperpage{56}
     \subitem {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}L\discretionary {-}{}{}C\discretionary {-}{}{}D}, 
-		\hyperpage{58}
-  \item {moc\discretionary {-}{}{}\_\discretionary {-}{}{}lcdscreen.\discretionary {-}{}{}cpp}
-    \subitem {Q\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}L\discretionary {-}{}{}I\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}A\discretionary {-}{}{}L}, 
-		\hyperpage{59}
-    \subitem {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}data\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}L\discretionary {-}{}{}C\discretionary {-}{}{}Dscreen}, 
-		\hyperpage{59}
-    \subitem {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}L\discretionary {-}{}{}C\discretionary {-}{}{}Dscreen}, 
-		\hyperpage{59}
+		\hyperpage{56}
   \item {moc\discretionary {-}{}{}\_\discretionary {-}{}{}mainwindow.\discretionary {-}{}{}cpp}
     \subitem {Q\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}L\discretionary {-}{}{}I\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}A\discretionary {-}{}{}L}, 
-		\hyperpage{60}
+		\hyperpage{57}
     \subitem {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}data\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Main\discretionary {-}{}{}Window}, 
-		\hyperpage{60}
+		\hyperpage{57}
     \subitem {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Main\discretionary {-}{}{}Window}, 
-		\hyperpage{60}
+		\hyperpage{57}
   \item {moc\discretionary {-}{}{}\_\discretionary {-}{}{}plotgraph.\discretionary {-}{}{}cpp}
     \subitem {Q\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}L\discretionary {-}{}{}I\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}A\discretionary {-}{}{}L}, 
-		\hyperpage{61}
+		\hyperpage{58}
     \subitem {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}data\discretionary {-}{}{}\_\discretionary {-}{}{}plot\discretionary {-}{}{}Graph}, 
-		\hyperpage{62}
+		\hyperpage{59}
     \subitem {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}plot\discretionary {-}{}{}Graph}, 
-		\hyperpage{62}
+		\hyperpage{59}
   \item {moc\discretionary {-}{}{}\_\discretionary {-}{}{}rs22812.\discretionary {-}{}{}cpp}
     \subitem {Q\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}L\discretionary {-}{}{}I\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}A\discretionary {-}{}{}L}, 
-		\hyperpage{63}
+		\hyperpage{60}
     \subitem {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}data\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}R\discretionary {-}{}{}S22812}, 
-		\hyperpage{63}
+		\hyperpage{60}
     \subitem {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}R\discretionary {-}{}{}S22812}, 
-		\hyperpage{63}
+		\hyperpage{60}
   \item {moc\discretionary {-}{}{}\_\discretionary {-}{}{}serialport.\discretionary {-}{}{}cpp}
     \subitem {Q\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}L\discretionary {-}{}{}I\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}A\discretionary {-}{}{}L}, 
-		\hyperpage{64}
+		\hyperpage{61}
     \subitem {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}data\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Serial\discretionary {-}{}{}Port}, 
-		\hyperpage{65}
+		\hyperpage{62}
     \subitem {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Serial\discretionary {-}{}{}Port}, 
-		\hyperpage{65}
+		\hyperpage{62}
   \item {mode}
     \subitem {R\discretionary {-}{}{}S22812}, \hyperpage{45}
   \item {mode\discretionary {-}{}{}Changed}
-    \subitem {R\discretionary {-}{}{}S22812}, \hyperpage{42}
+    \subitem {R\discretionary {-}{}{}S22812}, \hyperpage{43}
 
   \indexspace
 
   \item {n}
     \subitem {Flags}, \hyperpage{19}
   \item {new\discretionary {-}{}{}Data}
-    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{28}
+    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{27}
     \subitem {R\discretionary {-}{}{}S22812}, \hyperpage{43}
   \item {new\discretionary {-}{}{}Mode}
-    \subitem {R\discretionary {-}{}{}S22812}, \hyperpage{43}
+    \subitem {R\discretionary {-}{}{}S22812}, \hyperpage{44}
   \item {new\discretionary {-}{}{}Value}
-    \subitem {R\discretionary {-}{}{}S22812}, \hyperpage{43}
+    \subitem {R\discretionary {-}{}{}S22812}, \hyperpage{44}
   \item {nx}
-    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{35}
+    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{36}
   \item {ny}
-    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{35}
+    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{36}
 
   \indexspace
 
@@ -355,15 +331,15 @@
   \item {oldflags}
     \subitem {R\discretionary {-}{}{}S22812}, \hyperpage{45}
   \item {on\discretionary {-}{}{}\_\discretionary {-}{}{}connect\discretionary {-}{}{}Button\discretionary {-}{}{}\_\discretionary {-}{}{}clicked}
-    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{26}
+    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{25}
   \item {on\discretionary {-}{}{}\_\discretionary {-}{}{}disconnect\discretionary {-}{}{}Button\discretionary {-}{}{}\_\discretionary {-}{}{}clicked}
-    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{26}
+    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{25}
   \item {open\discretionary {-}{}{}Port}
     \subitem {Serial\discretionary {-}{}{}Port}, \hyperpage{48}
   \item {operator==}
     \subitem {Flags}, \hyperpage{18}
   \item {origin}
-    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{35}
+    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{36}
 
   \indexspace
 
@@ -372,170 +348,146 @@
   \item {paint}
     \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{31}
   \item {paint\discretionary {-}{}{}Axis}
-    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{32}
+    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{33}
   \item {paint\discretionary {-}{}{}Event}
     \subitem {L\discretionary {-}{}{}C\discretionary {-}{}{}D}, 
 		\hyperpage{21}
   \item {percent}
     \subitem {Flags}, \hyperpage{19}
   \item {plot\discretionary {-}{}{}Data}
-    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{32}
+    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{34}
   \item {plot\discretionary {-}{}{}Graph}, \hyperpage{28}
-    \subitem {axis\discretionary {-}{}{}Margin}, \hyperpage{35}
-    \subitem {b\discretionary {-}{}{}Rect}, \hyperpage{35}
+    \subitem {axis\discretionary {-}{}{}Margin}, \hyperpage{36}
+    \subitem {b\discretionary {-}{}{}Rect}, \hyperpage{36}
     \subitem {bounding\discretionary {-}{}{}Rect}, \hyperpage{30}
-    \subitem {data}, \hyperpage{35}
+    \subitem {data}, \hyperpage{36}
     \subitem {label\discretionary {-}{}{}Xaxis}, \hyperpage{30}
     \subitem {label\discretionary {-}{}{}Yaxis}, \hyperpage{31}
     \subitem {link\discretionary {-}{}{}Data}, \hyperpage{31}
-    \subitem {nx}, \hyperpage{35}
-    \subitem {ny}, \hyperpage{35}
-    \subitem {origin}, \hyperpage{35}
+    \subitem {nx}, \hyperpage{36}
+    \subitem {ny}, \hyperpage{36}
+    \subitem {origin}, \hyperpage{36}
     \subitem {paint}, \hyperpage{31}
-    \subitem {paint\discretionary {-}{}{}Axis}, \hyperpage{32}
-    \subitem {plot\discretionary {-}{}{}Data}, \hyperpage{32}
+    \subitem {paint\discretionary {-}{}{}Axis}, \hyperpage{33}
+    \subitem {plot\discretionary {-}{}{}Data}, \hyperpage{34}
     \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{30}
     \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{30}
-    \subitem {real2\discretionary {-}{}{}Coord}, \hyperpage{33}
-    \subitem {right\discretionary {-}{}{}X}, \hyperpage{35}
-    \subitem {scene}, \hyperpage{35}
-    \subitem {set\discretionary {-}{}{}Scene}, \hyperpage{33}
-    \subitem {set\discretionary {-}{}{}Unit}, \hyperpage{34}
-    \subitem {set\discretionary {-}{}{}Xaxis}, \hyperpage{34}
-    \subitem {set\discretionary {-}{}{}Xsticks}, \hyperpage{34}
-    \subitem {set\discretionary {-}{}{}Yaxis}, \hyperpage{34}
-    \subitem {set\discretionary {-}{}{}Ysticks}, \hyperpage{35}
-    \subitem {unit}, \hyperpage{35}
-    \subitem {upper\discretionary {-}{}{}Y}, \hyperpage{35}
-    \subitem {xmax}, \hyperpage{36}
-    \subitem {xmin}, \hyperpage{36}
-    \subitem {ymax}, \hyperpage{36}
-    \subitem {ymin}, \hyperpage{36}
-  \item {plotgraph.\discretionary {-}{}{}cpp}, \hyperpage{69}
-  \item {plotgraph.\discretionary {-}{}{}h}, \hyperpage{70}
+    \subitem {real2\discretionary {-}{}{}Coord}, \hyperpage{34}
+    \subitem {right\discretionary {-}{}{}X}, \hyperpage{36}
+    \subitem {scene}, \hyperpage{36}
+    \subitem {set\discretionary {-}{}{}Scene}, \hyperpage{34}
+    \subitem {set\discretionary {-}{}{}Unit}, \hyperpage{35}
+    \subitem {set\discretionary {-}{}{}Xaxis}, \hyperpage{35}
+    \subitem {set\discretionary {-}{}{}Xsticks}, \hyperpage{35}
+    \subitem {set\discretionary {-}{}{}Yaxis}, \hyperpage{36}
+    \subitem {set\discretionary {-}{}{}Ysticks}, \hyperpage{36}
+    \subitem {unit}, \hyperpage{36}
+    \subitem {upper\discretionary {-}{}{}Y}, \hyperpage{37}
+    \subitem {xmax}, \hyperpage{37}
+    \subitem {xmin}, \hyperpage{37}
+    \subitem {ymax}, \hyperpage{37}
+    \subitem {ymin}, \hyperpage{37}
+  \item {plotgraph.\discretionary {-}{}{}cpp}, \hyperpage{67}
+  \item {plotgraph.\discretionary {-}{}{}h}, \hyperpage{67}
   \item {port\discretionary {-}{}{}Ptr}
-    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{28}
+    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{27}
   \item {ports}
     \subitem {Serial\discretionary {-}{}{}Port}, \hyperpage{51}
 
   \indexspace
 
   \item {Q\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}L\discretionary {-}{}{}I\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}A\discretionary {-}{}{}L}
-    \subitem {moc\discretionary {-}{}{}\_\discretionary {-}{}{}foo.\discretionary {-}{}{}cpp}, 
-		\hyperpage{56}
     \subitem {moc\discretionary {-}{}{}\_\discretionary {-}{}{}lcd.\discretionary {-}{}{}cpp}, 
-		\hyperpage{57}
-    \subitem {moc\discretionary {-}{}{}\_\discretionary {-}{}{}lcdscreen.\discretionary {-}{}{}cpp}, 
-		\hyperpage{59}
-    \subitem {moc\discretionary {-}{}{}\_\discretionary {-}{}{}mainwindow.\discretionary {-}{}{}cpp}, 
-		\hyperpage{60}
-    \subitem {moc\discretionary {-}{}{}\_\discretionary {-}{}{}plotgraph.\discretionary {-}{}{}cpp}, 
-		\hyperpage{61}
-    \subitem {moc\discretionary {-}{}{}\_\discretionary {-}{}{}rs22812.\discretionary {-}{}{}cpp}, 
-		\hyperpage{63}
-    \subitem {moc\discretionary {-}{}{}\_\discretionary {-}{}{}serialport.\discretionary {-}{}{}cpp}, 
-		\hyperpage{64}
-  \item {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}data\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Foo}
-    \subitem {moc\discretionary {-}{}{}\_\discretionary {-}{}{}foo.\discretionary {-}{}{}cpp}, 
 		\hyperpage{56}
+    \subitem {moc\discretionary {-}{}{}\_\discretionary {-}{}{}mainwindow.\discretionary {-}{}{}cpp}, 
+		\hyperpage{57}
+    \subitem {moc\discretionary {-}{}{}\_\discretionary {-}{}{}plotgraph.\discretionary {-}{}{}cpp}, 
+		\hyperpage{58}
+    \subitem {moc\discretionary {-}{}{}\_\discretionary {-}{}{}rs22812.\discretionary {-}{}{}cpp}, 
+		\hyperpage{60}
+    \subitem {moc\discretionary {-}{}{}\_\discretionary {-}{}{}serialport.\discretionary {-}{}{}cpp}, 
+		\hyperpage{61}
   \item {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}data\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}L\discretionary {-}{}{}C\discretionary {-}{}{}D}
     \subitem {moc\discretionary {-}{}{}\_\discretionary {-}{}{}lcd.\discretionary {-}{}{}cpp}, 
-		\hyperpage{57}
-  \item {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}data\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}L\discretionary {-}{}{}C\discretionary {-}{}{}Dscreen}
-    \subitem {moc\discretionary {-}{}{}\_\discretionary {-}{}{}lcdscreen.\discretionary {-}{}{}cpp}, 
-		\hyperpage{59}
+		\hyperpage{56}
   \item {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}data\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Main\discretionary {-}{}{}Window}
     \subitem {moc\discretionary {-}{}{}\_\discretionary {-}{}{}mainwindow.\discretionary {-}{}{}cpp}, 
-		\hyperpage{60}
+		\hyperpage{57}
   \item {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}data\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}R\discretionary {-}{}{}S22812}
     \subitem {moc\discretionary {-}{}{}\_\discretionary {-}{}{}rs22812.\discretionary {-}{}{}cpp}, 
-		\hyperpage{63}
+		\hyperpage{60}
   \item {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}data\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Serial\discretionary {-}{}{}Port}
     \subitem {moc\discretionary {-}{}{}\_\discretionary {-}{}{}serialport.\discretionary {-}{}{}cpp}, 
-		\hyperpage{65}
+		\hyperpage{62}
   \item {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}data\discretionary {-}{}{}\_\discretionary {-}{}{}plot\discretionary {-}{}{}Graph}
     \subitem {moc\discretionary {-}{}{}\_\discretionary {-}{}{}plotgraph.\discretionary {-}{}{}cpp}, 
-		\hyperpage{62}
-  \item {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Foo}
-    \subitem {moc\discretionary {-}{}{}\_\discretionary {-}{}{}foo.\discretionary {-}{}{}cpp}, 
-		\hyperpage{56}
-  \item {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Foo\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
-		\hyperpage{36}
-    \subitem {data}, \hyperpage{36}
-    \subitem {stringdata0}, \hyperpage{36}
+		\hyperpage{59}
   \item {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}L\discretionary {-}{}{}C\discretionary {-}{}{}D}
     \subitem {moc\discretionary {-}{}{}\_\discretionary {-}{}{}lcd.\discretionary {-}{}{}cpp}, 
-		\hyperpage{58}
+		\hyperpage{56}
   \item {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}L\discretionary {-}{}{}C\discretionary {-}{}{}D\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
-		\hyperpage{36}
-    \subitem {data}, \hyperpage{36}
-    \subitem {stringdata0}, \hyperpage{36}
-  \item {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}L\discretionary {-}{}{}C\discretionary {-}{}{}Dscreen}
-    \subitem {moc\discretionary {-}{}{}\_\discretionary {-}{}{}lcdscreen.\discretionary {-}{}{}cpp}, 
-		\hyperpage{59}
-  \item {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}L\discretionary {-}{}{}C\discretionary {-}{}{}Dscreen\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
 		\hyperpage{37}
     \subitem {data}, \hyperpage{37}
     \subitem {stringdata0}, \hyperpage{37}
   \item {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Main\discretionary {-}{}{}Window}
     \subitem {moc\discretionary {-}{}{}\_\discretionary {-}{}{}mainwindow.\discretionary {-}{}{}cpp}, 
-		\hyperpage{60}
+		\hyperpage{57}
   \item {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Main\discretionary {-}{}{}Window\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
 		\hyperpage{37}
     \subitem {data}, \hyperpage{37}
     \subitem {stringdata0}, \hyperpage{37}
   \item {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}R\discretionary {-}{}{}S22812}
     \subitem {moc\discretionary {-}{}{}\_\discretionary {-}{}{}rs22812.\discretionary {-}{}{}cpp}, 
-		\hyperpage{63}
+		\hyperpage{60}
   \item {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}R\discretionary {-}{}{}S22812\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
 		\hyperpage{38}
     \subitem {data}, \hyperpage{38}
     \subitem {stringdata0}, \hyperpage{38}
   \item {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Serial\discretionary {-}{}{}Port}
     \subitem {moc\discretionary {-}{}{}\_\discretionary {-}{}{}serialport.\discretionary {-}{}{}cpp}, 
-		\hyperpage{65}
+		\hyperpage{62}
   \item {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Serial\discretionary {-}{}{}Port\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
 		\hyperpage{38}
     \subitem {data}, \hyperpage{38}
     \subitem {stringdata0}, \hyperpage{38}
   \item {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}plot\discretionary {-}{}{}Graph}
     \subitem {moc\discretionary {-}{}{}\_\discretionary {-}{}{}plotgraph.\discretionary {-}{}{}cpp}, 
-		\hyperpage{62}
+		\hyperpage{59}
   \item {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}plot\discretionary {-}{}{}Graph\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
-		\hyperpage{37}
-    \subitem {data}, \hyperpage{37}
-    \subitem {stringdata0}, \hyperpage{37}
+		\hyperpage{38}
+    \subitem {data}, \hyperpage{38}
+    \subitem {stringdata0}, \hyperpage{38}
 
   \indexspace
 
   \item {r\discretionary {-}{}{}Data}
-    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{28}
+    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{27}
   \item {R\discretionary {-}{}{}E\discretionary {-}{}{}A\discretionary {-}{}{}D\discretionary {-}{}{}M\discretionary {-}{}{}E.\discretionary {-}{}{}md}, 
-		\hyperpage{71}
+		\hyperpage{68}
   \item {R\discretionary {-}{}{}E\discretionary {-}{}{}L}
     \subitem {Flags}, \hyperpage{19}
-  \item {R\discretionary {-}{}{}S22812}, \hyperpage{38}
+  \item {R\discretionary {-}{}{}S22812}, \hyperpage{39}
     \subitem {byte2\discretionary {-}{}{}Digit}, \hyperpage{41}
     \subitem {digits}, \hyperpage{45}
     \subitem {flags}, \hyperpage{45}
     \subitem {get\discretionary {-}{}{}Digit\discretionary {-}{}{}String}, 
-		\hyperpage{41}
+		\hyperpage{42}
     \subitem {get\discretionary {-}{}{}Flags}, \hyperpage{42}
     \subitem {get\discretionary {-}{}{}Mode}, \hyperpage{42}
-    \subitem {get\discretionary {-}{}{}Val}, \hyperpage{42}
+    \subitem {get\discretionary {-}{}{}Val}, \hyperpage{43}
     \subitem {mode}, \hyperpage{45}
-    \subitem {mode\discretionary {-}{}{}Changed}, \hyperpage{42}
+    \subitem {mode\discretionary {-}{}{}Changed}, \hyperpage{43}
     \subitem {new\discretionary {-}{}{}Data}, \hyperpage{43}
-    \subitem {new\discretionary {-}{}{}Mode}, \hyperpage{43}
-    \subitem {new\discretionary {-}{}{}Value}, \hyperpage{43}
+    \subitem {new\discretionary {-}{}{}Mode}, \hyperpage{44}
+    \subitem {new\discretionary {-}{}{}Value}, \hyperpage{44}
     \subitem {oldflags}, \hyperpage{45}
-    \subitem {R\discretionary {-}{}{}S22812}, \hyperpage{40}
+    \subitem {R\discretionary {-}{}{}S22812}, \hyperpage{41}
     \subitem {reset\discretionary {-}{}{}Flags}, \hyperpage{45}
-    \subitem {R\discretionary {-}{}{}S22812}, \hyperpage{40}
+    \subitem {R\discretionary {-}{}{}S22812}, \hyperpage{41}
   \item {R\discretionary {-}{}{}S232}
     \subitem {Flags}, \hyperpage{19}
   \item {rawdata}
-    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{28}
+    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{27}
   \item {read\discretionary {-}{}{}Connect}
     \subitem {Serial\discretionary {-}{}{}Port}, \hyperpage{51}
   \item {read\discretionary {-}{}{}Port}
@@ -545,18 +497,18 @@
   \item {ready\discretionary {-}{}{}Read}
     \subitem {Serial\discretionary {-}{}{}Port}, \hyperpage{51}
   \item {real2\discretionary {-}{}{}Coord}
-    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{33}
+    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{34}
   \item {reset\discretionary {-}{}{}Data}
-    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{27}
+    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{26}
   \item {reset\discretionary {-}{}{}Flags}
     \subitem {R\discretionary {-}{}{}S22812}, \hyperpage{45}
   \item {retranslate\discretionary {-}{}{}Ui}
     \subitem {Ui\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Main\discretionary {-}{}{}Window}, 
 		\hyperpage{53}
   \item {right\discretionary {-}{}{}X}
-    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{35}
-  \item {rs22812.\discretionary {-}{}{}cpp}, \hyperpage{71}
-  \item {rs22812.\discretionary {-}{}{}h}, \hyperpage{71}
+    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{36}
+  \item {rs22812.\discretionary {-}{}{}cpp}, \hyperpage{68}
+  \item {rs22812.\discretionary {-}{}{}h}, \hyperpage{68}
 
   \indexspace
 
@@ -565,8 +517,8 @@
   \item {S\discretionary {-}{}{}T\discretionary {-}{}{}O\discretionary {-}{}{}P\discretionary {-}{}{}B\discretionary {-}{}{}I\discretionary {-}{}{}T\discretionary {-}{}{}S}
     \subitem {Serial\discretionary {-}{}{}Port}, \hyperpage{51}
   \item {scene}
-    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{28}
-    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{35}
+    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{27}
+    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{36}
   \item {Serial\discretionary {-}{}{}Port}, \hyperpage{46}
     \subitem {$\sim $\discretionary {-}{}{}Serial\discretionary {-}{}{}Port}, 
 		\hyperpage{47}
@@ -593,20 +545,20 @@
 		\hyperpage{51}
     \subitem {Serial\discretionary {-}{}{}Port}, \hyperpage{47}
     \subitem {Serial\discretionary {-}{}{}Port}, \hyperpage{47}
-  \item {serialport.\discretionary {-}{}{}cpp}, \hyperpage{72}
-  \item {serialport.\discretionary {-}{}{}h}, \hyperpage{72}
+  \item {serialport.\discretionary {-}{}{}cpp}, \hyperpage{69}
+  \item {serialport.\discretionary {-}{}{}h}, \hyperpage{69}
   \item {set\discretionary {-}{}{}Scene}
-    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{33}
+    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{34}
   \item {set\discretionary {-}{}{}Unit}
-    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{34}
-  \item {set\discretionary {-}{}{}Xaxis}
-    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{34}
-  \item {set\discretionary {-}{}{}Xsticks}
-    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{34}
-  \item {set\discretionary {-}{}{}Yaxis}
-    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{34}
-  \item {set\discretionary {-}{}{}Ysticks}
     \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{35}
+  \item {set\discretionary {-}{}{}Xaxis}
+    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{35}
+  \item {set\discretionary {-}{}{}Xsticks}
+    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{35}
+  \item {set\discretionary {-}{}{}Yaxis}
+    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{36}
+  \item {set\discretionary {-}{}{}Ysticks}
+    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{36}
   \item {setup\discretionary {-}{}{}Ui}
     \subitem {Ui\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Main\discretionary {-}{}{}Window}, 
 		\hyperpage{53}
@@ -614,18 +566,14 @@
     \subitem {Ui\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Main\discretionary {-}{}{}Window}, 
 		\hyperpage{54}
   \item {store\discretionary {-}{}{}Data}
-    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{28}
+    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{27}
   \item {stringdata0}
-    \subitem {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Foo\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
-		\hyperpage{36}
     \subitem {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}L\discretionary {-}{}{}C\discretionary {-}{}{}D\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
-		\hyperpage{36}
-    \subitem {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}L\discretionary {-}{}{}C\discretionary {-}{}{}Dscreen\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
 		\hyperpage{37}
     \subitem {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Main\discretionary {-}{}{}Window\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
 		\hyperpage{37}
     \subitem {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}plot\discretionary {-}{}{}Graph\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
-		\hyperpage{37}
+		\hyperpage{38}
     \subitem {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}R\discretionary {-}{}{}S22812\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
 		\hyperpage{38}
     \subitem {qt\discretionary {-}{}{}\_\discretionary {-}{}{}meta\discretionary {-}{}{}\_\discretionary {-}{}{}stringdata\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Serial\discretionary {-}{}{}Port\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
@@ -636,11 +584,11 @@
   \item {tilde}
     \subitem {Flags}, \hyperpage{19}
   \item {time\discretionary {-}{}{}Mark}
-    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{28}
+    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{27}
   \item {time\discretionary {-}{}{}Running}
-    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{28}
+    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{27}
   \item {tmp}
-    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{28}
+    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{27}
   \item {tool\discretionary {-}{}{}Bar}
     \subitem {Ui\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Main\discretionary {-}{}{}Window}, 
 		\hyperpage{54}
@@ -651,9 +599,9 @@
     \subitem {Flags}, \hyperpage{19}
   \item {Ui}, \hyperpage{15}
   \item {ui}
-    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{28}
+    \subitem {Main\discretionary {-}{}{}Window}, \hyperpage{27}
   \item {Ui\discretionary {-}{}{}::\discretionary {-}{}{}Main\discretionary {-}{}{}Window}, 
-		\hyperpage{21}
+		\hyperpage{27}
   \item {Ui\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Main\discretionary {-}{}{}Window}, 
 		\hyperpage{52}
     \subitem {central\discretionary {-}{}{}Widget}, \hyperpage{53}
@@ -676,9 +624,9 @@
     \subitem {vertical\discretionary {-}{}{}Layout\discretionary {-}{}{}\_\discretionary {-}{}{}2}, 
 		\hyperpage{54}
   \item {unit}
-    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{35}
+    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{36}
   \item {upper\discretionary {-}{}{}Y}
-    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{35}
+    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{37}
 
   \indexspace
 
@@ -694,15 +642,15 @@
   \indexspace
 
   \item {xmax}
-    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{36}
+    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{37}
   \item {xmin}
-    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{36}
+    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{37}
 
   \indexspace
 
   \item {ymax}
-    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{36}
+    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{37}
   \item {ymin}
-    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{36}
+    \subitem {plot\discretionary {-}{}{}Graph}, \hyperpage{37}
 
 \end{theindex}

@@ -31,8 +31,15 @@ private slots:
     void on_disconnectButton_clicked();
     void addData();
     void resetData();
+    void updateLabel(int _val);
+
+    //To set the plot updating policy.
+    void on_radioAutoRescaling_clicked();
+    void on_radioFixed_clicked();
+    void on_radioNoRescaling_clicked();
 
 private:
+    void updateAxes();
     Ui::MainWindow *ui;
     SerialPort *portPtr;
     RS22812 *rawdata;
@@ -40,16 +47,16 @@ private:
     QLabel *label;
     plotGraph *graph;
     QGraphicsScene *scene;
-    QVector<QPair<qint64,qreal> > storeData;
+    QList<QPair<qint64,qreal> > storeData;
     qint32 counter=0;
-    qreal minData=99999999;
-    qreal maxData=-99999999;
 
     QMetaObject::Connection newData;
     QMetaObject::Connection rData;
 
     QElapsedTimer *timeMark;
     bool timeRunning;
+
+    enum UpdateMode {RESCALING, NORESCALING, FIXED} updateMode;
 
     //Temporal data
     QVector<QPair<qreal,qreal> >tmp;

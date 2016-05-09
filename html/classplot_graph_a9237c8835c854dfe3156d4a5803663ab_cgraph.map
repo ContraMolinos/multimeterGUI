@@ -1,4 +1,4 @@
 <map id="plotGraph::paintAxis" name="plotGraph::paintAxis">
-<area shape="rect" id="node2" href="$classplot_graph.html#aafb4adc423d484284f192dee28b00b8a" title="plotGraph::labelXaxis Add labels to the X axis. " alt="" coords="196,5,347,32"/>
-<area shape="rect" id="node3" href="$classplot_graph.html#a101e15e7b8cb1ca251e736777a091ee3" title="plotGraph::labelYaxis Adds labels to the Y axis. " alt="" coords="196,56,347,83"/>
+<area shape="rect" id="node2" href="$classplot_graph.xhtml#aafb4adc423d484284f192dee28b00b8a" title="Adds labels to the X axis. " alt="" coords="196,5,347,32"/>
+<area shape="rect" id="node3" href="$classplot_graph.xhtml#a101e15e7b8cb1ca251e736777a091ee3" title="Adds labels to the Y axis. " alt="" coords="196,56,347,83"/>
 </map>

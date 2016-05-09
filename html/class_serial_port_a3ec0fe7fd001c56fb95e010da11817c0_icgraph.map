@@ -1,5 +1,5 @@
 <map id="SerialPort::readyRead" name="SerialPort::readyRead">
-<area shape="rect" id="node2" href="$class_serial_port.html#a76a7bb63e3f581ccb55a5951bf97a4e3" title="SerialPort::ready Re&#45;emits the readyRead signal. " alt="" coords="211,13,335,39"/>
-<area shape="rect" id="node3" href="$class_serial_port.html#a746e1ff02d45d8bf6b94e8bcbde6bb0d" title="SerialPort::openPort Opens a serial port for reading. If port name is empty, it does nothing..." alt="" coords="383,13,525,39"/>
-<area shape="rect" id="node4" href="$class_main_window.html#a55cd52e7b00aff669290588f8affea5a" title="MainWindow::on_connectButton_clicked. Open the selected port. " alt="" coords="573,5,788,47"/>
+<area shape="rect" id="node2" href="$class_serial_port.xhtml#a76a7bb63e3f581ccb55a5951bf97a4e3" title="Re&#45;emits the readyRead signal. " alt="" coords="211,13,335,39"/>
+<area shape="rect" id="node3" href="$class_serial_port.xhtml#a746e1ff02d45d8bf6b94e8bcbde6bb0d" title="Opens a serial port for reading. If port name is empty, it does nothing. If port name is not availabl..." alt="" coords="383,13,525,39"/>
+<area shape="rect" id="node4" href="$class_main_window.xhtml#a55cd52e7b00aff669290588f8affea5a" title="Opens the selected port. " alt="" coords="573,5,788,47"/>
 </map>

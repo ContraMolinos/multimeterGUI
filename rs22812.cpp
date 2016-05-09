@@ -2,8 +2,9 @@
 #include <QDebug>
 
 /*!
- * \brief RS22812::RS22812
+ * \brief Constructor.
  * \param parent
+ * It sets the mode to 0 and resets all the flags.
  */
 RS22812::RS22812(QObject *parent) : QObject(parent)
 {
@@ -13,8 +14,7 @@ RS22812::RS22812(QObject *parent) : QObject(parent)
 }
 
 /*!
- * \brief RS22812::getVal
- * Returns the numeric value of the reading.
+ * \brief Returns the numeric value of the reading.
  * \return
  */
 float RS22812::getVal() const
@@ -63,8 +63,7 @@ float RS22812::getVal() const
 }
 
 /*!
- * \brief RS22812::modeChanged
- * Checks the flags structure to see whether the read mode changed.
+ * \brief Checks the flags structure to see whether the read mode changed.
  * \return
  */
 bool RS22812::modeChanged()
@@ -75,8 +74,7 @@ bool RS22812::modeChanged()
 }
 
 /*!
- * \brief RS22812::byte2Digit
- * Translates the RS 22-812 byte value of the LCD mapping into a digit.
+ * \brief Translates the RS 22-812 byte value of the LCD mapping into a digit.
  * \param byte  RS 22-812 byte value
  * \return  String with the equivalent digit.
  */
@@ -163,8 +161,7 @@ QString RS22812::byte2Digit(uchar byte)
 }
 
 /*!
- * \brief RS22812::resetFlags
- * Sets all the flags to false.
+ * \brief Sets all the flags to false.
  */
 void RS22812::resetFlags(Flags &f)
 {
@@ -199,7 +196,7 @@ void RS22812::resetFlags(Flags &f)
 }
 
 /*!
- * \brief RS22812::newValue Reads a new packet and reformats the data.
+ * \brief Reads a new packet and reformats the data.
  * \param data
  */
 void RS22812::newValue(const QByteArray &data)

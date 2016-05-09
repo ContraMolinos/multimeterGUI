@@ -4,7 +4,7 @@
 
 #include<QDebug>
 
-/*! \brief LCD::LCD. Constructor
+/*! \brief Constructor
  * \param data
  * \param parent
  */
@@ -26,7 +26,7 @@ LCD::LCD(const RS22812 *data, QWidget *parent):QLabel(parent), data(data)
 }
 
 /*!
- * \brief LCD::paintEvent. Paint event handler.
+ * \brief Paint event handler.
  * \param event
  * It redraws the LCD widget every time there is an update.
  */

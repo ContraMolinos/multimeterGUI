@@ -1,5 +1,5 @@
 <map id="SerialPort::listPorts" name="SerialPort::listPorts">
-<area shape="rect" id="node2" href="$class_main_window.html#a8b244be8b7b7db1b08de2a2acb9409db" title="MainWindow::MainWindow. Constructor. " alt="" coords="189,5,376,32"/>
-<area shape="rect" id="node3" href="$class_serial_port.html#a746e1ff02d45d8bf6b94e8bcbde6bb0d" title="SerialPort::openPort Opens a serial port for reading. If port name is empty, it does nothing..." alt="" coords="211,56,354,83"/>
-<area shape="rect" id="node4" href="$class_main_window.html#a55cd52e7b00aff669290588f8affea5a" title="MainWindow::on_connectButton_clicked. Open the selected port. " alt="" coords="424,49,639,90"/>
+<area shape="rect" id="node2" href="$class_main_window.xhtml#a8b244be8b7b7db1b08de2a2acb9409db" title="Constructor. " alt="" coords="189,5,376,32"/>
+<area shape="rect" id="node3" href="$class_serial_port.xhtml#a746e1ff02d45d8bf6b94e8bcbde6bb0d" title="Opens a serial port for reading. If port name is empty, it does nothing. If port name is not availabl..." alt="" coords="211,56,354,83"/>
+<area shape="rect" id="node4" href="$class_main_window.xhtml#a55cd52e7b00aff669290588f8affea5a" title="Opens the selected port. " alt="" coords="424,49,639,90"/>
 </map>

@@ -1,4 +1,4 @@
 <map id="RS22812::resetFlags" name="RS22812::resetFlags">
-<area shape="rect" id="node2" href="$class_r_s22812.html#ac5e60fb0fe61e2be5db4d5caab46c827" title="RS22812::RS22812" alt="" coords="203,5,339,32"/>
-<area shape="rect" id="node3" href="$class_r_s22812.html#a5de59c9521bc80e37745c8c3243d9229" title="RS22812::newValue Reads a new packet and reformats the data. " alt="" coords="200,56,343,83"/>
+<area shape="rect" id="node2" href="$class_r_s22812.xhtml#ac5e60fb0fe61e2be5db4d5caab46c827" title="Constructor. " alt="" coords="203,5,339,32"/>
+<area shape="rect" id="node3" href="$class_r_s22812.xhtml#a5de59c9521bc80e37745c8c3243d9229" title="Reads a new packet and reformats the data. " alt="" coords="200,56,343,83"/>
 </map>
